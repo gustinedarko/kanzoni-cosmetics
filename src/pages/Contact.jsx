@@ -1,0 +1,14 @@
+import AlertBar from "../components/AlertBar";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
+export default function Contact() {
+    return (
+        <>
+        <AlertBar />
+        <Navbar />
+        <h1 className="text-4xl text-yellow-600 flex justify-center">Welcome to the Kanzoni Contact Page</h1>
+        <Footer />
+        </>
+    );
+}
