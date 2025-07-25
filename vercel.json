@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/view-single-product", "destination": "/" },
+    { "source": "/about-us", "destination": "/" },
+    { "source": "/process", "destination": "/" },
+    { "source": "/contact", "destination": "/" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
