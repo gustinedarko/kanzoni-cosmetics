@@ -47,14 +47,31 @@ export default function ProductsHome() {
                 </div>
             </section>
 
-            <section className="w-full h-screen bg-[#F7F4ED] flex items-center justify-center">
-                <div className="w-2/3">
-                    <h2 className="flex justify-center">Kanzoni</h2>
-                    <h3 className="flex justify-center">Represents ........</h3>
-                    <p className="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, explicabo soluta. Id vel, fugit assumenda cupiditate quae saepe beatae totam velit voluptatem omnis impedit earum magnam iure accusantium tempora consectetur qui cumque praesentium maxime, enim, ab aliquam? Ducimus sequi facere voluptas praesentium quibusdam a quod eligendi pariatur reiciendis perspiciatis. Doloremque?</p>
-                    <span className="flex justify-center"><button>Our story</button></span>
-                    <p className="flex justify-center">Products</p>
+            <section className="w-full h-full bg-[#F7F4ED] flex items-center justify-center">
+
+                <div className="w-5/6 my-12">
+
+                    <h2 className="flex justify-center text-5xl font-bold">Kanzoni</h2>
+                    <h3 className="flex justify-center text-2xl">Represents ........</h3>
+
+                    <p className="text-center py-10 px-12 text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, explicabo soluta. Id vel, fugit assumenda cupiditate quae saepe beatae totam velit voluptatem omnis impedit earum magnam iure accusantium tempora consectetur qui cumque praesentium maxime, enim, ab aliquam? Ducimus sequi facere voluptas praesentium quibusdam a quod eligendi pariatur reiciendis perspiciatis. Doloremque?</p>
+
+                    <span className="flex justify-center"><button className="border px-6 py-3 rounded shadow-lg mb-12 text-lg">Our story</button></span>
+
+                    <span>
+                        <p className="flex justify-center text-3xl font-medium mb-6">View our Products</p>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                            <div className="h-48 bg-gray-400 rounded"></div>
+                            <div className="h-48 bg-gray-400 rounded"></div>
+                            <div className="h-48 bg-gray-400 rounded"></div>
+                            <div className="h-48 bg-gray-400 rounded"></div>
+                        </div>
+                    </span>
+
+                    <span className="flex justify-center"><button className="border px-6 py-3 rounded shadow-lg mt-10 text-lg">Our Products</button></span>
                 </div>
+
             </section>
             <section
                 style={{
@@ -104,7 +121,18 @@ export default function ProductsHome() {
                     <button className="bg-white text-black px-6 py-3 rounded shadow-lg">Shop Now</button>
                 </div>
             </section>
-            <section className="w-full h-screen"></section>
+            <section className="w-full h-full bg-[#F7F4ED] flex items-center justify-center">
+
+                <div className="my-10">
+                    <h2 className="flex justify-center text-4xl font-medium mb-8">Shea Butter........</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+                                <div className="h-60 w-60 bg-gray-400 rounded-full"></div>
+                                <div className="h-60 w-60 bg-gray-400 rounded-full"></div>
+                                <div className="h-60 w-60 bg-gray-400 rounded-full"></div>
+                                <div className="h-60 w-60 bg-gray-400 rounded-full"></div>
+                            </div>
+                </div>
+            </section>
             <Footer />
         </>
     );
