@@ -5,10 +5,10 @@ import Footer from "../components/Footer";
 import img1 from "../assets/images/istockphoto-A.jpg";
 import img2 from "../assets/images/kaeme-unsplash.jpg";
 import img3 from "../assets/images/istockphoto-B.jpg";
-import cropCream from "../assets/images/cream-crop.jpeg"
-import cropLotion from "../assets/images/lotion-crop.jpeg"
-import cropShowergel from "../assets/images/shower-gel-crop.jpeg"
-import cropSoap from "../assets/images/black-soap-crop.jpeg"
+import cropCream from "../assets/images/cream-crop.jpeg";
+import cropLotion from "../assets/images/lotion-crop.jpeg";
+import cropShowergel from "../assets/images/shower-gel-crop.jpeg";
+import cropSoap from "../assets/images/black-soap-crop.jpeg";
 
 const images = [img1, img2, img3];
 
@@ -41,7 +41,7 @@ export default function ProductsHome() {
                     />
                 ))}
                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
-                    <h1 className="text-white text-4xl md:text-5xl font-bold text-center">
+                    <h1 className="text-[#9C88FF] text-4xl md:text-6xl font-bold text-center">
                         Welcome to the Kanzoni Cosmetics
                     </h1>
                 </div>
