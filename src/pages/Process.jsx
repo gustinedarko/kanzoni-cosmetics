@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { GiFire, GiBoilingBubbles, GiCauldron, GiCoconuts, GiSpinningBlades } from "react-icons/gi";
 import { FaSeedling, FaRegSnowflake, FaHandHoldingWater } from "react-icons/fa";
+import imgCommunity from "../assets/images/annie-spratt-2.jpg";
+import imgProductSoap from "../assets/images/black-soap-product.jpeg";
 
 export default function Process() {
     const steps = [
@@ -91,7 +93,7 @@ export default function Process() {
                     {/* Product 1 - Shea Butter */}
                     <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center">
                         <img
-                            src="/images/shea-butter.jpg"
+                            src={imgProductSoap}
                             alt="Raw Shea Butter"
                             className="w-full h-40 object-cover rounded"
                         />
@@ -142,7 +144,7 @@ export default function Process() {
                 </div>
             </section>
 
-            <section className="bg-amber-50 py-12 px-4 sm:px-8 lg:px-16">
+            <section className="bg-[#F7F4ED] py-12 px-4 sm:px-8 lg:px-16">
                 <h2 className="text-3xl text-center font-semibold text-[#9C88FF] mb-6">
                     Traditional Tools & Community Impact
                 </h2>
@@ -151,7 +153,7 @@ export default function Process() {
                     <div className="w-full h-64 bg-gray-200 rounded-lg overflow-hidden shadow-md">
                         {/* Replace with actual image */}
                         <img
-                            src="/path-to-your-image.jpg"
+                            src={imgCommunity}
                             alt="Traditional tools used in shea butter production"
                             className="w-full h-full object-cover"
                         />

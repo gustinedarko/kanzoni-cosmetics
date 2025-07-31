@@ -2,15 +2,18 @@ import { useEffect, useState } from "react";
 import AlertBar from "../components/AlertBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import img1 from "../assets/images/istockphoto-A.jpg";
-import img2 from "../assets/images/kaeme-unsplash.jpg";
-import img3 from "../assets/images/istockphoto-B.jpg";
-import cropCream from "../assets/images/cream-crop.jpeg";
-import cropLotion from "../assets/images/lotion-crop.jpeg";
-import cropShowergel from "../assets/images/shower-gel-crop.jpeg";
-import cropSoap from "../assets/images/black-soap-crop.jpeg";
+// import img1 from "../assets/images/istockphoto-A.jpg";
+// import img2 from "../assets/images/kaeme-unsplash.jpg";
+// import img3 from "../assets/images/istockphoto-B.jpg";
+import imgA from "../assets/images/megumi.jpg";
+import imgB from "../assets/images/leighann.jpg";
+import imgC from "../assets/images/kristina.jpg";
+import cropCream from "../assets/images/sincerely.jpg";
+import cropLotion from "../assets/images/leighann-cream.jpg";
+import cropShowergel from "../assets/images/robbie.jpg";
+import cropSoap from "../assets/images/hygiene.jpg";
 
-const images = [img1, img2, img3];
+const images = [imgA, imgB, imgC];
 
 export default function ProductsHome() {
 
@@ -73,11 +76,12 @@ export default function ProductsHome() {
                 </div>
 
             </section>
+
             <section
                 style={{
                     backgroundImage: `url(${cropCream})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'right',
+                    backgroundPosition: 'center',
                     backgroundAttachment: 'fixed',
                 }}
                 className="w-full h-full md:h-screen">
@@ -85,6 +89,20 @@ export default function ProductsHome() {
                     <button className="bg-white text-black px-6 py-3 rounded shadow-lg">Shop Now</button>
                 </div>
             </section>
+
+            <section
+                style={{
+                    backgroundImage: `url(${cropShowergel})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundAttachment: 'fixed',
+                }}
+                className="w-full h-full md:h-screen">
+                <div className="w-full h-screen flex items-start justify-center pt-[90%] sm:pt-[70%] md:pt-[40%] lg:pt-[35%]">
+                    <button className="bg-white text-black px-6 py-3 rounded shadow-lg">Shop Now</button>
+                </div>
+            </section>
+
             <section
                 style={{
                     backgroundImage: `url(${cropLotion})`,
@@ -97,23 +115,12 @@ export default function ProductsHome() {
                     <button className="bg-white text-black px-6 py-3 rounded shadow-lg">Shop Now</button>
                 </div>
             </section>
-            <section
-                style={{
-                    backgroundImage: `url(${cropShowergel})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'right',
-                    backgroundAttachment: 'fixed',
-                }}
-                className="w-full h-full md:h-screen">
-                <div className="w-full h-screen flex items-start justify-center pt-[90%] sm:pt-[70%] md:pt-[40%] lg:pt-[35%]">
-                    <button className="bg-white text-black px-6 py-3 rounded shadow-lg">Shop Now</button>
-                </div>
-            </section>
+
             <section
                 style={{
                     backgroundImage: `url(${cropSoap})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'right',
+                    backgroundPosition: '',
                     backgroundAttachment: 'fixed',
                 }}
                 className="w-full h-full md:h-screen">
@@ -121,16 +128,17 @@ export default function ProductsHome() {
                     <button className="bg-white text-black px-6 py-3 rounded shadow-lg">Shop Now</button>
                 </div>
             </section>
+
             <section className="w-full h-full bg-[#F7F4ED] flex items-center justify-center">
 
                 <div className="my-10">
                     <h2 className="flex justify-center text-4xl font-medium mb-8">Shea Butter........</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
-                                <div className="h-60 w-60 bg-gray-400 rounded-full"></div>
-                                <div className="h-60 w-60 bg-gray-400 rounded-full"></div>
-                                <div className="h-60 w-60 bg-gray-400 rounded-full"></div>
-                                <div className="h-60 w-60 bg-gray-400 rounded-full"></div>
-                            </div>
+                        <div className="h-60 w-60 bg-gray-400 rounded-full"></div>
+                        <div className="h-60 w-60 bg-gray-400 rounded-full"></div>
+                        <div className="h-60 w-60 bg-gray-400 rounded-full"></div>
+                        <div className="h-60 w-60 bg-gray-400 rounded-full"></div>
+                    </div>
                 </div>
             </section>
             <Footer />

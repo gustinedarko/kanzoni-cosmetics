@@ -70,7 +70,7 @@ export default function Navbar() {
                 </button>
 
                 {[
-                    { href: "/", label: "PRODUCTS" },
+                    { href: "/", label: "HOME" },
                     { href: "/about-us", label: "ABOUT US" },
                     { href: "/process", label: "PROCESS" },
                     { href: "/contact", label: "CONTACT" },
