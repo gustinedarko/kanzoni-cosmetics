@@ -10,7 +10,7 @@ import imgB from "../assets/images/leighann.jpg";
 import imgC from "../assets/images/kristina.jpg";
 import cropCream from "../assets/images/sincerely.jpg";
 import cropLotion from "../assets/images/leighann-cream.jpg";
-import cropShowergel from "../assets/images/robbie.jpg";
+// import cropShowergel from "../assets/images/robbie.jpg";
 import cropSoap from "../assets/images/hygiene.jpg";
 
 const images = [imgA, imgB, imgC];
@@ -85,12 +85,15 @@ export default function ProductsHome() {
                     backgroundAttachment: 'fixed',
                 }}
                 className="w-full h-full md:h-screen">
-                <div className="w-full h-screen flex items-start justify-center pt-[90%] sm:pt-[70%] md:pt-[40%] lg:pt-[35%]">
-                    <button className="bg-white text-black px-6 py-3 rounded shadow-lg">Shop Now</button>
+                <div className="w-full h-screen flex items-center justify-center">
+                    <div className="text-center">
+                        <p className="text-[#9C88FF] text-6xl font-">Shea butter</p>
+                        <button className="bg-white text-black px-6 py-3 rounded shadow-lg mt-12">Shop Now</button>
+                    </div>
                 </div>
             </section>
 
-            <section
+            {/* <section
                 style={{
                     backgroundImage: `url(${cropShowergel})`,
                     backgroundSize: 'cover',
@@ -101,7 +104,7 @@ export default function ProductsHome() {
                 <div className="w-full h-screen flex items-start justify-center pt-[90%] sm:pt-[70%] md:pt-[40%] lg:pt-[35%]">
                     <button className="bg-white text-black px-6 py-3 rounded shadow-lg">Shop Now</button>
                 </div>
-            </section>
+            </section> */}
 
             <section
                 style={{
@@ -111,8 +114,11 @@ export default function ProductsHome() {
                     backgroundAttachment: 'fixed',
                 }}
                 className="w-full h-full md:h-screen">
-                <div className="w-full h-screen flex items-start justify-center pt-[90%] sm:pt-[70%] md:pt-[40%] lg:pt-[35%]">
-                    <button className="bg-white text-black px-6 py-3 rounded shadow-lg">Shop Now</button>
+                <div className="w-full h-screen flex items-center justify-center">
+                    <div className="text-center">
+                        <p className="text-[#9C88FF] text-6xl font-">Body Lotion</p>
+                        <button className="bg-white text-black px-6 py-3 rounded shadow-lg mt-12">Shop Now</button>
+                    </div>
                 </div>
             </section>
 
@@ -124,8 +130,11 @@ export default function ProductsHome() {
                     backgroundAttachment: 'fixed',
                 }}
                 className="w-full h-full md:h-screen">
-                <div className="w-full h-screen flex items-start justify-center pt-[90%] sm:pt-[70%] md:pt-[40%] lg:pt-[35%]">
-                    <button className="bg-white text-black px-6 py-3 rounded shadow-lg">Shop Now</button>
+                <div className="w-full h-screen flex items-center justify-center">
+                    <div className="text-center">
+                        <p className="text-[#9C88FF] text-6xl font-">Shower Gel and Soap</p>
+                        <button className="bg-white text-black px-6 py-3 rounded shadow-lg mt-12">Shop Now</button>
+                    </div>
                 </div>
             </section>
 
