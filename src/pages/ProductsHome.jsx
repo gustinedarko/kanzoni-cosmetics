@@ -12,6 +12,7 @@ import cropCream from "../assets/images/sincerely.jpg";
 import cropLotion from "../assets/images/leighann-cream.jpg";
 // import cropShowergel from "../assets/images/robbie.jpg";
 import cropSoap from "../assets/images/hygiene.jpg";
+import { Link } from "react-router";
 
 const images = [imgA, imgB, imgC];
 
@@ -43,10 +44,14 @@ export default function ProductsHome() {
                             }`}
                     />
                 ))}
-                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
-                    <h1 className="text-[#9C88FF] text-4xl md:text-6xl font-bold text-center">
-                        Welcome to the Kanzoni Cosmetics
+                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30"></div>
+
+                <div className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-opacity-30">
+                    <h1 className="text-[#5C4D9A] text-4xl md:text-6xl font-bold text-center">
+                        Kanzoni Cosmetics
                     </h1>
+                    <p className="text-[#5C4D9A] text-2xl md:text-5xl font-bold text-center">Shea Butter & Other Shea Products</p>
+                    {/* <button className="text-[#F7F4ED] font-medium border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 text-lg bg- hover:bg-[#9C88FF]">Our Products</button> */}
                 </div>
             </section>
 
@@ -54,12 +59,13 @@ export default function ProductsHome() {
 
                 <div className="w-5/6 my-12">
 
-                    <h2 className="flex justify-center text-5xl font-bold">Kanzoni</h2>
-                    <h3 className="flex justify-center text-2xl">Represents ........</h3>
+                    <h2 className="flex justify-center text-5xl font-bold mb-4">Kanzoni</h2>
+                    <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
+                    className="flex justify-center text-5xl font-bold text-[#9C88FF] tracking-wider italic">Represents ......</h3>
 
                     <p className="text-center py-10 px-12 text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, explicabo soluta. Id vel, fugit assumenda cupiditate quae saepe beatae totam velit voluptatem omnis impedit earum magnam iure accusantium tempora consectetur qui cumque praesentium maxime, enim, ab aliquam? Ducimus sequi facere voluptas praesentium quibusdam a quod eligendi pariatur reiciendis perspiciatis. Doloremque?</p>
 
-                    <span className="flex justify-center"><button className="border px-6 py-3 rounded shadow-lg mb-12 text-lg">Our story</button></span>
+                    <span className="flex justify-center"><Link to="/about-us" className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mb-12 text-lg font-medium bg-[#9C88FF] hover:bg-[#453979] text-[#F7F4ED]">Our story</Link></span>
 
                     <span>
                         <p className="flex justify-center text-3xl font-medium mb-6">View our Products</p>
@@ -72,7 +78,7 @@ export default function ProductsHome() {
                         </div>
                     </span>
 
-                    <span className="flex justify-center"><button className="border px-6 py-3 rounded shadow-lg mt-10 text-lg">Our Products</button></span>
+                    <span className="flex justify-center"><button className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 text-lg bg-[#A7B97E] hover:bg-[#9C88FF] text-[#F7F4ED]">Our Products</button></span>
                 </div>
 
             </section>
@@ -87,8 +93,9 @@ export default function ProductsHome() {
                 className="w-full h-full md:h-screen">
                 <div className="w-full h-screen flex items-center justify-center">
                     <div className="text-center">
-                        <p className="text-[#9C88FF] text-6xl font-">Shea butter</p>
-                        <button className="bg-white text-black px-6 py-3 rounded shadow-lg mt-12">Shop Now</button>
+                        <p style={{ fontFamily: "'Dancing Script', cursive" }} 
+                        className="text-[#5C4D9A] text-6xl font-bold tracking-wider italic">Shea butter</p>
+                        <button className="bg-white text-black border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-12 font-medium">Shop Now</button>
                     </div>
                 </div>
             </section>
@@ -116,8 +123,9 @@ export default function ProductsHome() {
                 className="w-full h-full md:h-screen">
                 <div className="w-full h-screen flex items-center justify-center">
                     <div className="text-center">
-                        <p className="text-[#9C88FF] text-6xl font-">Body Lotion</p>
-                        <button className="bg-white text-black px-6 py-3 rounded shadow-lg mt-12">Shop Now</button>
+                        <p style={{ fontFamily: "'Dancing Script', cursive" }}
+                        className="text-[#5C4D9A] text-6xl font-bold tracking-wider italic">Body Lotion</p>
+                        <button className="bg-white text-black border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-12 font-medium">Shop Now</button>
                     </div>
                 </div>
             </section>
@@ -132,8 +140,9 @@ export default function ProductsHome() {
                 className="w-full h-full md:h-screen">
                 <div className="w-full h-screen flex items-center justify-center">
                     <div className="text-center">
-                        <p className="text-[#9C88FF] text-6xl font-">Shower Gel and Soap</p>
-                        <button className="bg-white text-black px-6 py-3 rounded shadow-lg mt-12">Shop Now</button>
+                        <p style={{ fontFamily: "'Dancing Script', cursive" }}
+                        className="text-[#5C4D9A] text-6xl font-bold tracking-wider italic">Shower Gel & Soap</p>
+                        <button className="bg-white text-black px-5 py-2.5 border border-gray-400 rounded-lg shadow-lg mt-12 font-medium">Shop Now</button>
                     </div>
                 </div>
             </section>

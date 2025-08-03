@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { GiFire, GiBoilingBubbles, GiCauldron, GiCoconuts, GiSpinningBlades } from "react-icons/gi";
 import { FaSeedling, FaRegSnowflake, FaHandHoldingWater } from "react-icons/fa";
-import imgCommunity from "../assets/images/annie-spratt-2.jpg";
+import imgCommunity from "../assets/images/annie-spratt-1.jpg";
 import imgProductSoap from "../assets/images/black-soap-product.jpeg";
 
 export default function Process() {
@@ -66,7 +66,7 @@ export default function Process() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-12">
                         {steps.map((step, index) => (
-                            <div key={index} className="bg-white shadow-md rounded-lg p-6 text-center">
+                            <div key={index} className="bg-white shadow-md rounded-lg p-6 text-center transform hover:scale-105 transition duration-300">
                                 <div className="mb-4 flex justify-center">{step.icon}</div>
                                 <h4 className="text-xl font-semibold text-[#9C88FF] mb-2">{step.title}</h4>
                                 <p className="text-gray-700 text-base">{step.text}</p>

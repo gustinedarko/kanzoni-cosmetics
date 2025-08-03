@@ -1,9 +1,10 @@
 import logo from "../assets/images/logo.jpeg";
+import { Link } from "react-router";
 
 export default function Footer() {
     return (
         <>
-        <footer className="w-full bg-amber-100 text-gray-700">
+        <footer className="w-full bg-[#A7B97E] text-gray-700">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-8">
                 
                 <div>
@@ -18,16 +19,16 @@ export default function Footer() {
                     <h3 className="font-semibold text-lg mb-3">Quick Links</h3>
                     <ul className="flex flex-wrap gap-8 text-sm">
                         <li>
-                            <a href="/" className="font-medium hover:underline block">Home</a>
+                            <Link to="/" className="font-medium hover:underline block">Home</Link>
                             <ul className="mt-1 space-y-1 text-gray-600">
-                                <li><a href="/#" className="hover:underline">Our Story</a></li>
+                                <li><Link to="/about-us" className="hover:underline">Our Story</Link></li>
                                 <li><a href="/#" className="hover:underline">Our Product</a></li>
                                 <li><a href="/#" className="hover:underline">Shop Now</a></li>
                             </ul>
                         </li>
                         
                         <li>
-                            <a href="/about" className="font-medium hover:underline block">About</a>
+                            <Link to="/about-us" className="font-medium hover:underline block">About</Link>
                             <ul className="mt-1 space-y-1 text-gray-600">
                                 <li><a href="/" className="hover:underline">Mission</a></li>
                                 <li><a href="/" className="hover:underline">Team</a></li>
@@ -35,7 +36,7 @@ export default function Footer() {
                         </li>
 
                         <li>
-                            <a href="/process" className="font-medium hover:underline block">Process</a>
+                            <Link to="/process" className="font-medium hover:underline block">Process</Link>
                             <ul className="mt-1 space-y-1 text-gray-600">
                                 <li><a href="/process#sourcing" className="hover:underline">Sourcing</a></li>
                                 <li><a href="/process#packaging" className="hover:underline">Packaging</a></li>
@@ -43,7 +44,7 @@ export default function Footer() {
                         </li>
 
                         <li>
-                            <a href="/contact" className="font-medium hover:underline block">Contact</a>
+                            <Link to="/contact" className="font-medium hover:underline block">Contact</Link>
                             <ul className="mt-1 space-y-1 text-gray-600">
                                 <li><a href="/contact#location" className="hover:underline">Address</a></li>
                                 <li><a href="/contact#form" className="hover:underline">--------</a></li>
