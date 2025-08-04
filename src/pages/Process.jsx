@@ -5,6 +5,10 @@ import { GiFire, GiBoilingBubbles, GiCauldron, GiCoconuts, GiSpinningBlades } fr
 import { FaSeedling, FaRegSnowflake, FaHandHoldingWater } from "react-icons/fa";
 import imgCommunity from "../assets/images/annie-spratt-1.jpg";
 import imgProductSoap from "../assets/images/black-soap-product.jpeg";
+import img1 from "../assets/images/kaeme.jpg";
+import img2 from "../assets/images/giorgio.jpg";
+import img3 from "../assets/images/mockup.jpg";
+import img4 from "../assets/images/sagar.jpg";
 
 export default function Process() {
     const steps = [
@@ -93,7 +97,7 @@ export default function Process() {
                     {/* Product 1 - Shea Butter */}
                     <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center">
                         <img
-                            src={imgProductSoap}
+                            src={img1}
                             alt="Raw Shea Butter"
                             className="w-full h-40 object-cover rounded"
                         />
@@ -106,7 +110,7 @@ export default function Process() {
                     {/* Product 2 - Shea Butter Lotion */}
                     <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center">
                         <img
-                            src="/images/shea-lotion.jpg"
+                            src={img3}
                             alt="Shea Butter Lotion"
                             className="w-full h-40 object-cover rounded"
                         />
@@ -119,7 +123,7 @@ export default function Process() {
                     {/* Product 3 - Alata Shower Gel */}
                     <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center">
                         <img
-                            src="/images/alata-shower-gel.jpg"
+                            src={img4}
                             alt="Alata Shower Gel"
                             className="w-full h-40 object-cover rounded"
                         />
@@ -132,7 +136,7 @@ export default function Process() {
                     {/* Product 4 - Alata Black Soap */}
                     <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center">
                         <img
-                            src="/images/alata-black-soap.jpg"
+                            src={img2}
                             alt="Alata Black Soap"
                             className="w-full h-40 object-cover rounded"
                         />

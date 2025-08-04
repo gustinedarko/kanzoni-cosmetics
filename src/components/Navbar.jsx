@@ -29,7 +29,7 @@ export default function Navbar() {
             {/* Logo */}
             <div>
                 <Link to="/"
-                    className={`nav-text font-bold transition-colors duration-200 ${scrolled ? "text-white hover:text-[#9C88FF]" : "text-slate-800 hover:text-[#9C88FF]"
+                    className={`nav-text font-bold transition-colors duration-200 ${scrolled ? "text-[#F7F4ED] hover:text-[#9C88FF]" : "text-slate-800 hover:text-[#9C88FF]"
                         }`}
                 >
                     <div className="leading-none">
@@ -43,7 +43,7 @@ export default function Navbar() {
             <div className="md:hidden">
                 <button
                     onClick={handleToggle}
-                    className={`nav-text focus:outline-none transition-colors duration-200 ${scrolled ? "text-white hover:text-[#9C88FF]" : "text-slate-800 hover:text-[#9C88FF]"
+                    className={`nav-text focus:outline-none transition-colors duration-200 ${scrolled ? "text-[#F7F4ED] hover:text-[#9C88FF]" : "text-slate-800 hover:text-[#9C88FF]"
                         }`}
                 >
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
