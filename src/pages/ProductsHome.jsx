@@ -27,7 +27,7 @@ export default function ProductsHome() {
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentIndex((prev) => (prev + 1) % images.length);
-        }, 3000); // Change image every 3 seconds
+        }, 5000); // Change image every 3 seconds
 
         return () => clearInterval(timer);
     }, []);
@@ -44,7 +44,7 @@ export default function ProductsHome() {
                         key={index}
                         src={img}
                         alt={`slide-${index}`}
-                        className={`absolute top-0 left-0 w-full h-full  object-cover transition-opacity duration-1000 ease-in-out ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+                        className={`absolute top-0 left-0 w-full h-full  object-cover transition-opacity duration-1500 ease-in-out ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
                             }`}
                     />
                 ))}
@@ -57,8 +57,8 @@ export default function ProductsHome() {
                     <h1 className="text-[#5C4D9A] text-5xl md:text-6xl font-bold text-center">
                         Cosmetics
                     </h1>
-                    <p className="text-[#F7F4ED] text-2xl md:text-4xl font-bold text-center">Shea Butter & Other</p>
-                    <p className="text-[#F7F4ED] text-2xl md:text-4xl font-bold text-center">Shea Products</p>
+                    <p className="text-[#F7F4ED] text-2xl md:text-4xl font-medium text-center">Shea Butter & Other</p>
+                    <p className="text-[#F7F4ED] text-2xl md:text-4xl font-medium text-center">Shea Products</p>
                     {/* <button className="text-[#F7F4ED] font-medium border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 text-lg bg- hover:bg-[#9C88FF]">Our Products</button> */}
                 </div>
             </section>
@@ -71,7 +71,7 @@ export default function ProductsHome() {
                     <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
                         className="flex justify-center text-5xl font-bold text-[#9C88FF] tracking-wider italic">Represents ......</h3>
 
-                    <p className="text-center py-10 px-12 text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, explicabo soluta. Id vel, fugit assumenda cupiditate quae saepe beatae totam velit voluptatem omnis impedit earum magnam iure accusantium tempora consectetur qui cumque praesentium maxime, enim, ab aliquam? Ducimus sequi facere voluptas praesentium quibusdam a quod eligendi pariatur reiciendis perspiciatis. Doloremque?</p>
+                    <p className="text-center py-10 text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, explicabo soluta. Id vel, fugit assumenda cupiditate quae saepe beatae totam velit voluptatem omnis impedit earum magnam iure accusantium tempora consectetur qui cumque praesentium maxime, enim, ab aliquam? Ducimus sequi facere voluptas praesentium quibusdam a quod eligendi pariatur reiciendis perspiciatis. Doloremque?</p>
 
                     <span className="flex justify-center"><Link to="/about-us" className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mb-12 text-lg font-medium bg-[#9C88FF] hover:bg-[#453979] text-[#F7F4ED]">Our story</Link></span>
 

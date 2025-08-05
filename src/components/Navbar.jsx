@@ -62,7 +62,7 @@ export default function Navbar() {
                 {/* Close button (only visible on mobile) */}
                 <button
                     onClick={handleToggle}
-                    className="absolute top-4 right-4 md:hidden focus:outline-none text-gray-300 hover:text-[#9C88FF]"
+                    className="absolute top-4 right-4 md:hidden focus:outline-none text-gray-600 hover:text-[#9C88FF]"
                 >
                     <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
