@@ -61,7 +61,8 @@ export default function Process() {
             <section className="w-full h-full bg-[#F7F4ED] flex items-center justify-center">
                 <div className="w-5/6 my-12">
                     <h2 className="flex justify-center text-3xl md:text-5xl font-bold text-center">Experience the Craft of Shea Butter Making in Ghana</h2>
-                    <h3 className="flex justify-center text-xl md:text-2xl text-center mt-4">A step-by-step journey through tradition and care</h3>
+                    <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
+                    className="flex justify-center text-3xl md:text-5xl font-bold text-[#9C88FF] italic text-center mt-4">A step-by-step journey through tradition and care</h3>
                     <p className="text-center py-10 px-6 text-lg max-w-4xl mx-auto">
                         Shea butter is more than a cosmetic ingredient, it's a legacy passed down through generations in Ghana.
                         At Kanzoni Cosmetics, we honor this heritage with an artisanal approach to production. Each step in the process is

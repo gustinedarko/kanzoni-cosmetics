@@ -54,11 +54,11 @@ export default function ProductsHome() {
                     <h1 className="text-[#5C4D9A] text-5xl md:text-6xl font-bold text-center">
                         Kanzoni
                     </h1>
-                    <h1 className="text-[#5C4D9A] text-5xl md:text-6xl font-bold text-center">
+                    <h1 className="text-[#5C4D9A] text-5xl md:text-6xl font-bold text-center mb-2">
                         Cosmetics
                     </h1>
-                    <p className="text-[#F7F4ED] text-2xl md:text-4xl font-medium text-center">Shea Butter & Other</p>
-                    <p className="text-[#F7F4ED] text-2xl md:text-4xl font-medium text-center">Shea Products</p>
+                    <p className="text-[#F7F4ED] text-3xl md:text-4xl font-medium text-center">Shea Butter & Other</p>
+                    <p className="text-[#F7F4ED] text-3xl md:text-4xl font-medium text-center">Shea Products</p>
                     {/* <button className="text-[#F7F4ED] font-medium border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 text-lg bg- hover:bg-[#9C88FF]">Our Products</button> */}
                 </div>
             </section>
@@ -67,11 +67,11 @@ export default function ProductsHome() {
 
                 <div className="w-5/6 my-12">
 
-                    <h2 className="flex justify-center text-5xl font-bold mb-4">Kanzoni</h2>
+                    <h2 className="flex justify-center text-3xl md:text-5xl font-bold mb-2 md:mb-4">Kanzoni</h2>
                     <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
-                        className="flex justify-center text-5xl font-bold text-[#9C88FF] tracking-wider italic">Represents ......</h3>
+                        className="flex justify-center text-3xl md:text-5xl font-bold text-[#9C88FF] tracking-wider italic">Represents ......</h3>
 
-                    <p className="text-center py-10 text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, explicabo soluta. Id vel, fugit assumenda cupiditate quae saepe beatae totam velit voluptatem omnis impedit earum magnam iure accusantium tempora consectetur qui cumque praesentium maxime, enim, ab aliquam? Ducimus sequi facere voluptas praesentium quibusdam a quod eligendi pariatur reiciendis perspiciatis. Doloremque?</p>
+                    <p className="text-center py-6 md:py-10 text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, explicabo soluta. Id vel, fugit assumenda cupiditate quae saepe beatae totam velit voluptatem omnis impedit earum magnam iure accusantium tempora consectetur qui cumque praesentium maxime, enim, ab aliquam? Ducimus sequi facere voluptas praesentium quibusdam a quod eligendi pariatur reiciendis perspiciatis. Doloremque?</p>
 
                     <span className="flex justify-center"><Link to="/about-us" className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mb-12 text-lg font-medium bg-[#9C88FF] hover:bg-[#453979] text-[#F7F4ED]">Our story</Link></span>
 
@@ -92,7 +92,13 @@ export default function ProductsHome() {
 
                     </span>
 
-                    <span className="flex justify-center"><button className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 text-lg font-medium bg-[#9C88FF] hover:bg-[#453979] text-[#F7F4ED]">Our Products</button></span>
+                    <span className="flex justify-center">
+                        <Link to="/our-products">
+                            <button className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 text-lg font-medium bg-[#9C88FF] hover:bg-[#453979] text-[#F7F4ED]">
+                                Our Products
+                            </button>
+                        </Link>
+                    </span>
                 </div>
 
             </section>
@@ -174,17 +180,17 @@ export default function ProductsHome() {
                             <img src={ingredient1} alt="" className="h-60 w-60 bg-gray-400 rounded-full" />
                             <p className="text-xl font-medium mt-2">Coconut Oil</p>
                         </div>
-                        
+
                         <div className="flex flex-col items-center justify-center text-center">
                             <img src={ingredient1} alt="" className="h-60 w-60 bg-gray-400 rounded-full" />
                             <p className="text-xl font-medium mt-2">Coconut Oil</p>
                         </div>
-                        
+
                         <div className="flex flex-col items-center justify-center text-center">
                             <img src={ingredient1} alt="" className="h-60 w-60 bg-gray-400 rounded-full" />
                             <p className="text-xl font-medium mt-2">Coconut Oil</p>
                         </div>
-                        
+
                         <div className="flex flex-col items-center justify-center text-center">
                             <img src={ingredient1} alt="" className="h-60 w-60 bg-gray-400 rounded-full" />
                             <p className="text-xl font-medium mt-2">Coconut Oil</p>

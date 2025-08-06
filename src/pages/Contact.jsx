@@ -3,12 +3,60 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import React from "react";
 import { FaPhoneAlt, FaEnvelope, FaWhatsapp, FaMapMarkerAlt, FaClock, FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { useState, useRef, useEffect } from "react";
 
 export default function Contact() {
+
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [notification, setNotification] = useState({ show: false, message: "", type: "" });
+    const formRef = useRef(null);
+    useEffect(() => {
+        if (notification.show) {
+            const timer = setTimeout(() => {
+                setNotification({ show: false, message: "", type: "" });
+            }, 3000);
+
+            return () => clearTimeout(timer);
+        }
+    }, [notification.show]);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+
+        const form = formRef.current;
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch("https://formspree.io/f/mnnzglbl", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    Accept: "application/json",
+                },
+            });
+
+            if (response.ok) {
+                setNotification({ show: true, message: "Message sent successfully!", type: "success" });
+                form.reset();
+            } else {
+                setNotification({ show: true, message: "Something went wrong. Please try again.", type: "error" });
+
+                setTimeout(() => {
+                    setNotification({ show: false, message: "", type: "" });
+                }, 3000);
+            }
+        } catch (error) {
+            setNotification({ show: true, message: "Failed to send message. Check your connection.", type: "error" });
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
     return (
         <>
-        <AlertBar />
-        <Navbar />
+            <AlertBar />
+            <Navbar />
             <div className="bg-white text-gray-800">
                 {/* Why Choose Us */}
                 <section className="py-16 px-6 text-center bg-[#F5F3FF]">
@@ -29,8 +77,8 @@ export default function Contact() {
                     <div className="bg-[#FAF9FF] rounded-xl p-6 shadow">
                         <FaWhatsapp size={24} className="text-[#25D366] mb-2" />
                         <h4 className="font-bold mb-1">Chat on WhatsApp</h4>
-                        <a href="https://wa.me/233541958490" target="_blank" 
-                        rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                        <a href="https://wa.me/233541958490" target="_blank"
+                            rel="noopener noreferrer" className="text-blue-600 hover:underline">
                             Chat on WhatsApp
                         </a>
                     </div>
@@ -67,32 +115,50 @@ export default function Contact() {
                 {/* Contact Form */}
                 <section className="py-16 px-6 bg-[#F5F3FF]">
                     <h3 className="text-2xl font-bold text-center mb-8 text-[#5C4D9A]">Send Us a Message</h3>
-                    <form className="max-w-3xl mx-auto space-y-6">
+                    <form
+                        ref={formRef}
+                        onSubmit={handleSubmit}
+                        className="max-w-3xl mx-auto space-y-6">
+                        {notification.show && (
+                            <div
+                                className={`fixed top-20 left-1/2 transform -translate-x-1/2 z-50 px-6 py-3 rounded-md shadow-md text-white font-medium transition duration-300
+                                ${notification.type === "success" ? "bg-green-400" : "bg-red-500"}`}
+                            >
+                                {notification.message}
+                            </div>
+                        )}
                         <div className="flex flex-col md:flex-row gap-6">
                             <input
                                 type="text"
+                                name="name"
                                 placeholder="Your Name"
                                 className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9C88FF]"
                                 required
                             />
                             <input
                                 type="email"
+                                name="email"
                                 placeholder="Your Email"
                                 className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9C88FF]"
                                 required
                             />
                         </div>
+
                         <textarea
+                            name="message"
                             placeholder="Your Message"
                             rows="5"
                             className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9C88FF]"
                             required
                         ></textarea>
+
                         <button
                             type="submit"
-                            className="bg-[#5C4D9A] text-white px-6 py-3 rounded-md hover:bg-[#453979] transition duration-200"
+                            disabled={isSubmitting}
+                            className={`${isSubmitting ? "bg-[#7a6bb7] cursor-not-allowed" : "bg-[#5C4D9A] hover:bg-[#453979]"
+                                } text-white px-5 py-2.5 font-medium rounded-md transition duration-200`}
                         >
-                            Send Message
+                            {isSubmitting ? "Sending..." : "Send Message"}
                         </button>
                     </form>
                 </section>
@@ -130,7 +196,7 @@ export default function Contact() {
                     ></iframe>
                 </section>
             </div>
-        <Footer />
+            <Footer />
         </>
     );
 }

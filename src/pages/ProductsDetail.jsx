@@ -18,15 +18,18 @@ export default function ProductsDetail() {
             <Navbar />
             <button
                 onClick={() => navigate(-1)}
-                className="ml-10 mt-6 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition"
+                className="ml-10 mt-6 px-4 py-2 text-white rounded font-medium bg-[#9C88FF] hover:bg-[#453979] transition"
             >
                 ← Back
             </button>
             <div className="p-10">
-                <img src={product.image} alt={product.name} className="w-full max-w-md mx-auto object-cover rounded" />
-                <h2 className="text-3xl font-bold text-center mt-6">{product.name}</h2>
-                <p className="mt-2 text-center text-lg font-medium text-[#5C4D9A]">Ghc {product.price}</p>
-                <p className="mt-4 text-center">{product.description}</p>
+
+                <div className="bg-[#F7F4ED] p-6 rounded-lg shadow-md w-full max-w-md mx-auto">
+                    <img src={product.image} alt={product.name} className="w-full max-w-md mx-auto object-cover rounded" />
+                    <h2 className="text-3xl font-bold text-center mt-6">{product.name}</h2>
+                    <p className="mt-2 text-center text-lg font-medium text-[#5C4D9A]">Gh₵ {product.price}</p>
+                    <p className="mt-4 text-center">{product.description}</p>
+                </div>
             </div>
             <Footer />
         </>

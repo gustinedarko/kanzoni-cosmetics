@@ -13,9 +13,12 @@ export default function AboutUs() {
             <AlertBar />
             <Navbar />
             <section
-                className="h-screen w-full flex justify-center items-center"
+                className="relative h-screen w-full flex justify-center items-center"
                 style={{ backgroundImage: `url(${bgAboutImageI})`, backgroundSize: 'cover', backgroundPosition: 'center', }}>
-                <h1 className="text-[#5C4D9A] text-5xl md:text-6xl font-bold text-center">About Us</h1>
+                
+                <div className="absolute inset-0 bg-black opacity-60"></div>
+                
+                <h1 className="relative z-10 text-[#5C4D9A] text-5xl md:text-6xl font-bold text-center">About Us</h1>
             </section>
 
             <section className="h-full w-full bg-[#F7F4ED]">
