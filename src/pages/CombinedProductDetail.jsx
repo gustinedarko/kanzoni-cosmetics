@@ -27,8 +27,8 @@ export default function CombinedProductDetail() {
                         <div key={product.id} className="bg-[#F7F4ED] p-6 rounded-lg shadow-md">
                             <img src={product.image} alt={product.name} className="w-full h-64 object-cover rounded" />
                             <h2 className="text-2xl font-semibold mt-4">{product.name}</h2>
-                            <p className="text-lg mt-2 font-medium text-[#5C4D9A]">Gh₵ {product.price}</p>
                             <p className="mt-2">{product.description}</p>
+                            <p className="text-lg mt-2 font-medium text-[#5C4D9A]">Gh₵ {product.price}</p>
                         </div>
                     )
                 ))}

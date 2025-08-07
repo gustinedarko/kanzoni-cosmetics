@@ -5,9 +5,9 @@ import Footer from "../components/Footer";
 // import img1 from "../assets/images/istockphoto-A.jpg";
 // import img2 from "../assets/images/kaeme-unsplash.jpg";
 // import img3 from "../assets/images/istockphoto-B.jpg";
-import imgA from "../assets/images/megumi.jpg";
-import imgB from "../assets/images/leighann.jpg";
-import imgC from "../assets/images/aurelia.jpg";
+// import imgA from "../assets/images/megumi.jpg";
+// import imgB from "../assets/images/leighann.jpg";
+// import imgC from "../assets/images/aurelia.jpg";
 import cropCream from "../assets/images/sincerely.jpg";
 import cropLotion from "../assets/images/leighann-cream.jpg";
 // import cropShowergel from "../assets/images/robbie.jpg";
@@ -15,52 +15,20 @@ import cropSoap from "../assets/images/hygiene.jpg";
 import { Link } from "react-router";
 import ProductsCard from "../components/ProductsCard";
 import products from "../data/products";
-import ingredient1 from "../assets/images/deanna.jpg"
-
-
-const images = [imgA, imgB, imgC];
+import ingredient1 from "../assets/images/deanna.jpg";
+import HeroHomeSlider from "../components/HeroHomeSlider";
+import BottomHomeSlider from "../components/BottomHomeSlider";
 
 export default function ProductsHome() {
-
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrentIndex((prev) => (prev + 1) % images.length);
-        }, 5000); // Change image every 3 seconds
-
-        return () => clearInterval(timer);
-    }, []);
 
     return (
         <>
             <AlertBar />
             <Navbar />
 
-            {/* Hero slider section */}
+            
             <section className="w-full h-screen relative overflow-hidden">
-                {images.map((img, index) => (
-                    <img
-                        key={index}
-                        src={img}
-                        alt={`slide-${index}`}
-                        className={`absolute top-0 left-0 w-full h-full  object-cover transition-opacity duration-1500 ease-in-out ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
-                            }`}
-                    />
-                ))}
-                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30"></div>
-
-                <div className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-opacity-30">
-                    <h1 className="text-[#5C4D9A] text-5xl md:text-6xl font-bold text-center">
-                        Kanzoni
-                    </h1>
-                    <h1 className="text-[#5C4D9A] text-5xl md:text-6xl font-bold text-center mb-2">
-                        Cosmetics
-                    </h1>
-                    <p className="text-[#F7F4ED] text-3xl md:text-4xl font-medium text-center">Shea Butter & Other</p>
-                    <p className="text-[#F7F4ED] text-3xl md:text-4xl font-medium text-center">Shea Products</p>
-                    {/* <button className="text-[#F7F4ED] font-medium border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 text-lg bg- hover:bg-[#9C88FF]">Our Products</button> */}
-                </div>
+                <HeroHomeSlider />
             </section>
 
             <section className="w-full h-full bg-[#F7F4ED] flex items-center justify-center">
@@ -73,7 +41,7 @@ export default function ProductsHome() {
 
                     <p className="text-center py-6 md:py-10 text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, explicabo soluta. Id vel, fugit assumenda cupiditate quae saepe beatae totam velit voluptatem omnis impedit earum magnam iure accusantium tempora consectetur qui cumque praesentium maxime, enim, ab aliquam? Ducimus sequi facere voluptas praesentium quibusdam a quod eligendi pariatur reiciendis perspiciatis. Doloremque?</p>
 
-                    <span className="flex justify-center"><Link to="/about-us" className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mb-12 text-lg font-medium bg-[#9C88FF] hover:bg-[#453979] text-[#F7F4ED]">Our story</Link></span>
+                    <span className="flex justify-center"><Link to="/about-us" className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mb-12 text-lg font-medium bg-[#9C88FF] hover:bg-[#453979] text-[#F7F4ED]">Our Story</Link></span>
 
                     <span>
                         <p className="flex justify-center text-3xl font-medium mb-6">View our Products</p>
@@ -114,25 +82,12 @@ export default function ProductsHome() {
                 <div className="w-full h-screen flex items-center justify-center">
                     <div className="text-center">
                         <p style={{ fontFamily: "'Dancing Script', cursive" }}
-                            className="text-[#5C4D9A] text-6xl font-bold tracking-wider italic">Shea butter</p>
+                            className="text-[#5C4D9A] text-6xl font-bold tracking-wider italic">Shea butter and All other products</p>
 
-                        <Link to="/products/cream"><button className="bg-white text-black border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-12 font-medium hover:bg-[#453979] hover:text-[#F7F4ED]">Shop Now</button></Link>
+                        <Link to="/shopnow-products"><button className="bg-white text-black border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-12 font-medium hover:bg-[#453979] hover:text-[#F7F4ED]">Shop Now</button></Link>
                     </div>
                 </div>
             </section>
-
-            {/* <section
-                style={{
-                    backgroundImage: `url(${cropShowergel})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundAttachment: 'fixed',
-                }}
-                className="w-full h-full md:h-screen">
-                <div className="w-full h-screen flex items-start justify-center pt-[90%] sm:pt-[70%] md:pt-[40%] lg:pt-[35%]">
-                    <button className="bg-white text-black px-6 py-3 rounded shadow-lg">Shop Now</button>
-                </div>
-            </section> */}
 
             <section
                 style={{
@@ -141,33 +96,11 @@ export default function ProductsHome() {
                     backgroundPosition: 'right',
                     backgroundAttachment: 'fixed',
                 }}
-                className="w-full h-full md:h-screen">
-                <div className="w-full h-screen flex items-center justify-center">
-                    <div className="text-center">
-                        <p style={{ fontFamily: "'Dancing Script', cursive" }}
-                            className="text-[#5C4D9A] text-6xl font-bold tracking-wider italic">Body Lotion</p>
-
-                        <Link to="/products/lotion"><button className="bg-white text-black border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-12 font-medium hover:bg-[#453979] hover:text-[#F7F4ED]">Shop Now</button></Link>
-                    </div>
-                </div>
+                className="w-full h-screen">
             </section>
 
-            <section
-                style={{
-                    backgroundImage: `url(${cropSoap})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: '',
-                    backgroundAttachment: 'fixed',
-                }}
-                className="w-full h-full md:h-screen">
-                <div className="w-full h-screen flex items-center justify-center">
-                    <div className="text-center">
-                        <p style={{ fontFamily: "'Dancing Script', cursive" }}
-                            className="text-[#5C4D9A] text-6xl font-bold tracking-wider italic">Shower Gel & Soap</p>
-
-                        <Link to="/products/combo"><button className="bg-white text-black border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-12 font-medium hover:bg-[#453979] hover:text-[#F7F4ED]">Shop Now</button></Link>
-                    </div>
-                </div>
+            <section className="w-full h-screen">
+                <BottomHomeSlider />
             </section>
 
             <section className="w-full h-full bg-[#F7F4ED] flex items-center justify-center">

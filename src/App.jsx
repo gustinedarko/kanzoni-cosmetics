@@ -8,6 +8,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import ProductsDetail from "./pages/ProductsDetail";
 import CombinedProductDetail from "./pages/CombinedProductDetail";
 import OurProducts from "./pages/OurProducts";
+import ShopNowProducts from "./pages/ShopNowProducts";
+import Cart from "./pages/Cart";
 
 const withScroll = (element) => (
   <>
@@ -22,9 +24,11 @@ const kanzoniCosmeticsRouter = createBrowserRouter([
   { path: '/products/:id', element: withScroll(<ProductsDetail />) },
   { path: '/products/combo', element: withScroll(<CombinedProductDetail />) },
   { path: '/our-products', element: withScroll(<OurProducts />) },
+  { path: '/shopnow-products', element: withScroll(<ShopNowProducts />) },
   { path: '/about-us', element: withScroll(<AboutUs />) },
   { path: '/process', element: withScroll(<Process />) },
   { path: '/contact', element: withScroll(<Contact />) },
+  { path: '/cart', element: withScroll(<Cart />) },
   {path: '*', element: <NotFound />},
 ]);
 
