@@ -21,9 +21,9 @@ export default function AboutUs() {
                 <h1 className="relative z-10 text-[#5C4D9A] text-5xl md:text-6xl font-bold text-center">About Us</h1>
             </section>
 
-            <section className="h-full w-full bg-[#F7F4ED]">
+            <section className="h-full w-full bg-[#F5F3FF]">
                 <div className="px-4 sm:px-6 lg:px-8 py-10 text-center">
-                    <h1 className="text-4xl text-[#9C88FF] font-medium">Who we are and What we do.</h1>
+                    <h1 className="text-4xl text-[#9C88FF] font-medium">Who we are and What we do</h1>
                     <p className="py-10 px-12 text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, numquam hic suscipit rem exercitationem iusto quidem officiis natus voluptatibus non, explicabo reiciendis laudantium, deserunt placeat! Sint deserunt optio rem quo vero, modi minima ipsam facilis beatae ducimus est itaque cumque autem perferendis iusto illum. Iure quasi quos neque quae ipsa?</p>
                 </div>
             </section>
@@ -33,7 +33,7 @@ export default function AboutUs() {
                 <div></div>
             </section>
 
-            <section className="px-4 sm:px-6 lg:px-8 py-10 bg-[#F7F4ED]">
+            <section className="px-4 sm:px-6 lg:px-8 py-10 bg-[#F5F3FF]">
                 <h2 className="text-3xl text-[#9C88FF] font-medium mb-10 text-center">Our Story</h2>
 
                 <div className="flex flex-col md:flex-row gap-6 items-center">
@@ -86,7 +86,7 @@ export default function AboutUs() {
                 </div>
             </section>
 
-            <section className="px-4 sm:px-6 lg:px-8 py-10 bg-[#F7F4ED]">
+            <section className="px-4 sm:px-6 lg:px-8 py-10 bg-[#F5F3FF]">
                 <h2 className="text-3xl text-[#9C88FF] font-medium mb-10 text-center">Our Mission</h2>
 
                 <div className="flex flex-col md:flex-row gap-6 items-center">

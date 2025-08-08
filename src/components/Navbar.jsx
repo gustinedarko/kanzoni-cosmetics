@@ -48,11 +48,11 @@ export default function Navbar() {
                 {/* Cart Icon — shown on both screen sizes but positioned differently */}
                 <div className="md:order-2 order-1">
                     <Link to="/cart" className={`relative text-2xl ${scrolled ? "text-[#F7F4ED]" : "text-[#333333]"}`}>
-                        {totalItems > 0 && (
-                            <span className="absolute -top-2 -right-2 bg-[#9C88FF] text-white rounded-full px-2 text-sm">
+
+                            <span className="absolute -top-2 -right-3 bg-[#9C88FF] text-white rounded-full px-2 text-sm">
                                 {totalItems}
                             </span>
-                        )}
+
                         <FaShoppingCart />
                     </Link>
                 </div>

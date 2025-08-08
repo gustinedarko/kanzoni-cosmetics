@@ -7,6 +7,7 @@ const products = [
   {
     id: "cream",
     name: "Shea Body Cream",
+    nameTwo: "Kanzoni Shea Body Cream",
     image: img1,
     price: "50",
     description: "Deeply nourishing cream with pure shea butter.",
@@ -15,6 +16,7 @@ const products = [
   {
     id: "soap",
     name: "Herbal Soap",
+    nameTwo: "Kanzoni Herbal Soap",
     image: img2,
     price: "50",
     description: "Gentle herbal soap for a natural glow.",
@@ -23,6 +25,7 @@ const products = [
   {
     id: "lotion",
     name: "Shea Body Lotion",
+    nameTwo: "Kanzoni Shea Body Lotion",
     image: img3,
     price: "50",
     description: "Smooth, soft skin with our premium lotion.",
@@ -31,6 +34,7 @@ const products = [
   {
     id: "showergel",
     name: "Shower Gel",
+    nameTwo: "Kanzoni Shower Gel",
     image: img4,
     price: "50",
     description: "Refreshing shower gel infused with shea extracts.",

@@ -33,16 +33,18 @@ export default function HeroHomeSlider() {
                     />
                 ))}
 
+                <div className='absolute inset-0 bg-black opacity-30'></div>
+
                 {/* Overlay Content */}
                 <div className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-opacity-30">
-                    <h1 className="text-[#5C4D9A] text-5xl md:text-6xl font-bold text-center">
+                    <h1 className="text-[#453979] text-5xl md:text-6xl font-bold text-center">
                         Kanzoni
                     </h1>
-                    <h1 className="text-[#5C4D9A] text-5xl md:text-6xl font-bold text-center mb-2">
+                    <h1 className="text-[#453979] text-5xl md:text-6xl font-bold text-center mb-2">
                         Cosmetics
                     </h1>
-                    <p className="text-[#F7F4ED] text-3xl md:text-4xl font-medium text-center">Shea Butter & Other</p>
-                    <p className="text-[#F7F4ED] text-3xl md:text-4xl font-medium text-center">Shea Products</p>
+                    <p style={{ fontFamily: "'Dancing Script', cursive" }} className="text-[#F7F4ED] text-4xl md:text-5xl font-bold text-center">Shea Butter & Other</p>
+                    <p style={{ fontFamily: "'Dancing Script', cursive" }} className="text-[#F7F4ED] text-4xl md:text-5xl font-bold text-center">Shea Products</p>
                 </div>
 
                 {/* Pagination Dots */}

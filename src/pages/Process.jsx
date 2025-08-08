@@ -58,7 +58,7 @@ export default function Process() {
         <>
             <AlertBar />
             <Navbar />
-            <section className="w-full h-full bg-[#F7F4ED] flex items-center justify-center">
+            <section className="w-full h-full bg-[#F5F3FF] flex items-center justify-center">
                 <div className="w-5/6 my-12">
                     <h2 className="flex justify-center text-3xl md:text-5xl font-bold text-center">Experience the Craft of Shea Butter Making in Ghana</h2>
                     <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
@@ -149,7 +149,7 @@ export default function Process() {
                 </div>
             </section>
 
-            <section className="bg-[#F7F4ED] py-12 px-4 sm:px-8 lg:px-16">
+            <section className="bg-[#F5F3FF] py-12 px-4 sm:px-8 lg:px-16">
                 <h2 className="text-3xl text-center font-semibold text-[#9C88FF] mb-6">
                     Traditional Tools & Community Impact
                 </h2>

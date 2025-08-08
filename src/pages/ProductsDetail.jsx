@@ -15,27 +15,28 @@ export default function ProductsDetail() {
 
     return (
         <>
-            <AlertBar />
-            <Navbar />
-            <button
-                onClick={() => navigate(-1)}
-                className="ml-10 mt-6 px-1.5 py-1.5 text-white rounded font-medium bg-[#9C88FF] hover:bg-[#453979] transition"
-            >
-                <span className="flex items-center space-x-1">
-                    <span><FaChevronLeft /></span>
-                    <span>Back</span>
-                </span>
-            </button>
-            <div className="p-10">
-
-                <div className="bg-[#F7F4ED] p-6 rounded-lg shadow-md w-full max-w-md mx-auto">
-                    <img src={product.image} alt={product.name} className="w-full max-w-md mx-auto object-cover rounded" />
-                    <h2 className="text-3xl font-bold text-center mt-6">{product.name}</h2>
-                    <p className="mt-2 text-center">{product.description}</p>
-                    <p className="mt-2 text-center text-lg font-medium text-[#5C4D9A]">Gh₵ {product.price}</p>
+            <section className="bg-[#F5F3FF]">
+                <AlertBar />
+                <Navbar />
+                <button
+                    onClick={() => navigate(-1)}
+                    className="ml-10 mt-6 px-1.5 py-1.5 text-white rounded font-medium bg-[#9C88FF] hover:bg-[#453979] transition"
+                >
+                    <span className="flex items-center space-x-1">
+                        <span><FaChevronLeft /></span>
+                        <span>Back</span>
+                    </span>
+                </button>
+                <div className="p-10">
+                    <div className="bg-[#F7F4ED] p-6 rounded-lg shadow-md w-full max-w-md mx-auto">
+                        <img src={product.image} alt={product.name} className="w-full max-w-md mx-auto object-cover rounded" />
+                        <h2 className="text-3xl font-bold text-center mt-6">{product.name}</h2>
+                        <p className="mt-2 text-center">{product.description}</p>
+                        <p className="mt-2 text-center text-lg font-medium text-[#5C4D9A]">Gh₵ {product.price}</p>
+                    </div>
                 </div>
-            </div>
-            <Footer />
+                <Footer />
+            </section>
         </>
     );
 }

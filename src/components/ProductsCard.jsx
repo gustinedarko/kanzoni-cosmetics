@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-export default function ProductsCard({ image, name, id, price }) {
+export default function ProductsCard({ image, name, id, price, nameTwo }) {
   return (
     <>
       <Link to={`/products/${id}`} className="block">
@@ -14,8 +14,9 @@ export default function ProductsCard({ image, name, id, price }) {
             </div>
           </div>
           <p className="mt-2 text-center text-lg font-medium">{name}</p>
+          <p className="mt-1 text-gray-600 text-center text-lg">{nameTwo}</p>
           {/* <p className="mt-2 text-center text-lg font-medium">{name}</p> */}
-          <p className="mt- text-center text-[#453979] text-lg font-medium">Gh₵ {price}</p>
+          <p className="mt-1 text-center text-[#453979] text-lg font-medium">Gh₵ {price}</p>
         </div>
       </Link>
     </>

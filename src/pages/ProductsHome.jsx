@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import AlertBar from "../components/AlertBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 import cropCream from "../assets/images/sincerely.jpg";
 import cropLotion from "../assets/images/leighann-cream.jpg";
 // import cropShowergel from "../assets/images/robbie.jpg";
-import cropSoap from "../assets/images/hygiene.jpg";
+// import cropSoap from "../assets/images/hygiene.jpg";
 import { Link } from "react-router";
 import ProductsCard from "../components/ProductsCard";
 import products from "../data/products";
@@ -31,20 +31,20 @@ export default function ProductsHome() {
                 <HeroHomeSlider />
             </section>
 
-            <section className="w-full h-full bg-[#F7F4ED] flex items-center justify-center">
+            <section className="w-full h-full bg-[#F5F3FF] flex items-center justify-center">
 
                 <div className="w-5/6 my-12">
 
-                    <h2 className="flex justify-center text-3xl md:text-5xl font-bold mb-2 md:mb-4">Kanzoni</h2>
+                    <h2 className="flex justify-center text-4xl md:text-5xl font-bold mb-2 md:mb-4">Kanzoni</h2>
                     <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
-                        className="flex justify-center text-3xl md:text-5xl font-bold text-[#9C88FF] tracking-wider italic">Represents ......</h3>
+                        className="flex justify-center text-3xl md:text-5xl font-bold text-[#9C88FF] tracking-wider italic">Represents da da da</h3>
 
                     <p className="text-center py-6 md:py-10 text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, explicabo soluta. Id vel, fugit assumenda cupiditate quae saepe beatae totam velit voluptatem omnis impedit earum magnam iure accusantium tempora consectetur qui cumque praesentium maxime, enim, ab aliquam? Ducimus sequi facere voluptas praesentium quibusdam a quod eligendi pariatur reiciendis perspiciatis. Doloremque?</p>
 
                     <span className="flex justify-center"><Link to="/about-us" className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mb-12 text-lg font-medium bg-[#9C88FF] hover:bg-[#453979] text-[#F7F4ED]">Our Story</Link></span>
 
                     <span>
-                        <p className="flex justify-center text-3xl font-medium mb-6">View our Products</p>
+                        <p className="flex justify-center text-3xl md:text-4xl font-medium mb-6">View our Products</p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                             {products.map((product) => (
@@ -52,6 +52,7 @@ export default function ProductsHome() {
                                     key={product.id}
                                     id={product.id}
                                     name={product.name}
+                                    nameTwo={product.nameTwo}
                                     price={product.price}
                                     image={product.image}
                                 />
@@ -71,7 +72,7 @@ export default function ProductsHome() {
 
             </section>
 
-            <section
+            <section 
                 style={{
                     backgroundImage: `url(${cropCream})`,
                     backgroundSize: 'cover',
@@ -82,7 +83,7 @@ export default function ProductsHome() {
                 <div className="w-full h-screen flex items-center justify-center">
                     <div className="text-center">
                         <p style={{ fontFamily: "'Dancing Script', cursive" }}
-                            className="text-[#5C4D9A] text-6xl font-bold tracking-wider italic">Shea butter and All other products</p>
+                            className="text-[#5C4D9A] text-5xl md:text-6xl font-bold tracking-wider italic">Shea butter and All other products</p>
 
                         <Link to="/shopnow-products"><button className="bg-white text-black border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-12 font-medium hover:bg-[#453979] hover:text-[#F7F4ED]">Shop Now</button></Link>
                     </div>
@@ -103,30 +104,30 @@ export default function ProductsHome() {
                 <BottomHomeSlider />
             </section>
 
-            <section className="w-full h-full bg-[#F7F4ED] flex items-center justify-center">
+            <section className="w-full h-full bg-[#F5F3FF] flex items-center justify-center">
 
                 <div className="my-10">
-                    <h2 className="flex justify-center text-4xl font-medium mb-8">Ingredients</h2>
+                    <h2 className="flex justify-center text-3xl md:text-4xl font-medium mb-8">Ingredients</h2>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
                         <div className="flex flex-col items-center justify-center text-center">
                             <img src={ingredient1} alt="" className="h-60 w-60 bg-gray-400 rounded-full" />
-                            <p className="text-xl font-medium mt-2">Coconut Oil</p>
+                            <p className="text-xl text-[#9C88FF] font-medium mt-2">Coconut Oil</p>
                         </div>
 
                         <div className="flex flex-col items-center justify-center text-center">
                             <img src={ingredient1} alt="" className="h-60 w-60 bg-gray-400 rounded-full" />
-                            <p className="text-xl font-medium mt-2">Coconut Oil</p>
+                            <p className="text-xl text-[#9C88FF] font-medium mt-2">Coconut Oil</p>
                         </div>
 
                         <div className="flex flex-col items-center justify-center text-center">
                             <img src={ingredient1} alt="" className="h-60 w-60 bg-gray-400 rounded-full" />
-                            <p className="text-xl font-medium mt-2">Coconut Oil</p>
+                            <p className="text-xl text-[#9C88FF] font-medium mt-2">Coconut Oil</p>
                         </div>
 
                         <div className="flex flex-col items-center justify-center text-center">
                             <img src={ingredient1} alt="" className="h-60 w-60 bg-gray-400 rounded-full" />
-                            <p className="text-xl font-medium mt-2">Coconut Oil</p>
+                            <p className="text-xl text-[#9C88FF] font-medium mt-2">Coconut Oil</p>
                         </div>
                     </div>
                 </div>
