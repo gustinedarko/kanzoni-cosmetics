@@ -15,23 +15,26 @@ export default function Footer() {
                     </p>
                 </div>
 
-                <div className="md:col-span-2 md:ml-12">
+                <div className="md:col-span-2 md:ml-6">
                     <h3 className="font-semibold text-lg mb-3">Quick Links</h3>
                     <ul className="flex flex-wrap gap-8 text-sm">
                         <li>
                             <Link to="/" className="font-medium hover:underline block">Home</Link>
                             <ul className="mt-1 space-y-1 text-gray-600">
                                 <li><Link to="/about-us" className="hover:underline">Our Story</Link></li>
-                                <li><a href="/#" className="hover:underline">Our Product</a></li>
+                                <li><a href="/#" className="hover:underline">Our Products</a></li>
                                 <li><a href="/#" className="hover:underline">Shop Now</a></li>
+                                <li><a href="/#" className="hover:underline">Ingredients</a></li>
                             </ul>
                         </li>
                         
                         <li>
                             <Link to="/about-us" className="font-medium hover:underline block">About</Link>
                             <ul className="mt-1 space-y-1 text-gray-600">
-                                <li><a href="/" className="hover:underline">Mission</a></li>
-                                <li><a href="/" className="hover:underline">Team</a></li>
+                                <li><Link to="/about-us" className="hover:underline">Team</Link></li>
+                                <li><Link to="/about-us" className="hover:underline">Our Story</Link></li>
+                                <li><Link to="/about-us" className="hover:underline">Founder</Link></li>
+                                <li><Link to="/about-us" className="hover:underline">Mission</Link></li>
                             </ul>
                         </li>
 

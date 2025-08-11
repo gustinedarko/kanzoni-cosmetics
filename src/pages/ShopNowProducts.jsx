@@ -33,9 +33,9 @@ export default function ShopNowProducts() {
                         </span>
                     </button>
                 </Link>
-                <div className="px-6 md:px-10 p-6 md:pb-10 md:w-5/6 mx-auto">
-                    <h1 className="text-3xl font-semibold text-center mb-10">Shop Now</h1>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="px-6 md:px-10 pb-8 md:pb-12 md:w-5/6 mx-auto">
+                    <h1 className="text-2xl md:text-3xl font-semibold text-center mb-4 md:mb-8">Shop Now</h1>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                         {products.map((product) => (
                             <div key={product.id} className="bg-white p-6 rounded-lg shadow-md">
                                 <img
@@ -43,8 +43,8 @@ export default function ShopNowProducts() {
                                     alt={product.name}
                                     className="w-full h-64 object-cover rounded"
                                 />
-                                <h2 className="text-2xl font-semibold mt-4 text-center">{product.name}</h2>
-                                <p className="mt-2 text-center">{product.description}</p>
+                                <h2 className="text-xl font-semibold mt-4 text-center">{product.nameTwo}</h2>
+                                {/* <p className="mt-2 text-center">{product.description}</p> */}
                                 <p className="text-lg mt-2 font-medium text-[#5C4D9A] text-center">Gh₵ {product.price}</p>
                                 <div className="mt-4 flex items-center justify-center space-x-3">
                                     <input

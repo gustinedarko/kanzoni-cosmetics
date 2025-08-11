@@ -23,7 +23,7 @@ export default function AboutUs() {
 
             <section className="h-full w-full bg-[#F5F3FF]">
                 <div className="px-4 sm:px-6 lg:px-8 py-10 text-center">
-                    <h1 className="text-4xl text-[#9C88FF] font-medium">Who we are and What we do</h1>
+                    <h1 className="text-2xl md:text-3xl text-[#9C88FF] font-medium">Who we are and What we do</h1>
                     <p className="py-10 px-12 text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, numquam hic suscipit rem exercitationem iusto quidem officiis natus voluptatibus non, explicabo reiciendis laudantium, deserunt placeat! Sint deserunt optio rem quo vero, modi minima ipsam facilis beatae ducimus est itaque cumque autem perferendis iusto illum. Iure quasi quos neque quae ipsa?</p>
                 </div>
             </section>
@@ -31,6 +31,13 @@ export default function AboutUs() {
             <section className="h-screen w-full bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${bgAboutImageIi})` }}>
                 <div></div>
+            </section>
+
+            <section className="h-full w-full bg-white">
+                <div className="px-4 sm:px-6 lg:px-8 py-10 text-center">
+                    <h1 className="text-2xl md:text-3xl text-[#9C88FF] font-medium">Why Choose Kanzoni Cosmetics?</h1>
+                    <p className="py-10 px-12 text-lg">At Kanzoni Cosmetics, we pride ourselves on crafting pure, natural skincare products rooted in the rich traditions of Ghana. Every product we make is inspired by nature’s abundance and created with respect for both people and the environment. From sourcing the finest raw shea butter to handcrafting blends enriched with essential oils, we ensure that every jar and bottle reflects our commitment to quality, sustainability, and authenticity. Our mission is simple — to help you glow inside and out, while supporting the communities that have preserved this heritage for generations.</p>
+                </div>
             </section>
 
             <section className="px-4 sm:px-6 lg:px-8 py-10 bg-[#F5F3FF]">

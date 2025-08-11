@@ -62,7 +62,7 @@ export default function Contact() {
                 <section className="py-16 px-6 text-center bg-[#F5F3FF]">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#5C4D9A]">Why Choose Kanzoni Cosmetics?</h2>
                     <p className="max-w-2xl mx-auto text-lg">
-                        At Kanzoni Cosmetics, we pride ourselves on crafting pure, natural skincare products rooted in Ghanaian tradition. With a commitment to quality, sustainability, and customer satisfaction, we’re here to help you glow—inside and out.
+                        At Kanzoni Cosmetics, we blend Ghanaian tradition with pure, natural skincare you can trust. Whether you have a question, need product guidance, or want to place an order, our team is here for you. Your journey to healthy, radiant skin starts with a conversation — let’s connect today.
                     </p>
                 </section>
 

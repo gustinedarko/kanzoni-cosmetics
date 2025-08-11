@@ -1,5 +1,6 @@
 // import { useState, useEffect } from "react";
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router";
 import { Link } from "react-router";
 import { FaShoppingCart } from "react-icons/fa";
 import { useCart } from "../context/CartContext";
@@ -49,9 +50,9 @@ export default function Navbar() {
                 <div className="md:order-2 order-1">
                     <Link to="/cart" className={`relative text-2xl ${scrolled ? "text-[#F7F4ED]" : "text-[#333333]"}`}>
 
-                            <span className="absolute -top-2 -right-3 bg-[#9C88FF] text-white rounded-full px-2 text-sm">
-                                {totalItems}
-                            </span>
+                        <span className="absolute -top-2 -right-3 bg-[#9C88FF] text-white rounded-full px-2 text-sm">
+                            {totalItems}
+                        </span>
 
                         <FaShoppingCart />
                     </Link>
@@ -91,14 +92,17 @@ export default function Navbar() {
                         { href: "/process", label: "PROCESS" },
                         { href: "/contact", label: "CONTACT" },
                     ].map((item) => (
-                        <Link
+                        <NavLink
                             key={item.href}
                             to={item.href}
                             onClick={handleLinkClick}
-                            className="nav-text hover:text-[#9C88FF] transition-colors duration-200"
+                            className={({ isActive }) =>
+                                `nav-text transition-colors duration-200 hover:text-[#9C88FF] ${isActive ? "text-[#9C88FF] font-bold" : ""
+                                }`
+                            }
                         >
                             <span>{item.label}</span>
-                        </Link>
+                        </NavLink>
                     ))}
                 </div>
             </div>

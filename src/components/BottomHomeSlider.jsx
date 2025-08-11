@@ -3,24 +3,29 @@ import cropSoap from "../assets/images/hygiene.jpg";
 
 const ingredients = [
   {
-    name: "Shea Nut",
-    description: "Rich in fatty acids and vitamins, shea nut deeply moisturizes and nourishes the skin.",
-    descriptionTwo: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi minima nesciunt incidunt molestiae officiis tempora. Totam corporis eos obcaecati. Fugit!",
+    name: "Raw Shea Butter",
+    description: "Rich in fatty acids and vitamins, deeply moisturizes, nourishes, and protects the skin.",
+    descriptionTwo: "Our raw Shea butter is sourced from the heart of Ghana, celebrated for its exceptional skin benefits. Naturally rich in vitamins A, E, and F, it helps boost collagen production, improve elasticity, and heal dryness. It forms a gentle barrier against harsh weather, keeping your skin smooth, supple, and radiant all year round.",
   },
   {
     name: "Coconut Oil",
-    description: "Provides antibacterial properties and helps in softening and hydrating the skin.",
-    descriptionTwo: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi minima nesciunt incidunt molestiae officiis tempora. Totam corporis eos obcaecati. Fugit!.",
+    description: "Naturally antibacterial and deeply hydrating, leaves skin soft, smooth, and refreshed.",
+    descriptionTwo: "Coconut oil is a natural skincare treasure, packed with nourishing fatty acids that penetrate deeply to moisturize from within. Its antibacterial and anti-inflammatory properties help protect against skin irritation while maintaining a healthy glow. Perfect for soothing dry patches, reducing redness, and restoring softness, it’s an essential ingredient in our moisturizing blends.",
   },
   {
-    name: "Baobab Oil",
-    description: "Packed with antioxidants and omega fatty acids, great for skin regeneration.",
-    descriptionTwo: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi minima nesciunt incidunt molestiae officiis tempora. Totam corporis eos obcaecati. Fugit!.",
+    name: "Palm Kernel Oil",
+    description: "Rich in antioxidants and omega fatty acids, supports skin repair and regeneration.",
+    descriptionTwo: "Palm kernel oil is known for its exceptional ability to nourish and revitalize skin. Packed with antioxidants like vitamin E, it helps combat free radicals that cause premature aging. Its omega fatty acids support skin cell renewal, improving texture and restoring a healthy, youthful appearance while locking in moisture for lasting hydration.",
   },
   {
-    name: "Cocoa Butter",
-    description: "Creates a protective barrier that holds in moisture and soothes skin.",
-    descriptionTwo: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi minima nesciunt incidunt molestiae officiis tempora. Totam corporis eos obcaecati. Fugit!.",
+    name: "Potash",
+    description: "Traditional ingredient used in African skincare for gentle cleansing and skin softness.",
+    descriptionTwo: "Potash is a key natural ingredient in authentic African black soap, known for its mild exfoliating and cleansing properties. It helps remove impurities without stripping away natural oils, leaving the skin soft and refreshed. When blended with Shea butter and oils, it creates a balanced, skin-friendly soap perfect for daily use.",
+  },
+  {
+    name: "Essential Oils",
+    description: "Natural plant extracts that add fragrance while offering skin-healing benefits.",
+    descriptionTwo: "Our essential oils are carefully selected for their therapeutic properties and natural aromas. From soothing lavender to refreshing citrus, each oil brings unique benefits, such as calming irritation, reducing inflammation, or boosting hydration. These potent plant extracts enhance the sensory experience of our products while supporting healthy, balanced skin.",
   },
 ];
 
@@ -66,10 +71,10 @@ export default function BottomHomeSlider() {
                 <p className="text-[#5C4D9A] text-2xl font-bold mb-2">
                   {item.name}
                 </p>
-                <p className="text-white text-base md:text-xl">
+                <p className="text-white text-lg md:text-xl">
                   {item.description}
                 </p>
-                <p className="text-white text-base md:text-xl">
+                <p className="text-white text-lg md:text-xl">
                   {item.descriptionTwo}
                 </p>
               </div>

@@ -9,6 +9,7 @@ import img1 from "../assets/images/kaeme.jpg";
 import img2 from "../assets/images/giorgio.jpg";
 import img3 from "../assets/images/mockup.jpg";
 import img4 from "../assets/images/sagar.jpg";
+import img5 from "../assets/images/kiona.jpg";
 
 export default function Process() {
     const steps = [
@@ -60,13 +61,11 @@ export default function Process() {
             <Navbar />
             <section className="w-full h-full bg-[#F5F3FF] flex items-center justify-center">
                 <div className="w-5/6 my-12">
-                    <h2 className="flex justify-center text-3xl md:text-5xl font-bold text-center">Experience the Craft of Shea Butter Making in Ghana</h2>
+                    <h2 className="flex justify-center text-3xl md:text-4xl font-bold text-center">Experience the Craft of Shea Butter Making in Ghana</h2>
                     <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
-                    className="flex justify-center text-3xl md:text-5xl font-bold text-[#9C88FF] italic text-center mt-4">A step-by-step journey through tradition and care</h3>
-                    <p className="text-center py-10 px-6 text-lg max-w-4xl mx-auto">
-                        Shea butter is more than a cosmetic ingredient, it's a legacy passed down through generations in Ghana.
-                        At Kanzoni Cosmetics, we honor this heritage with an artisanal approach to production. Each step in the process is
-                        infused with care, precision, and respect for both the women behind the craft and the environment.
+                    className="flex justify-center text-2xl md:text-4xl font-bold text-[#9C88FF] italic text-center mt-4">A Step-by-Step Journey Through Tradition and Care</h3>
+                    <p className="text-center py-6 md:py-10 px-6 text-lg max-w-4xl mx-auto">
+                        Shea butter is more than just a cosmetic ingredient, it’s a living legacy, lovingly passed down through generations in Ghana. At Kanzoni Cosmetics, we honor this heritage with an artisanal approach to production. Each stage of our process is guided by care, precision, and deep respect for the women who create it and the environment that sustains it.
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-12">
@@ -80,7 +79,7 @@ export default function Process() {
                     </div>
 
                     <div className="mt-16 text-center">
-                        <h4 className="text-2xl font-semibold text-[#9C88FF] mb-4">Did You Know?</h4>
+                        <h4 className="text-2xl md:text-3xl font-semibold text-[#9C88FF] mb-4">Did You Know?</h4>
                         <p className="text-lg px-6 md:px-20 text-gray-700">
                             Shea butter is rich in vitamins A and E and contains essential fatty acids that deeply moisturize the skin. Its production supports local
                             economies, empowers women in rural communities, and preserves an age-old craft passed down through generations.
@@ -90,11 +89,11 @@ export default function Process() {
             </section>
 
             <section className="bg-white py-12 px-4 sm:px-8 lg:px-16">
-                <h2 className="text-3xl text-center font-semibold text-[#9C88FF] mb-10">
+                <h2 className="text-2xl md:text-3xl text-center font-semibold text-[#9C88FF] mb-10">
                     From Tradition to Transformation: Our Natural Products
                 </h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 px-12">
                     {/* Product 1 - Shea Butter */}
                     <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center">
                         <img
@@ -102,9 +101,9 @@ export default function Process() {
                             alt="Raw Shea Butter"
                             className="w-full h-40 object-cover rounded"
                         />
-                        <h3 className="text-xl font-medium mt-4">Raw Shea Butter</h3>
+                        <h3 className="text-xl font-medium mt-4">Shea Body Cream</h3>
                         <p className="text-sm text-gray-600 mt-2">
-                            Pure, hand-processed shea butter packed with natural nutrients. Ideal for skin and hair hydration.
+                            Luxuriously rich cream made with shea butter and natural oils to deeply hydrate and smooth skin.
                         </p>
                     </div>
 
@@ -146,11 +145,24 @@ export default function Process() {
                             Traditional Ghanaian soap made from plantain peels and cocoa pods — gentle, natural, and effective.
                         </p>
                     </div>
+
+                    {/* Product 5 - Shea Butter */}
+                    <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center">
+                        <img
+                            src={img5}
+                            alt="Raw Shea Butter"
+                            className="w-full h-40 object-cover rounded"
+                        />
+                        <h3 className="text-xl font-medium mt-4">Shea Butter Cream</h3>
+                        <p className="text-sm text-gray-600 mt-2">
+                            Concentrated shea butter formula that restores moisture, soothes dryness, and protects hair & skin’s natural barrier.
+                        </p>
+                    </div>
                 </div>
             </section>
 
             <section className="bg-[#F5F3FF] py-12 px-4 sm:px-8 lg:px-16">
-                <h2 className="text-3xl text-center font-semibold text-[#9C88FF] mb-6">
+                <h2 className="text-2xl md:text-3xl text-center font-semibold text-[#9C88FF] mb-6">
                     Traditional Tools & Community Impact
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -165,16 +177,12 @@ export default function Process() {
                     </div>
 
                     {/* Text Content */}
-                    <div className="text-lg text-gray-700 space-y-4">
+                    <div className="text-lg text-gray-700 space-y-4 text-justify">
                         <p>
-                            Shea butter production in Ghana often uses traditional tools like grinding stones,
-                            wooden paddles, and large metal bowls. These tools, passed down through generations,
-                            are still used today, especially in rural cooperatives.
+                            In many parts of Ghana, shea butter production still honors the tools of the past — grinding stones worn smooth by years of use, sturdy wooden paddles, and wide metal bowls that have served generations of artisans.
                         </p>
                         <p>
-                            Many women come together in groups to hand-process shea nuts. This not only helps
-                            preserve indigenous techniques but also supports economic empowerment within
-                            communities, creating jobs, income, and unity.
+                            These tools aren’t just practical; they’re part of a living heritage. Women gather in cooperatives, working side-by-side to hand-process shea nuts, preserving ancestral techniques while creating jobs, income, and unity within their communities. Every jar of shea butter carries their skill, tradition, and resilience.
                         </p>
                     </div>
                 </div>
