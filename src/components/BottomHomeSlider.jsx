@@ -49,51 +49,49 @@ export default function BottomHomeSlider() {
       style={{ backgroundImage: `url(${cropSoap})` }}
     >
 
-      {/* Fixed Heading and Content */}
-      <div className="relative z-20 w-full h-full flex items-center justify-center">
-        <div className="text-center max-w-3xl px-4">
-          <h3
-            style={{ fontFamily: "'Dancing Script', cursive" }}
-            className="text-[#5C4D9A] text-5xl md:text-6xl font-bold tracking-wider italic mb-6"
-          >
-            Ingredients we make use of
-          </h3>
-
-          {/* Sliding Text */}
-          <div className="relative h-40">
-            {ingredients.map((item, index) => (
-              <div
-                key={index}
-                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                  index === currentSlide ? "opacity-100" : "opacity-0"
-                }`}
-              >
-                <p className="text-[#5C4D9A] text-2xl font-bold mb-2">
-                  {item.name}
-                </p>
-                <p className="text-white text-lg md:text-xl">
-                  {item.description}
-                </p>
-                <p className="text-white text-lg md:text-xl">
-                  {item.descriptionTwo}
-                </p>
-              </div>
-            ))}
+      <div className="w-full h-full flex flex-col items-center justify-center text-center">
+        {/* Fixed Heading and Content */}
+        <div className="relative z-20 w-full h-full flex items-center justify-center">
+          <div className="text-center max-w-3xl px-4">
+            <h3
+              style={{ fontFamily: "'Dancing Script', cursive" }}
+              className="text-[#8116b4] text-5xl md:text-6xl font-bold tracking-wider md:tracking-normal italic mb-6"
+            >
+              Ingredients Behind Our Products
+            </h3>
+            {/* Sliding Text */}
+            <div className="relative h-40">
+              {ingredients.map((item, index) => (
+                <div
+                  key={index}
+                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === currentSlide ? "opacity-100" : "opacity-0"
+                    }`}
+                >
+                  <p className="text-[#8116b4] text-2xl font-bold mb-2">
+                    {item.name}
+                  </p>
+                  <p className="text-white text-lg md:text-xl">
+                    {item.description}
+                  </p>
+                  <p className="text-white text-lg md:text-xl text-justify md:text-center">
+                    {item.descriptionTwo}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-
-      {/* Pagination Dots */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-30 flex space-x-3">
-        {ingredients.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => handleDotClick(index)}
-            className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-              index === currentSlide ? "bg-white" : "bg-white/40"
-            }`}
-          />
-        ))}
+        {/* Pagination Dots */}
+        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-30 flex space-x-3">
+          {ingredients.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => handleDotClick(index)}
+              className={`w-3 h-3 rounded-full transition-colors duration-300 ${index === currentSlide ? "bg-white" : "bg-white/40"
+                }`}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

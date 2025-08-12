@@ -36,7 +36,7 @@ export default function OurProducts() {
                                 />
                                 <h2 className="text-2xl font-semibold mt-4 text-center">{product.nameTwo}</h2>
                                 <p className="text-lg mt-2 font-medium text-[#5C4D9A] text-center">Gh₵ {product.price}</p>
-                                <p className="mt-2 text-center text-gray-600">{product.descriptionTwo}</p>
+                                <p className="mt-2 text-justify md:text-center text-gray-600">{product.descriptionTwo}</p>
                             </div>
                         ))}
                     </div>

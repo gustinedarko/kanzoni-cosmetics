@@ -14,42 +14,42 @@ import img5 from "../assets/images/kiona.jpg";
 export default function Process() {
     const steps = [
         {
-            icon: <FaSeedling size={40} className="text-[#9C88FF]" />,
+            icon: <FaSeedling size={40} className="text-[#8116b4]" />,
             title: "Harvesting",
             text: "Shea fruits are collected by hand after they fall naturally from the trees."
         },
         {
-            icon: <GiBoilingBubbles size={40} className="text-[#9C88FF]" />,
+            icon: <GiBoilingBubbles size={40} className="text-[#8116b4]" />,
             title: "Boiling & Drying",
             text: "The nuts are boiled to reduce moisture and then sun-dried to preserve them."
         },
         {
-            icon: <GiCoconuts size={40} className="text-[#9C88FF]" />,
+            icon: <GiCoconuts size={40} className="text-[#8116b4]" />,
             title: "Cracking",
             text: "The dried nuts are cracked to access the kernel inside."
         },
         {
-            icon: <GiFire size={40} className="text-[#9C88FF]" />,
+            icon: <GiFire size={40} className="text-[#8116b4]" />,
             title: "Roasting",
             text: "The kernels are roasted to enhance quality and release their oils."
         },
         {
-            icon: <GiSpinningBlades size={40} className="text-[#9C88FF]" />,
+            icon: <GiSpinningBlades size={40} className="text-[#8116b4]" />,
             title: "Grinding",
             text: "Roasted kernels are ground into a thick, rich paste."
         },
         {
-            icon: <FaHandHoldingWater size={40} className="text-[#9C88FF]" />,
+            icon: <FaHandHoldingWater size={40} className="text-[#8116b4]" />,
             title: "Kneading",
             text: "The paste is mixed with water and kneaded by hand to extract the oils."
         },
         {
-            icon: <GiCauldron size={40} className="text-[#9C88FF]" />,
+            icon: <GiCauldron size={40} className="text-[#8116b4]" />,
             title: "Boiling & Skimming",
             text: "The separated fat is boiled to purify it, then skimmed off."
         },
         {
-            icon: <FaRegSnowflake size={40} className="text-[#9C88FF]" />,
+            icon: <FaRegSnowflake size={40} className="text-[#8116b4]" />,
             title: "Cooling & Packaging",
             text: "The liquid shea butter cools and solidifies, ready for packaging."
         },
@@ -63,7 +63,7 @@ export default function Process() {
                 <div className="w-5/6 my-12">
                     <h2 className="flex justify-center text-3xl md:text-4xl font-bold text-center">Experience the Craft of Shea Butter Making in Ghana</h2>
                     <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
-                    className="flex justify-center text-2xl md:text-4xl font-bold text-[#9C88FF] italic text-center mt-4">A Step-by-Step Journey Through Tradition and Care</h3>
+                    className="flex justify-center text-2xl md:text-4xl font-bold text-[#8116b4] italic text-center mt-4">A Step-by-Step Journey Through Tradition and Care</h3>
                     <p className="text-center py-6 md:py-10 px-6 text-lg max-w-4xl mx-auto">
                         Shea butter is more than just a cosmetic ingredient, it’s a living legacy, lovingly passed down through generations in Ghana. At Kanzoni Cosmetics, we honor this heritage with an artisanal approach to production. Each stage of our process is guided by care, precision, and deep respect for the women who create it and the environment that sustains it.
                     </p>
@@ -72,14 +72,14 @@ export default function Process() {
                         {steps.map((step, index) => (
                             <div key={index} className="bg-white shadow-md rounded-lg p-6 text-center transform hover:scale-105 transition duration-300">
                                 <div className="mb-4 flex justify-center">{step.icon}</div>
-                                <h4 className="text-xl font-semibold text-[#9C88FF] mb-2">{step.title}</h4>
+                                <h4 className="text-xl font-semibold text-[#8116b4] mb-2">{step.title}</h4>
                                 <p className="text-gray-700 text-base">{step.text}</p>
                             </div>
                         ))}
                     </div>
 
                     <div className="mt-16 text-center">
-                        <h4 className="text-2xl md:text-3xl font-semibold text-[#9C88FF] mb-4">Did You Know?</h4>
+                        <h4 className="text-2xl md:text-3xl font-semibold text-[#8116b4] mb-4">Did You Know?</h4>
                         <p className="text-lg px-6 md:px-20 text-gray-700">
                             Shea butter is rich in vitamins A and E and contains essential fatty acids that deeply moisturize the skin. Its production supports local
                             economies, empowers women in rural communities, and preserves an age-old craft passed down through generations.
@@ -89,7 +89,7 @@ export default function Process() {
             </section>
 
             <section className="bg-white py-12 px-4 sm:px-8 lg:px-16">
-                <h2 className="text-2xl md:text-3xl text-center font-semibold text-[#9C88FF] mb-10">
+                <h2 className="text-2xl md:text-3xl text-center font-semibold text-[#8116b4] mb-10">
                     From Tradition to Transformation: Our Natural Products
                 </h2>
 
@@ -162,7 +162,7 @@ export default function Process() {
             </section>
 
             <section className="bg-[#F5F3FF] py-12 px-4 sm:px-8 lg:px-16">
-                <h2 className="text-2xl md:text-3xl text-center font-semibold text-[#9C88FF] mb-6">
+                <h2 className="text-2xl md:text-3xl text-center font-semibold text-[#8116b4] mb-6">
                     Traditional Tools & Community Impact
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">

@@ -60,7 +60,7 @@ export default function Contact() {
             <div className="bg-white text-gray-800">
                 {/* Why Choose Us */}
                 <section className="py-16 px-6 text-center bg-[#F5F3FF]">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#5C4D9A]">Why Choose Kanzoni Cosmetics?</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#8116b4]">Get in Touch with Kanzoni Cosmetics</h2>
                     <p className="max-w-2xl mx-auto text-lg">
                         At Kanzoni Cosmetics, we blend Ghanaian tradition with pure, natural skincare you can trust. Whether you have a question, need product guidance, or want to place an order, our team is here for you. Your journey to healthy, radiant skin starts with a conversation — let’s connect today.
                     </p>
@@ -114,7 +114,7 @@ export default function Contact() {
 
                 {/* Contact Form */}
                 <section className="py-16 px-6 bg-[#F5F3FF]">
-                    <h3 className="text-2xl font-bold text-center mb-8 text-[#5C4D9A]">Send Us a Message</h3>
+                    <h3 className="text-2xl font-bold text-center mb-8 text-[#8116b4]">Send Us a Message</h3>
                     <form
                         ref={formRef}
                         onSubmit={handleSubmit}
@@ -155,7 +155,7 @@ export default function Contact() {
                         <button
                             type="submit"
                             disabled={isSubmitting}
-                            className={`${isSubmitting ? "bg-[#7a6bb7] cursor-not-allowed" : "bg-[#5C4D9A] hover:bg-[#453979]"
+                            className={`${isSubmitting ? "bg-[#7a6bb7] cursor-not-allowed" : "bg-[#8116b4] hover:bg-[#453979]"
                                 } text-white px-5 py-2.5 font-medium rounded-md transition duration-200`}
                         >
                             {isSubmitting ? "Sending..." : "Send Message"}

@@ -35,7 +35,7 @@ export default function Navbar() {
             {/* Logo */}
             <div>
                 <Link to="/"
-                    className={`nav-text font-bold transition-colors duration-200 ${scrolled ? "text-[#F7F4ED] hover:text-[#9C88FF]" : "text-slate-800 hover:text-[#9C88FF]"
+                    className={`nav-text font-bold transition-colors duration-200 ${scrolled ? "text-[#F7F4ED] hover:text-[#8116b4]" : "text-slate-800 hover:text-[#8116b4]"
                         }`}
                 >
                     <div className="leading-none">
@@ -62,7 +62,7 @@ export default function Navbar() {
                 <div className="md:hidden">
                     <button
                         onClick={handleToggle}
-                        className={`nav-text focus:outline-none transition-colors duration-200 ${scrolled ? "text-[#F7F4ED] hover:text-[#9C88FF]" : "text-slate-800 hover:text-[#9C88FF]"
+                        className={`nav-text focus:outline-none transition-colors duration-200 ${scrolled ? "text-[#F7F4ED] hover:text-[#8116b4]" : "text-slate-800 hover:text-[#8116b4]"
                             }`}
                     >
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -80,7 +80,7 @@ export default function Navbar() {
                     {/* Close button (only visible on mobile) */}
                     <button
                         onClick={handleToggle}
-                        className="absolute top-4 right-4 md:hidden focus:outline-none text-gray-600 hover:text-[#9C88FF]"
+                        className="absolute top-4 right-4 md:hidden focus:outline-none text-gray-600 hover:text-[#8116b4]"
                     >
                         <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -97,7 +97,7 @@ export default function Navbar() {
                             to={item.href}
                             onClick={handleLinkClick}
                             className={({ isActive }) =>
-                                `nav-text transition-colors duration-200 hover:text-[#9C88FF] ${isActive ? "text-[#9C88FF] font-bold" : ""
+                                `nav-text transition-colors duration-200 hover:text-[#8116b4] ${isActive ? "text-[#8116b4] font-bold" : ""
                                 }`
                             }
                         >

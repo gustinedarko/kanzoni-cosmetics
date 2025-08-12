@@ -29,49 +29,50 @@ export default function ProductsHome() {
         <>
             <AlertBar />
             <Navbar />
-
             
             <section className="w-full h-screen relative overflow-hidden">
                 <HeroHomeSlider />
             </section>
 
-            <section className="w-full h-full bg-[#F5F3FF] flex items-center justify-center">
+            <section className="w-full h-full">
 
-                <div className="w-5/6 my-12">
+                <div className="w-full h-full bg-white">
 
-                    <h2 className="flex justify-center text-3xl md:text-4xl font-bold mb-2 md:mb-4">Kanzoni</h2>
-                    <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
-                        className="flex justify-center text-2xl md:text-4xl font-bold text-[#9C88FF] tracking-wider italic">Represents Pure, Natural Beauty</h3>
+                    <div className="w-5/6 mt-12 flex flex-col items-center justify-center mx-auto">
+                        <h2 className="flex justify-center text-3xl md:text-4xl font-bold mb-2 md:mb-4">Kanzoni</h2>
+                        <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
+                            className="flex justify-center text-2xl md:text-4xl font-bold text-[#8116b4] tracking-wider italic">Represents Pure, Natural Beauty</h3>
+                        <p className="text-justify md:text-center py-6 md:py-10 text-lg">At Kanzoni Cosmetics, we believe skincare should be as pure as nature itself. That’s why we craft our products using only organic ingredients like raw Shea butter, coconut oil, and essential oils — no harsh chemicals, no shortcuts. From Ghana’s rich Shea traditions to your home, our mission is simple: to nourish, protect, and celebrate your skin’s natural glow. Every jar, every bar, and every blend carries the care, integrity, and quality that define who we are.</p>
 
-                    <p className="text-center py-6 md:py-10 text-lg">At Kanzoni Cosmetics, we believe skincare should be as pure as nature itself. That’s why we craft our products using only organic ingredients like raw Shea butter, coconut oil, and essential oils — no harsh chemicals, no shortcuts. From Ghana’s rich Shea traditions to your home, our mission is simple: to nourish, protect, and celebrate your skin’s natural glow. Every jar, every bar, and every blend carries the care, integrity, and quality that define who we are.</p>
+                        <span className="flex justify-center"><Link to="/about-us" className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mb-12 text-lg font-medium bg-[#8116b4] hover:bg-[#453979] text-[#F7F4ED]">Our Story</Link></span>
+                    </div>
 
-                    <span className="flex justify-center"><Link to="/about-us" className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mb-12 text-lg font-medium bg-[#9C88FF] hover:bg-[#453979] text-[#F7F4ED]">Our Story</Link></span>
-
-                    <span>
-                        <p className="text-center text-2xl md:text-3xl font-medium mb-6">Explore Our Natural Skincare Collection</p>
-
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 ">
-                            {products.map((product) => (
-                                <ProductsCard
-                                    key={product.id}
-                                    id={product.id}
-                                    name={product.name}
-                                    nameTwo={product.nameTwo}
-                                    price={product.price}
-                                    image={product.image}
-                                />
-                            ))}
+                    <div className="w-full h-full bg-[#F5F3FF]">
+                        <div className="w-5/6 py-12 mx-auto">
+                            <span>
+                                <p className="text-center text-2xl md:text-3xl font-medium mb-6">Explore Our Natural Skincare Collection</p>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 ">
+                                    {products.map((product) => (
+                                        <ProductsCard
+                                            key={product.id}
+                                            id={product.id}
+                                            name={product.name}
+                                            nameTwo={product.nameTwo}
+                                            price={product.price}
+                                            image={product.image}
+                                        />
+                                    ))}
+                                </div>
+                            </span>
+                            <span className="flex justify-center">
+                                <Link to="/our-products">
+                                    <button className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 text-lg font-medium bg-[#8116b4] hover:bg-[#453979] text-[#F7F4ED]">
+                                        Our Products
+                                    </button>
+                                </Link>
+                            </span>
                         </div>
-
-                    </span>
-
-                    <span className="flex justify-center">
-                        <Link to="/our-products">
-                            <button className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 text-lg font-medium bg-[#9C88FF] hover:bg-[#453979] text-[#F7F4ED]">
-                                Our Products
-                            </button>
-                        </Link>
-                    </span>
+                    </div>
                 </div>
 
             </section>
@@ -87,9 +88,9 @@ export default function ProductsHome() {
                 <div className="w-full h-screen flex items-center justify-center">
                     <div className="text-center">
                         <p style={{ fontFamily: "'Dancing Script', cursive" }}
-                            className="text-[#5C4D9A] text-5xl md:text-6xl font-bold tracking-wider italic">Shea butter and All other products</p>
+                            className="text-[#8116b4] text-5xl md:text-6xl font-bold tracking-wider md:tracking-normal italic">From Pure Shea Butter to Nourishing Body Care</p>
 
-                        <Link to="/shopnow-products"><button className="bg-white text-black border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-12 font-medium hover:bg-[#453979] hover:text-[#F7F4ED]">Shop Now</button></Link>
+                        <Link to="/shopnow-products"><button className="bg-white text-black border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-12 font-medium hover:bg-[#8116b4] hover:text-[#F7F4ED] animate-bounce">Shop Now</button></Link>
                     </div>
                 </div>
             </section>
@@ -108,7 +109,7 @@ export default function ProductsHome() {
                 <BottomHomeSlider />
             </section>
 
-            <section className="w-full h-full bg-[#F5F3FF] flex items-center justify-center">
+            <section className="w-full h-full bg- flex items-center justify-center">
 
                 <div className="my-10">
                     <h2 className="flex justify-center text-2xl md:text-3xl font-medium mb-8">Ingredients</h2>
@@ -116,27 +117,27 @@ export default function ProductsHome() {
                     <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-10">
                         <div className="flex flex-col items-center justify-center text-center">
                             <img src={ingredient2} alt="" className="md:h-50 md:w-50 h-60 w-60 bg-gray-400 rounded-full" />
-                            <p className="text-xl text-[#9C88FF] font-medium mt-2">Raw Shea Butter</p>
+                            <p className="text-xl text-[#8116b4] font-medium mt-2">Raw Shea Butter</p>
                         </div>
 
                         <div className="flex flex-col items-center justify-center text-center">
                             <img src={ingredient1} alt="" className="md:h-50 md:w-50 h-60 w-60 bg-gray-400 rounded-full" />
-                            <p className="text-xl text-[#9C88FF] font-medium mt-2">Coconut Oil</p>
+                            <p className="text-xl text-[#8116b4] font-medium mt-2">Coconut Oil</p>
                         </div>
 
                         <div className="flex flex-col items-center justify-center text-center">
                             <img src={ingredient3} alt="" className="md:h-50 md:w-50 h-60 w-60 bg-gray-400 rounded-full" />
-                            <p className="text-xl text-[#9C88FF] font-medium mt-2">Palm Kernel Oil</p>
+                            <p className="text-xl text-[#8116b4] font-medium mt-2">Palm Kernel Oil</p>
                         </div>
 
                         <div className="flex flex-col items-center justify-center text-center">
                             <img src={ingredient4} alt="" className="md:h-50 md:w-50 h-60 w-60 bg-gray-400 rounded-full" />
-                            <p className="text-xl text-[#9C88FF] font-medium mt-2">Potash</p>
+                            <p className="text-xl text-[#8116b4] font-medium mt-2">Potash</p>
                         </div>
 
                         <div className="flex flex-col items-center justify-center text-center">
                             <img src={ingredient5} alt="" className="md:h-50 md:w-50 h-60 w-60 bg-gray-400 rounded-full" />
-                            <p className="text-xl text-[#9C88FF] font-medium mt-2">Essential Oils</p>
+                            <p className="text-xl text-[#8116b4] font-medium mt-2">Essential Oils</p>
                         </div>
                     </div>
                 </div>

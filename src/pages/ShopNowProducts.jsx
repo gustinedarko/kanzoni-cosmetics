@@ -58,7 +58,7 @@ export default function ShopNowProducts() {
                                     />
                                     <button
                                         onClick={() => addToCart(product, quantities[product.id] || 1)}
-                                        className="bg-[#9C88FF] hover:bg-[#453979] text-white font-medium px-4 py-2 rounded">
+                                        className="bg-[#8116b4] hover:bg-[#453979] text-white font-medium px-4 py-2 rounded">
                                         Add to Cart
                                     </button>
                                 </div>

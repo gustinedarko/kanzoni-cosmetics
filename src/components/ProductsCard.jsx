@@ -14,7 +14,7 @@ export default function ProductsCard({ image, name, id, price, nameTwo }) {
             </div>
           </div>
           <p className="mt-2 text-center text-lg font-medium">{name}</p>
-          <p className="mt-1 text-gray-600 text-center text-lg">{nameTwo}</p>
+          <p className="mt-1 text-gray-600 text-center text-base">{nameTwo}</p>
           {/* <p className="mt-2 text-center text-lg font-medium">{name}</p> */}
           <p className="mt-1 text-center text-[#453979] text-lg font-medium">Gh₵ {price}</p>
         </div>
