@@ -75,8 +75,8 @@ export default function Cart() {
             <div className="">
                 <h1 className="text-2xl md:text-3xl font-semibold mb-6 text-center">Your Cart</h1>
                 {cartItems.length === 0 ? (
-                    <div className="text-center">
-                        <p className="mb-4">Your cart is empty.</p>
+                    <div className="text-center text-lg text-gray-600 my-16">
+                        <p className="mb-8">Your cart is empty.</p>
                         <Link to="/shopnow-products" className="text-[#9C88FF] underline">Go shopping</Link>
                     </div>
                 ) : (

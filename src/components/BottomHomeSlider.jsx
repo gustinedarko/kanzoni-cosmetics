@@ -49,13 +49,15 @@ export default function BottomHomeSlider() {
       style={{ backgroundImage: `url(${cropSoap})` }}
     >
 
+      <div className="absolute inset-0 bg-black opacity-20"></div>
+
       <div className="w-full h-full flex flex-col items-center justify-center text-center">
         {/* Fixed Heading and Content */}
         <div className="relative z-20 w-full h-full flex items-center justify-center">
           <div className="text-center max-w-3xl px-4">
             <h3
               style={{ fontFamily: "'Dancing Script', cursive" }}
-              className="text-[#8116b4] text-5xl md:text-6xl font-bold tracking-wider md:tracking-normal italic mb-6"
+              className="text-[#8116b4] text-4xl md:text-5xl font-bold tracking-wider md:tracking-normal italic mb-6"
             >
               Ingredients Behind Our Products
             </h3>

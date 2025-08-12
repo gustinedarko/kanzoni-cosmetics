@@ -41,7 +41,7 @@ export default function ProductsHome() {
                     <div className="w-5/6 mt-12 flex flex-col items-center justify-center mx-auto">
                         <h2 className="flex justify-center text-3xl md:text-4xl font-bold mb-2 md:mb-4">Kanzoni</h2>
                         <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
-                            className="flex justify-center text-2xl md:text-4xl font-bold text-[#8116b4] tracking-wider italic">Represents Pure, Natural Beauty</h3>
+                            className="flex justify-center text-2xl md:text-4xl font-bold text-[#8116b4] italic">Represents Pure , Natural Beauty</h3>
                         <p className="text-justify md:text-center py-6 md:py-10 text-lg">At Kanzoni Cosmetics, we believe skincare should be as pure as nature itself. That’s why we craft our products using only organic ingredients like raw Shea butter, coconut oil, and essential oils — no harsh chemicals, no shortcuts. From Ghana’s rich Shea traditions to your home, our mission is simple: to nourish, protect, and celebrate your skin’s natural glow. Every jar, every bar, and every blend carries the care, integrity, and quality that define who we are.</p>
 
                         <span className="flex justify-center"><Link to="/about-us" className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mb-12 text-lg font-medium bg-[#8116b4] hover:bg-[#453979] text-[#F7F4ED]">Our Story</Link></span>
@@ -84,11 +84,15 @@ export default function ProductsHome() {
                     backgroundPosition: 'center',
                     backgroundAttachment: 'fixed',
                 }}
-                className="w-full h-full md:h-screen">
+                className="relative w-full h-full md:h-screen">
+
+                    <div className="absolute inset-0 bg-black opacity-20"></div>
+
                 <div className="w-full h-screen flex items-center justify-center">
+                    
                     <div className="text-center">
                         <p style={{ fontFamily: "'Dancing Script', cursive" }}
-                            className="text-[#8116b4] text-5xl md:text-6xl font-bold tracking-wider md:tracking-normal italic">From Pure Shea Butter to Nourishing Body Care</p>
+                            className="text-[#8116b4] text-4xl md:text-5xl font-bold tracking-wider md:tracking-normal italic">From Pure Shea Butter to Nourishing Body Care</p>
 
                         <Link to="/shopnow-products"><button className="bg-white text-black border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-12 font-medium hover:bg-[#8116b4] hover:text-[#F7F4ED] animate-bounce">Shop Now</button></Link>
                     </div>
@@ -100,7 +104,6 @@ export default function ProductsHome() {
                     backgroundImage: `url(${cropLotion})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'right',
-                    backgroundAttachment: 'fixed',
                 }}
                 className="w-full h-screen">
             </section>
