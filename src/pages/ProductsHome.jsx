@@ -80,11 +80,8 @@ export default function ProductsHome() {
             <section 
                 style={{
                     backgroundImage: `url(${cropCream})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundAttachment: 'fixed',
                 }}
-                className="relative w-full h-full md:h-screen">
+                className="relative w-full h-full md:h-screen md:bg-fixed bg-cover bg-center">
 
                     <div className="absolute inset-0 bg-black opacity-20"></div>
 
@@ -101,11 +98,9 @@ export default function ProductsHome() {
 
             <section
                 style={{
-                    backgroundImage: `url(${cropLotion})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'right',
+                    backgroundImage: `url(${cropLotion})`
                 }}
-                className="w-full h-screen">
+                className="w-full h-screen md:bg-fixed bg-cover bg-right">
             </section>
 
             <section className="w-full h-screen">

@@ -45,7 +45,7 @@ export default function BottomHomeSlider() {
 
   return (
     <section
-      className="relative w-full h-screen bg-fixed bg-cover bg-center"
+      className="relative w-full h-screen md:bg-fixed bg-cover md:bg-center"
       style={{ backgroundImage: `url(${cropSoap})` }}
     >
 
