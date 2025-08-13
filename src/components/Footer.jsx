@@ -15,9 +15,9 @@ export default function Footer() {
                     </p>
                 </div>
 
-                <div className="md:col-span-2 md:ml-6">
+                <div className="md:col-span-2 md:ml-4">
                     <h3 className="font-semibold text-lg mb-3">Quick Links</h3>
-                    <ul className="flex flex-wrap gap-8 text-sm">
+                    <ul className="flex flex-wrap gap-6 text-sm">
                         <li>
                             <Link to="/" className="font-medium hover:underline block">Home</Link>
                             <ul className="mt-1 space-y-1 text-gray-600">
@@ -56,8 +56,8 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                <div className="md:col-span-2 md:ml-20">
-                    <h3 className="font-semibold text-lg mb-3">Contact</h3>
+                <div className="md:col-span-2 md:ml-15">
+                    <h3 className="font-semibold text-lg mb-3">How to Reach Us</h3>
                     <ul className="space-y-2 text-sm">
                         <li>Email: <a href="mailto:kanzonicosmetics@gmail.com" className="hover:underline">kanzonicosmetics@gmail.com</a></li>
                         <li>Phone: +233 000 000 000</li>

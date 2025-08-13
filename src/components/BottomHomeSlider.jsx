@@ -45,19 +45,19 @@ export default function BottomHomeSlider() {
 
   return (
     <section
-      className="relative w-full h-full md:h-screen bg-fixed bg-cover bg-center"
+      className="relative w-full h-screen bg-fixed bg-cover bg-center"
       style={{ backgroundImage: `url(${cropSoap})` }}
     >
 
       <div className="absolute inset-0 bg-black opacity-20"></div>
 
-      <div className="w-full h-full flex flex-col items-center justify-center text-center">
+      <div className="w-full h-screen flex flex-col items-center justify-center text-center">
         {/* Fixed Heading and Content */}
-        <div className="relative z-20 w-full h-full flex items-center justify-center">
+        <div className="relative z-20 w-full h-screen flex items-center justify-center">
           <div className="text-center max-w-3xl px-4">
             <h3
               style={{ fontFamily: "'Dancing Script', cursive" }}
-              className="text-[#8116b4] text-4xl md:text-5xl font-bold tracking-wider md:tracking-normal italic mb-6"
+              className="text-[#8116b4] text-4xl md:text-5xl font-bold tracking-wide md:tracking-normal italic mb-2 md:mb-6"
             >
               Ingredients Behind Our Products
             </h3>
@@ -72,10 +72,10 @@ export default function BottomHomeSlider() {
                   <p className="text-[#8116b4] text-2xl font-bold mb-2">
                     {item.name}
                   </p>
-                  <p className="text-white text-lg md:text-xl">
+                  <p className="text-white text-base md:text-xl">
                     {item.description}
                   </p>
-                  <p className="text-white text-lg md:text-xl text-justify md:text-center">
+                  <p className="text-white text-base md:text-xl text-justify md:text-center">
                     {item.descriptionTwo}
                   </p>
                 </div>
