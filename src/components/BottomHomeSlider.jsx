@@ -69,7 +69,7 @@ export default function BottomHomeSlider() {
                   className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === currentSlide ? "opacity-100" : "opacity-0"
                     }`}
                 >
-                  <p className="text-[#8116b4] text-2xl font-bold mb-2">
+                  <p className="text-[#8116b4] text-2xl font-medium mb-2">
                     {item.name}
                   </p>
                   <p className="text-white text-base md:text-xl">
