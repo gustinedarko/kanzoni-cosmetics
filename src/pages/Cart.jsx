@@ -40,7 +40,7 @@ export default function Cart() {
             buyer_email: buyer.email,
             buyer_phone: buyer.phone,
             buyer_address: buyer.address,
-            order_list: `- ${orderDetails}`,
+            order_list: orderDetails,
             order_total: `Gh₵ ${total}`,
         };
 
