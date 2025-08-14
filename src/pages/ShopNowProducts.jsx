@@ -25,7 +25,7 @@ export default function ShopNowProducts() {
                 <Link to="/">
                     <button
                         // onClick={() => navigate(-1)}
-                        className="ml-10 mt-6 px-1.5 py-1.5 text-white rounded font-medium bg-[#9C88FF] hover:bg-[#453979] transition"
+                        className="ml-10 mt-6 px-1.5 py-1.5 text-white rounded font-medium bg-[#9C88FF] hover:bg-[#453979] transition text-sm md:text-base"
                     >
                         <span className="flex items-center space-x-1">
                             <span><FaChevronLeft /></span>

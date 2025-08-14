@@ -18,14 +18,14 @@ export default function OurProducts() {
                 <div className="w-full flex items-center justify-between">
                     <button
                         onClick={() => navigate(-1)}
-                        className="ml-6 md:ml-10 mt-6 px-1.5 py-1.5 text-white rounded font-medium bg-[#9C88FF] hover:bg-[#453979] transition"
+                        className="ml-6 md:ml-10 mt-6 px-1.5 py-1.5 text-white rounded font-medium bg-[#9C88FF] hover:bg-[#453979] transition text-sm md:text-base"
                     >
                         <span className="flex items-center space-x-1">
                             <span><FaChevronLeft /></span>
                             <span>Back</span>
                         </span>
                     </button>
-                    <Link to="/shopnow-products" className="text-[#9C88FF] mr-6 md:mr-10 mt-6 underline hover:font-medium hover:text-[#453979]">Shop Now</Link>
+                    <Link to="/shopnow-products" className="text-[#8116b4] mr-6 md:mr-10 mt-6 underline hover:font-medium hover:text-[#453979] animate-bounce text-sm md:text-base">Shop Now</Link>
                 </div>
 
                 <div className="px-6 md:px-10 pt-4 pb-8 md:pb-12 md:w-5/6 mx-auto">
