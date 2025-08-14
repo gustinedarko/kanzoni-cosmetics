@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router";
 import { FaChevronLeft } from "react-icons/fa";
+import { Link } from "react-router";
 
 export default function OurProducts() {
 
@@ -14,17 +15,20 @@ export default function OurProducts() {
             <section className="bg-[#F5F3FF]">
                 <AlertBar />
                 <Navbar />
-                <button
-                    onClick={() => navigate(-1)}
-                    className="ml-10 mt-6 px-1.5 py-1.5 text-white rounded font-medium bg-[#9C88FF] hover:bg-[#453979] transition"
-                >
-                    <span className="flex items-center space-x-1">
-                        <span><FaChevronLeft /></span>
-                        <span>Back</span>
-                    </span>
-                </button>
+                <div className="w-full flex items-center justify-between">
+                    <button
+                        onClick={() => navigate(-1)}
+                        className="ml-6 md:ml-10 mt-6 px-1.5 py-1.5 text-white rounded font-medium bg-[#9C88FF] hover:bg-[#453979] transition"
+                    >
+                        <span className="flex items-center space-x-1">
+                            <span><FaChevronLeft /></span>
+                            <span>Back</span>
+                        </span>
+                    </button>
+                    <Link to="/shopnow-products" className="text-[#9C88FF] mr-6 md:mr-10 mt-6 underline hover:font-medium hover:text-[#453979]">Shop Now</Link>
+                </div>
 
-                <div className="px-6 md:px-10 pb-8 md:pb-12 md:w-5/6 mx-auto">
+                <div className="px-6 md:px-10 pt-4 pb-8 md:pb-12 md:w-5/6 mx-auto">
                     <h1 className="text-2xl md:text-3xl font-semibold text-center mb-4 md:mb-8">Our Products</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         {products.map((product) => (
