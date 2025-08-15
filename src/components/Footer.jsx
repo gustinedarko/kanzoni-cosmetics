@@ -16,7 +16,7 @@ export default function Footer() {
                 </div>
 
                 <div className="md:col-span-2 md:ml-4">
-                    <h3 className="font-medium text-lg mb-3">Quick Links</h3>
+                    <h3 className="font-medium text-base mb-3">Quick Links</h3>
                     <ul className="flex flex-wrap gap-6 text-sm">
                         <li>
                             <Link to="/" className="font-medium hover:underline block">Home</Link>
@@ -57,7 +57,7 @@ export default function Footer() {
                 </div>
 
                 <div className="md:col-span-2 md:ml-15">
-                    <h3 className="font-medium text-lg mb-3">How to Reach Us</h3>
+                    <h3 className="font-medium text-base mb-3">How to Reach Us</h3>
                     <ul className="space-y-2 text-sm">
                         <li>Email: <a href="mailto:kanzonicosmetics@gmail.com" className="hover:underline">kanzonicosmetics@gmail.com</a></li>
                         <li>Phone: +233 000 000 000</li>
@@ -66,7 +66,7 @@ export default function Footer() {
                 </div>
 
                 <div>
-                    <h3 className="font-medium text-lg mb-3">Follow Us</h3>
+                    <h3 className="font-medium text-base mb-3">Follow Us</h3>
                     <ul className="space-y-2 text-sm">
                         <li><a href="#" className="hover:underline">Instagram</a></li>
                         <li><a href="#" className="hover:underline">Facebook</a></li>

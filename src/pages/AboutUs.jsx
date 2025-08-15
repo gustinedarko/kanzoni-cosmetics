@@ -49,7 +49,7 @@ export default function AboutUs() {
                     <div className="md:basis-1/2 px-4">
                         <img
                             src={ourStoryImage}
-                            alt="Our Story"
+                            alt="Our Story Image"
                             className="w-full h-auto rounded-xl object-cover"
                         />
                     </div>

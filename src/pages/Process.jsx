@@ -3,7 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { GiFire, GiBoilingBubbles, GiCauldron, GiCoconuts, GiSpinningBlades } from "react-icons/gi";
 import { FaSeedling, FaRegSnowflake, FaHandHoldingWater } from "react-icons/fa";
-import imgCommunity from "../assets/images/annie-spratt-1.jpg";
+// import imgCommunity from "../assets/images/annie-spratt-1.jpg";
+import imgCommunity from "../assets/images/production.jpg";
 import imgProductSoap from "../assets/images/black-soap-product.jpeg";
 import img1 from "../assets/images/kaeme.jpg";
 import img2 from "../assets/images/giorgio.jpg";
@@ -167,13 +168,15 @@ export default function Process() {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                     {/* Image Placeholder */}
-                    <div className="w-full h-64 bg-gray-200 rounded-lg overflow-hidden shadow-md">
+                    <div className="relative w-full h-64 bg-gray-200 rounded-lg overflow-hidden shadow-md">
                         {/* Replace with actual image */}
                         <img
                             src={imgCommunity}
                             alt="Traditional tools used in shea butter production"
-                            className="w-full h-full object-cover"
+                            className="w-full h-64 object-cover"
                         />
+
+                        <div className="w-full h-64 absolute inset-0 bg-black opacity-40"></div>
                     </div>
 
                     {/* Text Content */}
