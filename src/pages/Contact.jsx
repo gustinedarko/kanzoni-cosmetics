@@ -4,6 +4,8 @@ import Footer from "../components/Footer";
 import React from "react";
 import { FaPhoneAlt, FaEnvelope, FaWhatsapp, FaMapMarkerAlt, FaClock, FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { useState, useRef, useEffect } from "react";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 export default function Contact() {
 
@@ -53,6 +55,20 @@ export default function Contact() {
         }
     };
 
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 80,
+            easing: 'ease-out-quad',
+        });
+    }, []);
+            
+    // Ensure animations recalc when the route changes
+    useEffect(() => {
+        AOS.refreshHard();
+    }, [location.pathname]);
+
     return (
         <>
             <AlertBar />
@@ -60,10 +76,12 @@ export default function Contact() {
             <div className="bg-white text-gray-800">
                 {/* Why Choose Us */}
                 <section className="py-16 px-6 text-center bg-[#F5F3FF]">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#8116b4]">Get in Touch with Kanzoni Cosmetics</h2>
-                    <p className="max-w-2xl mx-auto text-lg">
-                        At Kanzoni Cosmetics, we blend Ghanaian tradition with pure, natural skincare you can trust. Whether you have a question, need product guidance, or want to place an order, our team is here for you. Your journey to healthy, radiant skin starts with a conversation — let’s connect today.
-                    </p>
+                    <div data-aos="zoom-in">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#8116b4]">Get in Touch with Kanzoni Cosmetics</h2>
+                        <p className="max-w-2xl mx-auto text-lg">
+                            At Kanzoni Cosmetics, we blend Ghanaian tradition with pure, natural skincare you can trust. Whether you have a question, need product guidance, or want to place an order, our team is here for you. Your journey to healthy, radiant skin starts with a conversation — let’s connect today.
+                        </p>
+                    </div>
                 </section>
 
                 {/* Contact Options */}

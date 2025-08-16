@@ -6,8 +6,35 @@ import bgAboutImageIi from "../assets/images/girl-about.jpg"
 import ourStoryImage from "../assets/images/zach.jpg"
 import foundersImage from "../assets/images/portrait-founder.jpg"
 import ourMissionImage from "../assets/images/annie-4.jpg"
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import { useEffect,useState } from "react";
 
 export default function AboutUs() {
+
+    useEffect(() => {
+         AOS.init({
+            duration: 800,
+            once: true,
+            offset: 80,
+            easing: 'ease-out-quad',
+        });
+    }, []);
+    
+    // Ensure animations recalc when the route changes
+    useEffect(() => {
+        AOS.refreshHard();
+    }, [location.pathname]);
+
+    const [isMd, setIsMd] = useState(false);
+
+    useEffect(() => {
+    const handleResize = () => setIsMd(window.innerWidth >= 768); // md breakpoint
+    handleResize(); // run on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
     return (
         <>
             <AlertBar />
@@ -18,7 +45,7 @@ export default function AboutUs() {
                 
                 <div className="absolute inset-0 bg-black opacity-40"></div>
                 
-                <h1 className="relative z-10 text-[#F7F4ED] text-5xl md:text-6xl font-bold text-center">About Kanzoni Cosmetics</h1>
+                <h1 data-aos="fade-right" className="relative z-10 text-[#F7F4ED] text-5xl md:text-6xl font-bold text-center">About Kanzoni Cosmetics</h1>
             </section>
 
             <section className="h-full w-full bg-[#F5F3FF]">
@@ -46,7 +73,7 @@ export default function AboutUs() {
 
                 <div className="flex flex-col md:flex-row gap-6 items-center">
                     
-                    <div className="md:basis-1/2 px-4">
+                    <div data-aos={isMd ? "fade-up" : "fade-left"} className="md:basis-1/2 px-4">
                         <img
                             src={ourStoryImage}
                             alt="Our Story Image"
@@ -54,7 +81,7 @@ export default function AboutUs() {
                         />
                     </div>
                     
-                    <div className="md:basis-1/2 px-4">
+                    <div data-aos={isMd ? "fade-down" : "fade-right"} className="md:basis-1/2 px-4">
                         <p className="text-lg text-justify">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, numquam hic suscipit rem exercitationem iusto quidem officiis natus voluptatibus non, explicabo reiciendis laudantium, deserunt placeat!
                             Sint deserunt optio rem quo vero, modi minima ipsam facilis beatae ducimus est itaque cumque autem perferendis iusto illum. Iure quasi quos neque quae ipsa?
@@ -72,7 +99,7 @@ export default function AboutUs() {
 
                 <div className="flex flex-col-reverse md:flex-row gap-6 items-center">
                     
-                    <div className="md:basis-1/2 px-4">
+                    <div data-aos="fade-left" className="md:basis-1/2 px-4">
                         <p className="text-lg text-justify">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, numquam hic suscipit rem exercitationem iusto quidem officiis natus voluptatibus non, explicabo reiciendis laudantium, deserunt placeat!
                             Sint deserunt optio rem quo vero, modi minima ipsam facilis beatae ducimus est itaque cumque autem perferendis iusto illum. Iure quasi quos neque quae ipsa?
@@ -83,7 +110,7 @@ export default function AboutUs() {
                         </p>
                     </div>
                     
-                    <div className="md:basis-1/2 px-4">
+                    <div data-aos="fade-right" className="md:basis-1/2 px-4">
                         <img
                             src={foundersImage}
                             alt="Founders Image"
@@ -99,7 +126,7 @@ export default function AboutUs() {
 
                 <div className="flex flex-col md:flex-row gap-6 items-center">
                     
-                    <div className="md:basis-1/2 px-4">
+                    <div data-aos={isMd ? "fade-up" : "fade-left"} className="md:basis-1/2 px-4">
                         <img
                             src={ourMissionImage}
                             alt="Our Story"
@@ -107,7 +134,7 @@ export default function AboutUs() {
                         />
                     </div>
                     
-                    <div className="md:basis-1/2 px-4">
+                    <div data-aos={isMd ? "fade-down" : "fade-right"} className="md:basis-1/2 px-4">
                         <p className="text-lg text-justify">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, numquam hic suscipit rem exercitationem iusto quidem officiis natus voluptatibus non, explicabo reiciendis laudantium, deserunt placeat!
                             Sint deserunt optio rem quo vero, modi minima ipsam facilis beatae ducimus est itaque cumque autem perferendis iusto illum. Iure quasi quos neque quae ipsa?

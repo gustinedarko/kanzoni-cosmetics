@@ -50,6 +50,15 @@ const products = [
     description: "Luxurious body cream that hydrates deeply, soothes dryness, and restores skin’s natural softness.",
     descriptionTwo: "KC Shea Butter Body Cream is the ultimate indulgence for dry or sensitive skin. Made with rich Shea butter and blended with natural oils, it penetrates deeply to moisturize, calm irritation, and improve skin texture. This cream helps protect against environmental damage while leaving your skin silky-smooth and beautifully nourished. Use it daily for long-lasting hydration and a healthy, radiant glow.",
   },
+  {
+    id: "soapsmall",
+    name: "Herbal Soap Small",
+    nameTwo: "African Black Soap (small size)",
+    image: img2,
+    price: "25",
+    description: "Traditional African Black Soap that gently cleanses, detoxifies, and improves skin clarity naturally.",
+    descriptionTwo: "Our African Black Soap is a time-honored skincare treasure, handmade with plant-based ingredients like cocoa pod ash, Shea butter, and palm kernel oil. It effectively removes dirt and excess oil while soothing irritation and promoting clear, healthy skin. Suitable for all skin types, it’s perfect for addressing acne, blemishes, and uneven tone, leaving your skin refreshed, balanced, and nourished with every wash.",
+  },
 ];
 
 export default products;

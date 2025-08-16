@@ -5,12 +5,15 @@ import { GiFire, GiBoilingBubbles, GiCauldron, GiCoconuts, GiSpinningBlades } fr
 import { FaSeedling, FaRegSnowflake, FaHandHoldingWater } from "react-icons/fa";
 // import imgCommunity from "../assets/images/annie-spratt-1.jpg";
 import imgCommunity from "../assets/images/production.jpg";
-import imgProductSoap from "../assets/images/black-soap-product.jpeg";
+// import imgProductSoap from "../assets/images/black-soap-product.jpeg";
 import img1 from "../assets/images/kaeme.jpg";
 import img2 from "../assets/images/giorgio.jpg";
 import img3 from "../assets/images/mockup.jpg";
 import img4 from "../assets/images/sagar.jpg";
 import img5 from "../assets/images/kiona.jpg";
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Process() {
     const steps = [
@@ -56,22 +59,40 @@ export default function Process() {
         },
     ];
 
+    useEffect(() => {
+             AOS.init({
+                duration: 800,
+                once: true,
+                offset: 80,
+                easing: 'ease-out-quad',
+            });
+        }, []);
+        
+        // Ensure animations recalc when the route changes
+        useEffect(() => {
+            AOS.refreshHard();
+        }, [location.pathname]);
+
     return (
         <>
             <AlertBar />
             <Navbar />
             <section className="w-full h-full bg-[#F5F3FF] flex items-center justify-center">
                 <div className="w-5/6 my-12">
-                    <h2 className="flex justify-center text-3xl md:text-4xl font-bold text-center">Experience the Craft of Shea Butter Making in Ghana</h2>
-                    <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
-                    className="flex justify-center text-2xl md:text-4xl font-bold text-[#8116b4] italic text-center mt-4">A Step-by-Step Journey Through Tradition and Care</h3>
-                    <p className="text-center py-6 md:py-10 px-6 text-lg max-w-4xl mx-auto">
-                        Shea butter is more than just a cosmetic ingredient, it’s a living legacy, lovingly passed down through generations in Ghana. At Kanzoni Cosmetics, we honor this heritage with an artisanal approach to production. Each stage of our process is guided by care, precision, and deep respect for the women who create it and the environment that sustains it.
-                    </p>
+
+                    <div data-aos="zoom-in">
+                        <h2 className="flex justify-center text-3xl md:text-4xl font-bold text-center">Experience the Craft of Shea Butter Making in Ghana</h2>
+                        
+                        <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
+                        className="flex justify-center text-2xl md:text-4xl font-bold text-[#8116b4] italic text-center mt-4">A Step-by-Step Journey Through Tradition and Care</h3>
+                        <p className="text-center py-6 md:py-10 px-6 text-lg max-w-4xl mx-auto">
+                            Shea butter is more than just a cosmetic ingredient, it’s a living legacy, lovingly passed down through generations in Ghana. At Kanzoni Cosmetics, we honor this heritage with an artisanal approach to production. Each stage of our process is guided by care, precision, and deep respect for the women who create it and the environment that sustains it.
+                        </p>
+                    </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-12">
                         {steps.map((step, index) => (
-                            <div key={index} className="bg-white shadow-md rounded-lg p-6 text-center transform hover:scale-105 transition duration-300">
+                            <div key={index} className="bg-white shadow-md rounded-lg p-6 text-center transform hover:scale-115 transition duration-300">
                                 <div className="mb-4 flex justify-center">{step.icon}</div>
                                 <h4 className="text-xl font-semibold text-[#8116b4] mb-2">{step.title}</h4>
                                 <p className="text-gray-700 text-base">{step.text}</p>
@@ -159,6 +180,19 @@ export default function Process() {
                             Concentrated shea butter formula that restores moisture, soothes dryness, and protects hair & skin’s natural barrier.
                         </p>
                     </div>
+
+                    {/* Product 6 - Alata Black Soap small */}
+                    <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center">
+                        <img
+                            src={img2}
+                            alt="Alata Black Soap Small Size"
+                            className="w-full h-40 object-cover rounded"
+                        />
+                        <h3 className="text-xl font-medium mt-4">Alata Black Soap (small)</h3>
+                        <p className="text-sm text-gray-600 mt-2">
+                            Traditional Ghanaian soap made from plantain peels and cocoa pods — gentle, natural, and effective.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -168,7 +202,7 @@ export default function Process() {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                     {/* Image Placeholder */}
-                    <div className="relative w-full h-64 bg-gray-200 rounded-lg overflow-hidden shadow-md">
+                    <div data-aos="fade-right" className="relative w-full h-64 bg-gray-200 rounded-lg overflow-hidden shadow-md">
                         {/* Replace with actual image */}
                         <img
                             src={imgCommunity}
@@ -180,7 +214,7 @@ export default function Process() {
                     </div>
 
                     {/* Text Content */}
-                    <div className="text-lg text-gray-700 space-y-4 text-justify">
+                    <div data-aos="fade-left" className="text-lg text-gray-700 space-y-4 text-justify">
                         <p>
                             In many parts of Ghana, shea butter production still honors the tools of the past — grinding stones worn smooth by years of use, sturdy wooden paddles, and wide metal bowls that have served generations of artisans.
                         </p>

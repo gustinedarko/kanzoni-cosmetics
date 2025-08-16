@@ -2,6 +2,9 @@
 import AlertBar from "../components/AlertBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 // import img1 from "../assets/images/istockphoto-A.jpg";
 // import img2 from "../assets/images/kaeme-unsplash.jpg";
 // import img3 from "../assets/images/istockphoto-B.jpg";
@@ -25,11 +28,25 @@ import ingredient5 from "../assets/images/essential-oil.jpg";
 
 export default function ProductsHome() {
 
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 80,
+            easing: 'ease-out-quad',
+        });
+    }, []);
+
+    // Ensure animations recalc when the route changes
+    useEffect(() => {
+        AOS.refreshHard();
+    }, [location.pathname]);
+
     return (
         <>
             <AlertBar />
             <Navbar />
-            
+
             <section className="w-full h-screen relative overflow-hidden">
                 <HeroHomeSlider />
             </section>
@@ -38,11 +55,11 @@ export default function ProductsHome() {
 
                 <div className="w-full h-full bg-white">
 
-                    <div className="w-5/6 mt-12 flex flex-col items-center justify-center mx-auto">
+                    <div data-aos="fade-up" className="w-5/6 mt-12 flex flex-col items-center justify-center mx-auto">
                         <h2 className="flex justify-center text-3xl md:text-4xl font-bold mb-2 md:mb-4">Kanzoni</h2>
                         <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
                             className="flex justify-center text-2xl md:text-4xl font-bold text-[#8116b4] italic text-center">Represents Pure , Natural Beauty</h3>
-                        <p className="text-justify md:text-center py-6 md:py-10 text-lg">At Kanzoni Cosmetics, we believe skincare should be as pure as nature itself. That’s why we craft our products using only organic ingredients like raw Shea butter, coconut oil, and essential oils — no harsh chemicals, no shortcuts. From Ghana’s rich Shea traditions to your home, our mission is simple: to nourish, protect, and celebrate your skin’s natural glow. Every jar, every bar, and every blend carries the care, integrity, and quality that define who we are.</p>
+                        <p className="text-justify md:text-center py-6 md:py-10 text-lg" >At Kanzoni Cosmetics, we believe skincare should be as pure as nature itself. That’s why we craft our products using only organic ingredients like raw Shea butter, coconut oil, and essential oils — no harsh chemicals, no shortcuts. From Ghana’s rich Shea traditions to your home, our mission is simple: to nourish, protect, and celebrate your skin’s natural glow. Every jar, every bar, and every blend carries the care, integrity, and quality that define who we are.</p>
 
                         <span className="flex justify-center"><Link to="/about-us" className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mb-12 text-lg font-medium bg-[#8116b4] hover:bg-[#453979] text-[#F7F4ED]">Our Story</Link></span>
                     </div>
@@ -77,16 +94,16 @@ export default function ProductsHome() {
 
             </section>
 
-            <section 
+            <section
                 style={{
                     backgroundImage: `url(${cropCream})`,
                 }}
                 className="relative w-full h-full md:h-screen md:bg-fixed bg-cover bg-center">
 
-                    <div className="absolute inset-0 bg-black opacity-20"></div>
+                <div className="absolute inset-0 bg-black opacity-20"></div>
 
                 <div className="w-full h-screen flex items-center justify-center">
-                    
+
                     <div className="text-center">
                         <p style={{ fontFamily: "'Dancing Script', cursive" }}
                             className="text-[#8116b4] text-4xl md:text-5xl font-bold tracking-wider md:tracking-normal italic">From Pure Shea Butter to Nourishing Body Care</p>
@@ -109,7 +126,7 @@ export default function ProductsHome() {
 
             <section className="w-full h-full bg- flex items-center justify-center">
 
-                <div className="my-10">
+                <div  data-aos="fade-left" className="my-10">
                     <h2 className="flex justify-center text-2xl md:text-3xl font-medium mb-8">Ingredients</h2>
 
                     <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-10">
