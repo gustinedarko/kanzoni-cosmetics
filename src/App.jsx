@@ -10,6 +10,9 @@ import CombinedProductDetail from "./pages/CombinedProductDetail";
 import OurProducts from "./pages/OurProducts";
 import ShopNowProducts from "./pages/ShopNowProducts";
 import Cart from "./pages/Cart";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const withScroll = (element) => (
   <>
@@ -29,10 +32,13 @@ const kanzoniCosmeticsRouter = createBrowserRouter([
   { path: '/process', element: withScroll(<Process />) },
   { path: '/contact', element: withScroll(<Contact />) },
   { path: '/cart', element: withScroll(<Cart />) },
-  {path: '*', element: <NotFound />},
+  { path: '*', element: <NotFound /> },
 ]);
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false, startEvent: "DOMContentLoaded" });
+  }, []);
 
   return (
     <>

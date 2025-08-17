@@ -4,8 +4,6 @@ import Footer from "../components/Footer";
 import React from "react";
 import { FaPhoneAlt, FaEnvelope, FaWhatsapp, FaMapMarkerAlt, FaClock, FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { useState, useRef, useEffect } from "react";
-import AOS from 'aos';
-import "aos/dist/aos.css";
 
 export default function Contact() {
 
@@ -54,20 +52,6 @@ export default function Contact() {
             setIsSubmitting(false);
         }
     };
-
-    useEffect(() => {
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 80,
-            easing: 'ease-out-quad',
-        });
-    }, []);
-            
-    // Ensure animations recalc when the route changes
-    useEffect(() => {
-        AOS.refreshHard();
-    }, [location.pathname]);
 
     return (
         <>

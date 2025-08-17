@@ -11,9 +11,6 @@ import img2 from "../assets/images/giorgio.jpg";
 import img3 from "../assets/images/mockup.jpg";
 import img4 from "../assets/images/sagar.jpg";
 import img5 from "../assets/images/kiona.jpg";
-import AOS from 'aos';
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 export default function Process() {
     const steps = [
@@ -59,20 +56,6 @@ export default function Process() {
         },
     ];
 
-    useEffect(() => {
-             AOS.init({
-                duration: 800,
-                once: true,
-                offset: 80,
-                easing: 'ease-out-quad',
-            });
-        }, []);
-        
-        // Ensure animations recalc when the route changes
-        useEffect(() => {
-            AOS.refreshHard();
-        }, [location.pathname]);
-
     return (
         <>
             <AlertBar />
@@ -82,9 +65,9 @@ export default function Process() {
 
                     <div data-aos="zoom-in">
                         <h2 className="flex justify-center text-3xl md:text-4xl font-bold text-center">Experience the Craft of Shea Butter Making in Ghana</h2>
-                        
+
                         <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
-                        className="flex justify-center text-2xl md:text-4xl font-bold text-[#8116b4] italic text-center mt-4">A Step-by-Step Journey Through Tradition and Care</h3>
+                            className="flex justify-center text-2xl md:text-4xl font-bold text-[#8116b4] italic text-center mt-4">A Step-by-Step Journey Through Tradition and Care</h3>
                         <p className="text-center py-6 md:py-10 px-6 text-lg max-w-4xl mx-auto">
                             Shea butter is more than just a cosmetic ingredient, it’s a living legacy, lovingly passed down through generations in Ghana. At Kanzoni Cosmetics, we honor this heritage with an artisanal approach to production. Each stage of our process is guided by care, precision, and deep respect for the women who create it and the environment that sustains it.
                         </p>

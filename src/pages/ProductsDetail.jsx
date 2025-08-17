@@ -33,7 +33,7 @@ export default function ProductsDetail() {
                     <Link to="/shopnow-products" className="text-[#8116b4] mr-6 md:mr-10 mt-6 underline hover:font-medium hover:text-[#453979] animate-bounce text-sm md:text-base">Shop Now</Link>
                 </div>
 
-                <div className="p-10 w-full">
+                <div data-aos="zoom-in" className="p-10 w-full">
                     <div className="bg-[#F7F4ED] p-6 rounded-lg shadow-md w-full max-w-md mx-auto">
                         <img src={product.image} alt={product.name} className="w-full max-w-md mx-auto object-cover rounded" />
                         <h2 className="text-2xl md:text-3xl font-bold text-center mt-6">{product.nameTwo}</h2>

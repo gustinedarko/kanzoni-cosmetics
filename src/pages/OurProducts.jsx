@@ -28,7 +28,7 @@ export default function OurProducts() {
                     <Link to="/shopnow-products" className="text-[#8116b4] mr-6 md:mr-10 mt-6 underline hover:font-medium hover:text-[#453979] animate-bounce text-sm md:text-base">Shop Now</Link>
                 </div>
 
-                <div className="px-6 md:px-10 pt-4 pb-8 md:pb-12 md:w-5/6 mx-auto">
+                <div data-aos="fade-down" className="px-6 md:px-10 pt-4 pb-8 md:pb-12 md:w-5/6 mx-auto">
                     <h1 className="text-2xl md:text-3xl font-semibold text-center mb-4 md:mb-8">Our Products</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         {products.map((product) => (

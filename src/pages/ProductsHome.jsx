@@ -2,9 +2,6 @@
 import AlertBar from "../components/AlertBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { useEffect } from 'react';
-import AOS from 'aos';
-import "aos/dist/aos.css";
 // import img1 from "../assets/images/istockphoto-A.jpg";
 // import img2 from "../assets/images/kaeme-unsplash.jpg";
 // import img3 from "../assets/images/istockphoto-B.jpg";
@@ -27,20 +24,6 @@ import ingredient4 from "../assets/images/potash.jpg";
 import ingredient5 from "../assets/images/essential-oil.jpg";
 
 export default function ProductsHome() {
-
-    useEffect(() => {
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 80,
-            easing: 'ease-out-quad',
-        });
-    }, []);
-
-    // Ensure animations recalc when the route changes
-    useEffect(() => {
-        AOS.refreshHard();
-    }, [location.pathname]);
 
     return (
         <>
@@ -126,7 +109,7 @@ export default function ProductsHome() {
 
             <section className="w-full h-full bg- flex items-center justify-center">
 
-                <div  data-aos="fade-left" className="my-10">
+                <div data-aos="fade-left" className="my-10">
                     <h2 className="flex justify-center text-2xl md:text-3xl font-medium mb-8">Ingredients</h2>
 
                     <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-10">

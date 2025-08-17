@@ -73,15 +73,15 @@ export default function Cart() {
             </Link>
             
             <div className="">
-                <h1 className="text-2xl md:text-3xl font-semibold mb-6 text-center">Your Cart</h1>
+                <h1 data-aos="fade-down" className="text-2xl md:text-3xl font-semibold mb-6 text-center">Your Cart</h1>
                 {cartItems.length === 0 ? (
-                    <div className="text-center text-lg text-gray-600 my-16">
+                    <div data-aos="fade-down" className="text-center text-lg text-gray-600 my-16">
                         <p className="mb-8">Your cart is empty.</p>
                         <Link to="/shopnow-products" className="text-[#9C88FF] underline">Go shopping</Link>
                     </div>
                 ) : (
                     <>
-                        <section className="px-6 md:w-5/6 mx-auto">
+                        <section data-aos="fade-down" className="px-6 md:w-5/6 mx-auto">
                             <hr className="text-gray-400" />
                             <div className="space-y-4">
                                 {cartItems.map(item => (

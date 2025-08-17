@@ -33,7 +33,7 @@ export default function ShopNowProducts() {
                         </span>
                     </button>
                 </Link>
-                <div className="px-6 md:px-10 pb-8 md:pb-12 md:w-5/6 mx-auto">
+                <div data-aos="fade-down" className="px-6 md:px-10 pb-8 md:pb-12 md:w-5/6 mx-auto">
                     <h1 className="text-2xl md:text-3xl font-semibold text-center mb-4 md:mb-8">Shop Now</h1>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                         {products.map((product) => (
