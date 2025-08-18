@@ -4,7 +4,7 @@ export default function ProductsCard({ image, name, id, price, nameTwo }) {
   return (
     <>
       <Link to={`/products/${id}`} className="block">
-        <div className="bg-white p-4 rounded-lg shadow-md">
+        <div className="bg-white h-full p-4 rounded-lg shadow-md">
           <div className="relative h-48 bg-gray-300 rounded overflow-hidden group transition">
             <img src={image} alt={name} className="w-full h-full object-cover" />
 

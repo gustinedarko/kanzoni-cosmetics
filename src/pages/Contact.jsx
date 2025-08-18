@@ -58,7 +58,7 @@ export default function Contact() {
             <AlertBar />
             <Navbar />
             <div className="bg-white text-gray-800">
-                {/* Why Choose Us */}
+
                 <section className="py-16 px-6 text-center bg-[#F5F3FF]">
                     <div data-aos="zoom-in">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#8116b4]">Get in Touch with Kanzoni Cosmetics</h2>
@@ -69,14 +69,14 @@ export default function Contact() {
                 </section>
 
                 {/* Contact Options */}
-                <section className="py-16 px-6 max-w-6xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                    <div className="bg-[#FAF9FF] rounded-xl p-6 shadow">
+                <section data-aos="fade-right" className="py-16 px-6 max-w-6xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <div className="bg-[#FAF9FF] rounded-xl p-6 shadow transform hover:scale-105 transition duration-300">
                         <FaPhoneAlt size={24} className="text-[#5C4D9A] mb-2" />
                         <h4 className="font-bold mb-1">Call Us</h4>
                         <a href="tel:+233501234567" className="hover:text-[#9C88FF] transition">+233 54 195 8490</a>
                     </div>
 
-                    <div className="bg-[#FAF9FF] rounded-xl p-6 shadow">
+                    <div className="bg-[#FAF9FF] rounded-xl p-6 shadow transform hover:scale-105 transition duration-300">
                         <FaWhatsapp size={24} className="text-[#25D366] mb-2" />
                         <h4 className="font-bold mb-1">Chat on WhatsApp</h4>
                         <a href="https://wa.me/233541958490" target="_blank"
@@ -85,26 +85,26 @@ export default function Contact() {
                         </a>
                     </div>
 
-                    <div className="bg-[#FAF9FF] rounded-xl p-6 shadow">
+                    <div className="bg-[#FAF9FF] rounded-xl p-6 shadow transform hover:scale-105 transition duration-300">
                         <FaEnvelope size={24} className="text-[#EA4335] mb-2" />
                         <h4 className="font-bold mb-1">Email Us</h4>
-                        <a href="mailto:kanzonicosmetics@gmail.com" className="hover:text-[#9C88FF] transition">kanzoni.cosmetics@gmail.com</a>
+                        <a href="mailto:kanzonipatricia490@gmail.com" className="hover:text-[#9C88FF] transition">kanzonipatricia490@gmail.com</a>
                     </div>
 
-                    <div className="bg-[#FAF9FF] rounded-xl p-6 shadow">
+                    <div className="bg-[#FAF9FF] rounded-xl p-6 shadow transform hover:scale-105 transition duration-300">
                         <FaMapMarkerAlt size={24} className="text-[#4285F4] mb-2" />
                         <h4 className="font-bold mb-1">Visit Our Location</h4>
                         <p>Tamale, Ghana</p>
                     </div>
 
-                    <div className="bg-[#FAF9FF] rounded-xl p-6 shadow">
+                    <div className="bg-[#FAF9FF] rounded-xl p-6 shadow transform hover:scale-105 transition duration-300">
                         <FaClock size={24} className="text-[#FF9900] mb-2" />
                         <h4 className="font-bold mb-1">Working Hours</h4>
                         <p>Mon - Fri: 9am – 5pm</p>
                         <p>Sat: 10am – 2pm</p>
                     </div>
 
-                    <div className="bg-[#FAF9FF] rounded-xl p-6 shadow">
+                    <div className="bg-[#FAF9FF] rounded-xl p-6 shadow transform hover:scale-105 transition duration-300">
                         <h4 className="font-bold mb-2">Follow Us</h4>
                         <div className="flex space-x-4">
                             <a href="#" className="text-[#3b5998] hover:text-[#5C4D9A]"><FaFacebookF size={20} /></a>
@@ -184,8 +184,7 @@ export default function Contact() {
                     </form>
                 </section> */}
 
-                {/* Optional: Embedded Google Map */}
-                {/* Remove if not needed */}
+                {/* Embedded Google Map */}
                 <section className="px-6 pb-16 bg-[#F5F3FF]">
                     <iframe
                         title="Kanzoni Cosmetics Location"

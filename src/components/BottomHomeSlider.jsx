@@ -51,9 +51,9 @@ export default function BottomHomeSlider() {
 
       <div className="absolute inset-0 bg-black opacity-20"></div>
 
-      <div className="w-full h-screen flex flex-col items-center justify-center text-center">
+      <div className="w-full h-screen">
         {/* Fixed Heading and Content */}
-        <div className="relative z-20 w-full h-screen flex items-center justify-center">
+        <div className="relative z-20 w-full h-full flex items-center justify-center">
           <div className="text-center max-w-3xl px-4">
             <h3
               style={{ fontFamily: "'Dancing Script', cursive" }}
@@ -62,7 +62,7 @@ export default function BottomHomeSlider() {
               Ingredients Behind Our Products
             </h3>
             {/* Sliding Text */}
-            <div className="relative h-40">
+            <div className="relative h-70 md:h-60">
               {ingredients.map((item, index) => (
                 <div
                   key={index}

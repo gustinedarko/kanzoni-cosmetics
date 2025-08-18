@@ -36,7 +36,7 @@ export default function ProductsDetail() {
                 <div data-aos="zoom-in" className="p-10 w-full">
                     <div className="bg-[#F7F4ED] p-6 rounded-lg shadow-md w-full max-w-md mx-auto">
                         <img src={product.image} alt={product.name} className="w-full max-w-md mx-auto object-cover rounded" />
-                        <h2 className="text-2xl md:text-3xl font-bold text-center mt-6">{product.nameTwo}</h2>
+                        <h2 className="text-2xl md:text-3xl font-medium text-center mt-6">{product.nameTwo}</h2>
                         <p className="mt-2 text-center text-gray-600">{product.description}</p>
                         <p className="mt-2 text-center text-lg font-medium text-[#5C4D9A]">Gh₵ {product.price}</p>
 

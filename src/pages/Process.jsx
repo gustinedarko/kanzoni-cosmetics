@@ -73,9 +73,9 @@ export default function Process() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-12">
+                    <div data-aos="fade-right" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-12">
                         {steps.map((step, index) => (
-                            <div key={index} className="bg-white shadow-md rounded-lg p-6 text-center transform hover:scale-115 transition duration-300">
+                            <div key={index} className="bg-white shadow-md rounded-lg p-6 text-center transform hover:scale-110 transition duration-300">
                                 <div className="mb-4 flex justify-center">{step.icon}</div>
                                 <h4 className="text-xl font-semibold text-[#8116b4] mb-2">{step.title}</h4>
                                 <p className="text-gray-700 text-base">{step.text}</p>
@@ -83,7 +83,7 @@ export default function Process() {
                         ))}
                     </div>
 
-                    <div className="mt-16 text-center">
+                    <div data-aos="fade-right" className="mt-16 text-center">
                         <h4 className="text-2xl md:text-3xl font-semibold text-[#8116b4] mb-4">Did You Know?</h4>
                         <p className="text-lg px-6 md:px-20 text-gray-700">
                             Shea butter is rich in vitamins A and E and contains essential fatty acids that deeply moisturize the skin. Its production supports local
@@ -94,26 +94,31 @@ export default function Process() {
             </section>
 
             <section className="bg-white py-12 px-4 sm:px-8 lg:px-16">
-                <h2 className="text-2xl md:text-3xl text-center font-semibold text-[#8116b4] mb-10">
-                    From Tradition to Transformation: Our Natural Products
-                </h2>
+                <div data-aos="fade-left">
+                    <h2 className="text-2xl md:text-3xl text-center font-semibold text-[#8116b4] mb-4">
+                        From Tradition to Transformation: Our Natural Products
+                    </h2>
+                    <p className="text-lg px-6 md:px-20 text-gray-700 mb-10 text-center">
+                        Rooted in authentic Ghanaian tradition, our collection reflects the natural power of shea and carefully crafted blends. From the gentle cleansing of our Alata Black Soaps to the nourishing richness of our Shea Butter Body Creams and Raw Shea, each product is made to care for your skin with purity and purpose. Presented in eco-friendly styles like brown paper wrapping and reusable containers, our packaging carries the same respect for nature as the products themselves. Though we offer more, this selection highlights seven of our most trusted creations—natural, effective, and inspired by everyday wellness.
+                    </p>
+                </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 px-12">
                     {/* Product 1 - Shea Butter */}
-                    <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center">
+                    <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center transform hover:scale-105 transition duration-300">
                         <img
                             src={img1}
                             alt="Raw Shea Butter"
                             className="w-full h-40 object-cover rounded"
                         />
-                        <h3 className="text-xl font-medium mt-4">Shea Body Cream</h3>
+                        <h3 className="text-xl font-medium mt-4">Raw Shea Butter</h3>
                         <p className="text-sm text-gray-600 mt-2">
                             Luxuriously rich cream made with shea butter and natural oils to deeply hydrate and smooth skin.
                         </p>
                     </div>
 
                     {/* Product 2 - Shea Butter Lotion */}
-                    <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center">
+                    <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center transform hover:scale-105 transition duration-300">
                         <img
                             src={img3}
                             alt="Shea Butter Lotion"
@@ -126,7 +131,7 @@ export default function Process() {
                     </div>
 
                     {/* Product 3 - Alata Shower Gel */}
-                    <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center">
+                    <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center transform hover:scale-105 transition duration-300">
                         <img
                             src={img4}
                             alt="Alata Shower Gel"
@@ -139,7 +144,7 @@ export default function Process() {
                     </div>
 
                     {/* Product 4 - Alata Black Soap */}
-                    <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center">
+                    <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center transform hover:scale-105 transition duration-300">
                         <img
                             src={img2}
                             alt="Alata Black Soap"
@@ -152,7 +157,7 @@ export default function Process() {
                     </div>
 
                     {/* Product 5 - Shea Butter */}
-                    <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center">
+                    <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center transform hover:scale-105 transition duration-300">
                         <img
                             src={img5}
                             alt="Raw Shea Butter"
@@ -165,7 +170,7 @@ export default function Process() {
                     </div>
 
                     {/* Product 6 - Alata Black Soap small */}
-                    <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center">
+                    <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center transform hover:scale-105 transition duration-300">
                         <img
                             src={img2}
                             alt="Alata Black Soap Small Size"

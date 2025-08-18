@@ -15,7 +15,7 @@ export default function Footer() {
                     </p>
                 </div>
 
-                <div className="md:col-span-2 md:ml-4">
+                <div className="md:col-span-2 md:ml-1">
                     <h3 className="font-medium text-base mb-3">Quick Links</h3>
                     <ul className="flex flex-wrap gap-6 text-sm">
                         <li>
@@ -31,7 +31,7 @@ export default function Footer() {
                         <li>
                             <Link to="/about-us" className="font-medium hover:underline block">About</Link>
                             <ul className="mt-1 space-y-1 text-gray-600">
-                                <li><Link to="/about-us" className="hover:underline">Team</Link></li>
+                                <li><Link to="/about-us" className="hover:underline">Why & Who</Link></li>
                                 <li><Link to="/about-us" className="hover:underline">Our Story</Link></li>
                                 <li><Link to="/about-us" className="hover:underline">Founder</Link></li>
                                 <li><Link to="/about-us" className="hover:underline">Mission</Link></li>
@@ -41,14 +41,16 @@ export default function Footer() {
                         <li>
                             <Link to="/process" className="font-medium hover:underline block">Process</Link>
                             <ul className="mt-1 space-y-1 text-gray-600">
-                                <li><a href="/process#sourcing" className="hover:underline">Sourcing</a></li>
-                                <li><a href="/process#packaging" className="hover:underline">Packaging</a></li>
+                                <li><Link to="/process" className="hover:underline">Craft</Link></li>
+                                <li><Link to="/process" className="hover:underline">Did You</Link></li>
+                                <li><a href="/process#sourcing" className="hover:underline">Packaging</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <Link to="/contact" className="font-medium hover:underline block">Contact</Link>
                             <ul className="mt-1 space-y-1 text-gray-600">
+                                <li><Link to="/cart" className="hover:underline">Cart</Link></li>
                                 <li><a href="/contact#location" className="hover:underline">Address</a></li>
                                 <li><a href="/contact#form" className="hover:underline">--------</a></li>
                             </ul>

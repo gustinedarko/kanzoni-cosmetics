@@ -48,10 +48,10 @@ export default function ProductsHome() {
                     </div>
 
                     <div className="w-full h-full bg-[#F5F3FF]">
-                        <div className="w-5/6 py-12 mx-auto">
+                        <div data-aos="zoom-in" className="w-5/6 py-12 mx-auto">
                             <span>
                                 <p className="text-center text-2xl md:text-3xl font-medium mb-6">Explore Our Natural Skincare Collection</p>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 ">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 ">
                                     {products.map((product) => (
                                         <ProductsCard
                                             key={product.id}
@@ -88,10 +88,10 @@ export default function ProductsHome() {
                 <div className="w-full h-screen flex items-center justify-center">
 
                     <div className="text-center">
-                        <p style={{ fontFamily: "'Dancing Script', cursive" }}
-                            className="text-[#8116b4] text-4xl md:text-5xl font-bold tracking-wider md:tracking-normal italic">From Pure Shea Butter to Nourishing Body Care</p>
+                        <p data-aos="zoom-in" style={{ fontFamily: "'Dancing Script', cursive" }}
+                            className="text-[#8116b4] text-4xl md:text-5xl font-bold tracking-wider md:tracking-normal italic mb-10">From Pure Shea Butter to Nourishing Body Care</p>
 
-                        <Link to="/shopnow-products"><button className="bg-white text-black border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-12 font-medium hover:bg-[#8116b4] hover:text-[#F7F4ED] animate-bounce">Shop Now</button></Link>
+                        <Link to="/shopnow-products"><button className="bg-white text-black border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 font-medium hover:bg-[#8116b4] hover:text-[#F7F4ED] animate-bounce">Shop Now</button></Link>
                     </div>
                 </div>
             </section>
@@ -114,27 +114,27 @@ export default function ProductsHome() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-10">
                         <div className="flex flex-col items-center justify-center text-center">
-                            <img src={ingredient2} alt="" className="md:h-50 md:w-50 h-60 w-60 bg-gray-400 rounded-full" />
+                            <img src={ingredient2} alt="" className="md:h-50 md:w-50 h-60 w-60 border border-gray-300 rounded-full shadow-xl" />
                             <p className="text-xl text-[#8116b4] font-medium mt-2">Raw Shea Butter</p>
                         </div>
 
                         <div className="flex flex-col items-center justify-center text-center">
-                            <img src={ingredient1} alt="" className="md:h-50 md:w-50 h-60 w-60 bg-gray-400 rounded-full" />
+                            <img src={ingredient1} alt="" className="md:h-50 md:w-50 h-60 w-60 border border-gray-300 rounded-full shadow-xl" />
                             <p className="text-xl text-[#8116b4] font-medium mt-2">Coconut Oil</p>
                         </div>
 
                         <div className="flex flex-col items-center justify-center text-center">
-                            <img src={ingredient3} alt="" className="md:h-50 md:w-50 h-60 w-60 bg-gray-400 rounded-full" />
+                            <img src={ingredient3} alt="" className="md:h-50 md:w-50 h-60 w-60 border border-gray-300 rounded-full shadow-xl" />
                             <p className="text-xl text-[#8116b4] font-medium mt-2">Palm Kernel Oil</p>
                         </div>
 
                         <div className="flex flex-col items-center justify-center text-center">
-                            <img src={ingredient4} alt="" className="md:h-50 md:w-50 h-60 w-60 bg-gray-400 rounded-full" />
+                            <img src={ingredient4} alt="" className="md:h-50 md:w-50 h-60 w-60 border border-gray-300 rounded-full shadow-xl" />
                             <p className="text-xl text-[#8116b4] font-medium mt-2">Potash</p>
                         </div>
 
                         <div className="flex flex-col items-center justify-center text-center">
-                            <img src={ingredient5} alt="" className="md:h-50 md:w-50 h-60 w-60 bg-gray-400 rounded-full" />
+                            <img src={ingredient5} alt="" className="md:h-50 md:w-50 h-60 w-60 border border-gray-300 rounded-full shadow-xl" />
                             <p className="text-xl text-[#8116b4] font-medium mt-2">Essential Oils</p>
                         </div>
                     </div>

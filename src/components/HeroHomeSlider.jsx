@@ -36,15 +36,14 @@ export default function HeroHomeSlider() {
                 <div className='absolute inset-0 bg-black opacity-40'></div>
 
                 {/* Overlay Content */}
-                <div data-aos="zoom-in" className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-opacity-30">
-                    <h1 className="text-[#8116b4] text-5xl md:text-6xl font-bold text-center">
+                <div className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-opacity-30">
+                    <h1 data-aos="fade-right" className="text-[#8116b4] text-5xl md:text-6xl font-bold text-center">
                         Kanzoni
                     </h1>
-                    <h1 className="text-[#8116b4] text-5xl md:text-6xl font-bold text-center mb-2">
+                    <h1 data-aos="fade-left" className="text-[#8116b4] text-5xl md:text-6xl font-bold text-center mb-2">
                         Cosmetics
                     </h1>
-                    <p style={{ fontFamily: "'Dancing Script', cursive" }} className="text-[#F7F4ED] text-4xl md:text-5xl font-bold text-center w-6/7 md:w-3/7">Pure Shea Butter & Natural Skincare Handcrafted in Ghana for Radiant, Healthy Skin</p>
-                    {/* <p style={{ fontFamily: "'Dancing Script', cursive" }} className="text-[#F7F4ED] text-4xl md:text-5xl font-bold text-center">Shea Products</p> */}
+                    <p  data-aos="zoom-in" style={{ fontFamily: "'Dancing Script', cursive" }} className="text-[#F7F4ED] text-4xl md:text-5xl font-bold text-center w-6/7 md:w-3/7">Pure Shea Butter & Natural Skincare Handcrafted in Ghana for Radiant, Healthy Skin</p>
                 </div>
 
                 {/* Pagination Dots */}
