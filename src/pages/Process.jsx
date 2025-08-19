@@ -6,11 +6,12 @@ import { FaSeedling, FaRegSnowflake, FaHandHoldingWater } from "react-icons/fa";
 // import imgCommunity from "../assets/images/annie-spratt-1.jpg";
 import imgCommunity from "../assets/images/production.jpg";
 // import imgProductSoap from "../assets/images/black-soap-product.jpeg";
-import img1 from "../assets/images/kaeme.jpg";
+import img1 from "../assets/images/kc-raw-sheabutter.jpeg";
 import img2 from "../assets/images/giorgio.jpg";
-import img3 from "../assets/images/mockup.jpg";
-import img4 from "../assets/images/sagar.jpg";
-import img5 from "../assets/images/kiona.jpg";
+import img3 from "../assets/images/kc-lotion.jpeg";
+import img4 from "../assets/images/kc-mixed-sheabutter.jpeg";
+import img5 from "../assets/images/kc-blacksoap.jpeg";
+import img6 from "../assets/images/sagar.jpg";
 
 export default function Process() {
     const steps = [
@@ -109,7 +110,7 @@ export default function Process() {
                         <img
                             src={img1}
                             alt="Raw Shea Butter"
-                            className="w-full h-40 object-cover rounded"
+                            className="w-full h-40 md:h-55 object-cover rounded"
                         />
                         <h3 className="text-xl font-medium mt-4">Raw Shea Butter</h3>
                         <p className="text-sm text-gray-600 mt-2">
@@ -122,7 +123,7 @@ export default function Process() {
                         <img
                             src={img3}
                             alt="Shea Butter Lotion"
-                            className="w-full h-40 object-cover rounded"
+                            className="w-full h-40 md:h-55 object-cover rounded"
                         />
                         <h3 className="text-xl font-medium mt-4">Shea Butter Lotion</h3>
                         <p className="text-sm text-gray-600 mt-2">
@@ -133,9 +134,9 @@ export default function Process() {
                     {/* Product 3 - Alata Shower Gel */}
                     <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center transform hover:scale-105 transition duration-300">
                         <img
-                            src={img4}
+                            src={img6}
                             alt="Alata Shower Gel"
-                            className="w-full h-40 object-cover rounded"
+                            className="w-full h-40 md:h-55 object-cover rounded"
                         />
                         <h3 className="text-xl font-medium mt-4">Alata Shower Gel</h3>
                         <p className="text-sm text-gray-600 mt-2">
@@ -148,9 +149,9 @@ export default function Process() {
                         <img
                             src={img2}
                             alt="Alata Black Soap"
-                            className="w-full h-40 object-cover rounded"
+                            className="w-full h-40 md:h-55 object-cover rounded"
                         />
-                        <h3 className="text-xl font-medium mt-4">Alata Black Soap</h3>
+                        <h3 className="text-xl font-medium mt-4">Pure Alata Black Soap</h3>
                         <p className="text-sm text-gray-600 mt-2">
                             Traditional Ghanaian soap made from plantain peels and cocoa pods — gentle, natural, and effective.
                         </p>
@@ -159,9 +160,9 @@ export default function Process() {
                     {/* Product 5 - Shea Butter */}
                     <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center transform hover:scale-105 transition duration-300">
                         <img
-                            src={img5}
+                            src={img4}
                             alt="Raw Shea Butter"
-                            className="w-full h-40 object-cover rounded"
+                            className="w-full h-40 md:h-55 object-cover rounded"
                         />
                         <h3 className="text-xl font-medium mt-4">Shea Butter Cream</h3>
                         <p className="text-sm text-gray-600 mt-2">
@@ -172,11 +173,11 @@ export default function Process() {
                     {/* Product 6 - Alata Black Soap small */}
                     <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center transform hover:scale-105 transition duration-300">
                         <img
-                            src={img2}
+                            src={img5}
                             alt="Alata Black Soap Small Size"
-                            className="w-full h-40 object-cover rounded"
+                            className="w-full h-40 md:h-55 object-cover rounded"
                         />
-                        <h3 className="text-xl font-medium mt-4">Alata Black Soap (small)</h3>
+                        <h3 className="text-xl font-medium mt-4">Alata Black Soap (mixed)</h3>
                         <p className="text-sm text-gray-600 mt-2">
                             Traditional Ghanaian soap made from plantain peels and cocoa pods — gentle, natural, and effective.
                         </p>
