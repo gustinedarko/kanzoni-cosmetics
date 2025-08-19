@@ -33,7 +33,7 @@ export default function AboutUs() {
             </section>
 
             <section className="h-full w-full bg-[#F5F3FF]">
-                <div className="px-4 sm:px-6 lg:px-8 py-10 text-center">
+                <div data-aos="fade-left" className="px-4 sm:px-6 lg:px-8 py-10 text-center">
                     <h1 className="text-2xl md:text-3xl text-[#8116b4] font-medium">Who We Are and What We Do</h1>
                     <p className="py-6 px-4 md:w-5/6 mx-auto text-lg text-justify md:text-center">Kanzoni Cosmetics Industry Limited was founded in 2019 after in-depth research into the potential of Africa’s shea butter industry. Inspired by Ghana’s rich heritage and the global demand for natural skincare, we set out to create pure, organic products using only the finest raw ingredients. From raw shea butter to nourishing lotions, soaps, and shower gels, we craft skincare that celebrates tradition, supports local communities, and delivers lasting benefits to your skin.</p>
                 </div>
@@ -46,7 +46,7 @@ export default function AboutUs() {
             </section>
 
             <section className="h-full w-full bg-white">
-                <div className="px-4 sm:px-6 lg:px-8 py-10 text-center">
+                <div data-aos="fade-right" className="px-4 sm:px-6 lg:px-8 py-10 text-center">
                     <h1 className="text-2xl md:text-3xl text-[#8116b4] font-medium">Why Choose Kanzoni Cosmetics?</h1>
                     <p className="py-6 px-4 md:w-5/6 mx-auto text-lg text-justify md:text-center">At Kanzoni Cosmetics, we pride ourselves on crafting pure, natural skincare products rooted in the rich traditions of Ghana. Every product we make is inspired by nature’s abundance and created with respect for both people and the environment. From sourcing the finest raw shea butter to handcrafting blends enriched with essential oils, we ensure that every jar and bottle reflects our commitment to quality, sustainability, and authenticity. Our mission is simple — to help you glow inside and out, while supporting the communities that have preserved this heritage for generations.</p>
                 </div>
@@ -66,13 +66,11 @@ export default function AboutUs() {
                     </div>
 
                     <div data-aos={isMd ? "fade-down" : "fade-right"} className="md:basis-1/2 px-4">
-                        <p className="text-lg text-justify">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, numquam hic suscipit rem exercitationem iusto quidem officiis natus voluptatibus non, explicabo reiciendis laudantium, deserunt placeat!
-                            Sint deserunt optio rem quo vero, modi minima ipsam facilis beatae ducimus est itaque cumque autem perferendis iusto illum. Iure quasi quos neque quae ipsa?
+                        <p className="text-lg text-justify mb-2 md:mb-4">
+                            At Kanzoni Cosmetics Industries Limited, our journey began with a passion to transform shea nuts into high-quality shea butter and cosmetic products for everyday use. Since our establishment in 2020, we have dedicated ourselves to processing, packaging, and marketing a wide range of natural soaps, creams, lotions, and detergents for local communities.
                         </p>
                         <p className="text-lg text-justify">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, numquam hic suscipit rem exercitationem iusto quidem officiis natus voluptatibus non, explicabo reiciendis laudantium, deserunt placeat!
-                            Sint deserunt optio rem quo vero, modi minima ipsam facilis beatae ducimus est itaque cumque autem perferendis iusto illum. Iure quasi quos neque quae ipsa?
+                            Beyond producing cosmetics, our story is deeply rooted in empowerment. We work closely with rural women’s groups across Northern Ghana, encouraging sustainable shea nut picking and processing. By supporting female entrepreneurs and protecting shea trees as valuable economic resources, we combine business growth with social impact, poverty reduction, and environmental preservation.
                         </p>
                     </div>
                 </div>
@@ -84,13 +82,11 @@ export default function AboutUs() {
                 <div className="flex flex-col-reverse md:flex-row gap-6 items-center">
 
                     <div data-aos="fade-left" className="md:basis-1/2 px-4">
-                        <p className="text-lg text-justify">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, numquam hic suscipit rem exercitationem iusto quidem officiis natus voluptatibus non, explicabo reiciendis laudantium, deserunt placeat!
-                            Sint deserunt optio rem quo vero, modi minima ipsam facilis beatae ducimus est itaque cumque autem perferendis iusto illum. Iure quasi quos neque quae ipsa?
+                        <p className="text-lg text-center md:text-justify mb-2 md:mb-4">
+                            Growing up, I witnessed the strength of women in our communities and their tireless work in shea nut collection. That experience planted a deep passion in me to create a brand that values their efforts, transforms raw potential into quality products, and provides opportunities for lasting economic independence.
                         </p>
-                        <p className="text-lg text-justify">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, numquam hic suscipit rem exercitationem iusto quidem officiis natus voluptatibus non, explicabo reiciendis laudantium, deserunt placeat!
-                            Sint deserunt optio rem quo vero, modi minima ipsam facilis beatae ducimus est itaque cumque autem perferendis iusto illum. Iure quasi quos neque quae ipsa?
+                        <p className="text-lg text-center md:text-justify">
+                            Kanzoni Cosmetics Industries Limited was born out of this vision — to blend tradition with innovation. Every product we create reflects our commitment to quality, community, and sustainability. Beyond cosmetics, we are building a legacy that empowers rural women, protects our environment, and celebrates the true wealth of Ghana.
                         </p>
                     </div>
 
@@ -119,13 +115,15 @@ export default function AboutUs() {
                     </div>
 
                     <div data-aos={isMd ? "fade-down" : "fade-right"} className="md:basis-1/2 px-4">
-                        <p className="text-lg text-justify">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, numquam hic suscipit rem exercitationem iusto quidem officiis natus voluptatibus non, explicabo reiciendis laudantium, deserunt placeat!
-                            Sint deserunt optio rem quo vero, modi minima ipsam facilis beatae ducimus est itaque cumque autem perferendis iusto illum. Iure quasi quos neque quae ipsa?
+                        <p className="text-lg text-justify mb-2 md:mb-4">
+                            Mission: Our Mission is to Empower and Promote Women Shea Collectors in Rural Communities through
+                            optimal utilization of the Shea tree and its bye-products for economic growth. We aim to create lasting opportunities
+                            that uplift families, preserve traditions, and inspire future generations.
                         </p>
                         <p className="text-lg text-justify">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, numquam hic suscipit rem exercitationem iusto quidem officiis natus voluptatibus non, explicabo reiciendis laudantium, deserunt placeat!
-                            Sint deserunt optio rem quo vero, modi minima ipsam facilis beatae ducimus est itaque cumque autem perferendis iusto illum. Iure quasi quos neque quae ipsa?
+                            Vision: Our Vision is to become the leading cosmetic manufacturing company in Ghana with full
+                            dedication, innovation and total commitment in our chosen industry; we remain the indigenous ideal Shea-based cosmetics company. We envision building a brand that not only thrives in global markets but also
+                            stands as a beacon of empowerment and sustainability.
                         </p>
                     </div>
                 </div>

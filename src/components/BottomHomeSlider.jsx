@@ -54,7 +54,7 @@ export default function BottomHomeSlider() {
       <div className="w-full h-screen">
         {/* Fixed Heading and Content */}
         <div className="relative z-20 w-full h-full flex items-center justify-center">
-          <div className="text-center max-w-3xl px-4">
+          <div data-aos="flip-left" className="text-center max-w-3xl px-4">
             <h3
               style={{ fontFamily: "'Dancing Script', cursive" }}
               className="text-[#8116b4] text-4xl md:text-5xl font-bold tracking-wide md:tracking-normal italic mb-2 md:mb-6"

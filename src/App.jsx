@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import ProductsDetail from "./pages/ProductsDetail";
+import CartProductDetails from "./pages/CartProductDetails";
 import CombinedProductDetail from "./pages/CombinedProductDetail";
 import OurProducts from "./pages/OurProducts";
 import ShopNowProducts from "./pages/ShopNowProducts";
@@ -25,6 +26,7 @@ const kanzoniCosmeticsRouter = createBrowserRouter([
   { path: '/', element: withScroll(<ProductsHome />) },
   // { path: '/view-single-product', element: withScroll(<ViewSingleProduct />) },
   { path: '/products/:id', element: withScroll(<ProductsDetail />) },
+  { path: '/cart/product/:id', element: withScroll(<CartProductDetails />) },
   { path: '/products/combo', element: withScroll(<CombinedProductDetail />) },
   { path: '/our-products', element: withScroll(<OurProducts />) },
   { path: '/shopnow-products', element: withScroll(<ShopNowProducts />) },

@@ -1,8 +1,9 @@
-import img1 from "../assets/images/kaeme.jpg";
+import img1 from "../assets/images/kc-raw-sheabutter.jpeg";
 import img2 from "../assets/images/giorgio.jpg";
-import img3 from "../assets/images/mockup.jpg";
+import img3 from "../assets/images/kc-lotion.jpeg";
 import img4 from "../assets/images/sagar.jpg";
-import img5 from "../assets/images/kiona.jpg";
+import img5 from "../assets/images/kc-mixed-sheabutter.jpeg";
+import img6 from "../assets/images/kc-blacksoap.jpeg";
 
 const products = [
   {
@@ -15,7 +16,7 @@ const products = [
     descriptionTwo: "KC Raw Shea Butter is 100% natural and unrefined, providing rich hydration and nourishment. With no additives or fragrance, it softens dry areas, improves elasticity, and leaves skin smooth and healthy. Suitable for all skin types and perfect for daily face and body care. Perfect for face and body care.",
   },
   {
-    id: "soapsmall",
+    id: "rawsoap",
     name: "Raw African Black Soap",
     nameTwo: "Alata Black Soap - Raw",
     image: img2,
@@ -36,7 +37,7 @@ const products = [
     id: "soapmixed",
     name: "African Black Soap",
     nameTwo: "Alata Black Soap - Mixed",
-    image: img2,
+    image: img6,
     price: "60",
     description: "Traditional Black Soap blended with fragrance and essential oils.",
     descriptionTwo: "Alata Black Soap - Mixed blends the traditional benefits of African Black Soap with carefully infused essential oils and fragrance. It deeply cleanses and purifies, while keeping the skin soft, hydrated, and subtly scented. Designed for anyone who values natural skincare with a hint of freshness, this soap works effectively on acne, blemishes, and uneven skin tone—promoting a clear, smooth, and revitalized complexion after every wash.",
@@ -52,8 +53,8 @@ const products = [
   },
   {
     id: "buttercream",
-    name: "Shea Butter Cream",
-    nameTwo: "KC Shea Butter Body Cream (sm)",
+    name: "Shea Butter Cream (sm)",
+    nameTwo: "KC Shea Butter Body Cream",
     image: img5,
     price: "35",
     description: "Smaller size of the Shea butter body cream with fragrance and additives.",

@@ -48,29 +48,31 @@ export default function ProductsHome() {
                     </div>
 
                     <div className="w-full h-full bg-[#F5F3FF]">
-                        <div data-aos="zoom-in" className="w-5/6 py-12 mx-auto">
+                        <div className="w-5/6 py-12 mx-auto">
                             <span>
-                                <p className="text-center text-2xl md:text-3xl font-medium mb-6">Explore Our Natural Skincare Collection</p>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 ">
-                                    {products.map((product) => (
-                                        <ProductsCard
-                                            key={product.id}
-                                            id={product.id}
-                                            name={product.name}
-                                            nameTwo={product.nameTwo}
-                                            price={product.price}
-                                            image={product.image}
-                                        />
-                                    ))}
+                                <p data-aos="zoom-in" className="text-center text-2xl md:text-3xl font-medium mb-6">Explore Our Natural Skincare Collection</p>
+
+                                <div data-aos="zoom-in" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-6 md:py-8">
+                                    {products.filter((product) => ["rawshea", "rawsoap", "lotion", "showergel"].includes(product.id)) // choose the ids you want
+                                        .map((product) => (
+                                            <ProductsCard
+                                                key={product.id}
+                                                id={product.id}
+                                                name={product.name}
+                                                nameTwo={product.nameTwo}
+                                                price={product.price}
+                                                image={product.image}
+                                            />
+                                        ))}
                                 </div>
                             </span>
-                            <span className="flex justify-center">
+                            {/* <span className="flex justify-center">
                                 <Link to="/our-products">
                                     <button className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 text-lg font-medium bg-[#8116b4] hover:bg-[#453979] text-[#F7F4ED]">
                                         Our Products
                                     </button>
                                 </Link>
-                            </span>
+                            </span> */}
                         </div>
                     </div>
                 </div>
