@@ -94,7 +94,7 @@ export default function Contact() {
                     <div className="bg-[#FAF9FF] rounded-xl p-6 shadow transform hover:scale-105 transition duration-300">
                         <FaMapMarkerAlt size={24} className="text-[#4285F4] mb-2" />
                         <h4 className="font-bold mb-1">Visit Our Location</h4>
-                        <p>Tamale, Ghana</p>
+                        <p>Walewale, Ghana</p>
                     </div>
 
                     <div className="bg-[#FAF9FF] rounded-xl p-6 shadow transform hover:scale-105 transition duration-300">
@@ -188,7 +188,7 @@ export default function Contact() {
                 <section className="px-6 pb-16 bg-[#F5F3FF]">
                     <iframe
                         title="Kanzoni Cosmetics Location"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31691.000000000!2d-0.205!3d5.6037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2z5YyX5Lqs5aSn!5e0!3m2!1sen!2sgh!4v0000000000000"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15699.637167187617!2d-0.8086538680017943!3d10.349137845154733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfd4c47880cf91a1%3A0xaa0362404ea1f4c5!2sWalewale!5e0!3m2!1sen!2sgh!4v1755656352033!5m2!1sen!2sgh"
                         width="100%"
                         height="300"
                         allowFullScreen=""

@@ -5,10 +5,10 @@ import Process from "./pages/Process";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
-import ProductsDetail from "./pages/ProductsDetail";
+// import ProductsDetail from "./pages/ProductsDetail";
+// import OurProducts from "./pages/OurProducts";
 import CartProductDetails from "./pages/CartProductDetails";
 import CombinedProductDetail from "./pages/CombinedProductDetail";
-import OurProducts from "./pages/OurProducts";
 import ShopNowProducts from "./pages/ShopNowProducts";
 import Cart from "./pages/Cart";
 import AOS from "aos";
@@ -25,10 +25,10 @@ const withScroll = (element) => (
 const kanzoniCosmeticsRouter = createBrowserRouter([
   { path: '/', element: withScroll(<ProductsHome />) },
   // { path: '/view-single-product', element: withScroll(<ViewSingleProduct />) },
-  { path: '/products/:id', element: withScroll(<ProductsDetail />) },
+  // { path: '/products/:id', element: withScroll(<ProductsDetail />) },
+  // { path: '/our-products', element: withScroll(<OurProducts />) },
   { path: '/cart/product/:id', element: withScroll(<CartProductDetails />) },
   { path: '/products/combo', element: withScroll(<CombinedProductDetail />) },
-  { path: '/our-products', element: withScroll(<OurProducts />) },
   { path: '/shopnow-products', element: withScroll(<ShopNowProducts />) },
   { path: '/about-us', element: withScroll(<AboutUs />) },
   { path: '/process', element: withScroll(<Process />) },

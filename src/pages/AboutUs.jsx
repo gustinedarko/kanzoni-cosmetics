@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import bgAboutImageI from "../assets/images/prodution2.jpeg"
 import bgAboutImageIi from "../assets/images/girl-about.jpg"
 import ourStoryImage from "../assets/images/zach.jpg"
-import foundersImage from "../assets/images/portrait-founder.jpg"
+import foundersImage from "../assets/images/founder-profile.png"
 import ourMissionImage from "../assets/images/annie-4.jpg"
 import { useEffect, useState } from "react";
 
@@ -94,7 +94,7 @@ export default function AboutUs() {
                         <img
                             src={foundersImage}
                             alt="Founders Image"
-                            className="w-full max-w-md md:max-w-lg h-auto max-h-[400px] rounded-xl object-cover mx-auto"
+                            className="w-full max-w-md md:max-w-lg h-auto max-h-[400px] rounded-xl object-cover md:object-right-top mx-auto"
                         />
                     </div>
 

@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router";
+import { useParams, Link, useNavigate } from "react-router";
 import products from "../data/products";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -17,19 +17,24 @@ export default function CartProductDetails() {
         return <p className="text-center mt-10">Product not found.</p>;
     }
 
+    const navigate = useNavigate();
+
     return (
         <section className="bg-[#F5F3FF] min-h-screen">
             <AlertBar />
             <Navbar />
 
-            <Link to="/shopnow-products">
-                <button className="ml-10 mt-6 px-1.5 py-1.5 text-white rounded font-medium bg-[#9C88FF] hover:bg-[#453979] transition text-sm md:text-base">
-                    <span className="flex items-center space-x-1">
-                        <span><FaChevronLeft /></span>
-                        <span>Back</span>
-                    </span>
-                </button>
-            </Link>
+            
+        <div className="w-full flex items-center justify-between">
+            <button onClick={() => navigate(-1)} className="ml-10 mt-6 px-1.5 py-1.5 text-white rounded font-medium bg-[#9C88FF] hover:bg-[#453979] transition text-sm md:text-base">
+                <span className="flex items-center space-x-1">
+                    <span><FaChevronLeft /></span>
+                    <span>Back</span>
+                </span>
+            </button>
+            <Link to="/shopnow-products" className="text-[#8116b4] mr-6 md:mr-10 mt-6 underline hover:font-medium hover:text-[#453979] animate-bounce text-sm md:text-base">Shop Now</Link>
+        </div>
+            
 
             <div className="px-6 md:px-16 py-10 md:w-5/6 mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
