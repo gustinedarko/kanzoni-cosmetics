@@ -133,14 +133,14 @@ export default function Cart() {
                             {/* 📌 NEW: Checkout Form */}
                             <div className="mt-10 px-6 pb-8 md:w-5/6 mx-auto flex md:justify-end">
                                 <div className="mt-10 bg-white p-6 rounded shadow-md md:w-6/11">
-                                    <h2 className="text-lg font-semibold mb-4">Fill in you details to place your order (Checkout)</h2>
+                                    <h2 className="text-lg font-semibold mb-4">Complete the form below to order now.</h2>
                                     <form onSubmit={handleCheckout} className="space-y-4">
                                         <input
                                             type="text"
                                             placeholder="Full Name"
                                             value={buyer.name}
                                             onChange={(e) => setBuyer({ ...buyer, name: e.target.value })}
-                                            className="w-full border p-2 rounded"
+                                            className="w-full border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9C88FF]"
                                             required
                                         />
                                         <input
@@ -148,7 +148,7 @@ export default function Cart() {
                                             placeholder="Email"
                                             value={buyer.email}
                                             onChange={(e) => setBuyer({ ...buyer, email: e.target.value })}
-                                            className="w-full border p-2 rounded"
+                                            className="w-full border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9C88FF]"
                                             required
                                         />
                                         <input
@@ -156,14 +156,14 @@ export default function Cart() {
                                             placeholder="Phone"
                                             value={buyer.phone}
                                             onChange={(e) => setBuyer({ ...buyer, phone: e.target.value })}
-                                            className="w-full border p-2 rounded"
+                                            className="w-full border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9C88FF]"
                                             required
                                         />
                                         <textarea
                                             placeholder="Address"
                                             value={buyer.address}
                                             onChange={(e) => setBuyer({ ...buyer, address: e.target.value })}
-                                            className="w-full border p-2 rounded"
+                                            className="w-full border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9C88FF]"
                                             required
                                         ></textarea>
                                         <button
