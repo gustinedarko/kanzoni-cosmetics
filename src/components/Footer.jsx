@@ -15,14 +15,14 @@ export default function Footer() {
                     </p>
                 </div>
 
-                <div className="md:col-span-2 md:ml-1">
+                <div className="md:col-span-2 md:ml-5">
                     <h3 className="font-medium text-base mb-3">Quick Links</h3>
                     <ul className="flex flex-wrap gap-6 text-sm">
                         <li>
                             <Link to="/" className="font-medium hover:underline block">Home</Link>
                             <ul className="mt-1 space-y-1 text-gray-600">
                                 <li><Link to="/about-us" className="hover:underline">Our Story</Link></li>
-                                <li><a href="/#" className="hover:underline">Our Products</a></li>
+                                <li><a href="/#" className="hover:underline">Expolore</a></li>
                                 <li><a href="/#" className="hover:underline">Shop Now</a></li>
                                 <li><a href="/#" className="hover:underline">Ingredients</a></li>
                             </ul>
@@ -44,6 +44,7 @@ export default function Footer() {
                                 <li><Link to="/process" className="hover:underline">Craft</Link></li>
                                 <li><Link to="/process" className="hover:underline">Did You</Link></li>
                                 <li><a href="/process#sourcing" className="hover:underline">Packaging</a></li>
+                                <li><a href="/process#sourcing" className="hover:underline">Impact</a></li>
                             </ul>
                         </li>
 
@@ -52,22 +53,25 @@ export default function Footer() {
                             <ul className="mt-1 space-y-1 text-gray-600">
                                 <li><Link to="/cart" className="hover:underline">Cart</Link></li>
                                 <li><a href="/contact#location" className="hover:underline">Address</a></li>
-                                <li><a href="/contact#form" className="hover:underline">--------</a></li>
+                                <li><a href="/contact#form" className="hover:underline">Email Us</a></li>
+                                <li><a href="/contact#form" className="hover:underline">Map</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
 
-                <div className="md:col-span-2 md:ml-15">
+                <div className="md:col-span-2 md:ml-18">
                     <h3 className="font-medium text-base mb-3">How to Reach Us</h3>
                     <ul className="space-y-2 text-sm">
                         <li>Email: <a href="mailto:kanzonicosmetics@gmail.com" className="hover:underline">kanzonicosmetics@gmail.com</a></li>
-                        <li>Phone: +233 000 000 000</li>
-                        <li>Location: Tamale, Ghana</li>
+                        <li>Phone: <a href="tel:+233501234567" className="hover:underline">+233 541 958 490</a></li>
+                        <li>WhatsApp: <a href="https://wa.me/233541958490" target="_blank"
+                            rel="noopener noreferrer" className="hover:underline">+233 541 958 490</a></li>
+                        <li>Location: Walewale, Ghana</li>
                     </ul>
                 </div>
 
-                <div>
+                <div className="md:ml-5">
                     <h3 className="font-medium text-base mb-3">Follow Us</h3>
                     <ul className="space-y-2 text-sm">
                         <li><a href="#" className="hover:underline">Instagram</a></li>

@@ -94,10 +94,10 @@ export default function Cart() {
                                                     alt={item.name}
                                                     className="w-24 h-24 object-cover rounded"
                                                 />
-                                                <div className="flex flex-col justify-around">
-                                                    <p>Price: Gh₵ {item.price * item.quantity}</p>
+                                                <div className="flex flex-col justify-around font-medium">
+                                                    <p>Price: <span className="text-[#453979]">Gh₵ {item.price * item.quantity}</span></p>
                                                     <label className="flex items-center gap-2 font">
-                                                        Qty:
+                                                        <span className="font-">Qty:</span>
                                                         <input
                                                             type="number"
                                                             min="1"
@@ -119,7 +119,7 @@ export default function Cart() {
                                 ))}
                             </div>
                             <div className="mt-6 text-right">
-                                <p className="text-xl font-bold">Total: Gh₵ {total}</p>
+                                <p className="text-xl font-bold">Total: <span className="text-[#453979]">Gh₵ {total}</span></p>
                                 <button
                                     onClick={clearCart}
                                     className="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700"

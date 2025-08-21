@@ -54,7 +54,7 @@ export default function ShopNowProducts() {
                                 </Link>
                                 <h2 className="text-xl font-semibold mt-4 text-center">{product.nameTwo}</h2>
                                 {/* <p className="mt-2 text-center">{product.description}</p> */}
-                                <p className="text-lg mt-2 font-medium text-[#5C4D9A] text-center">Gh₵ {product.price}</p>
+                                <p className="text-lg mt-2 text-[#5C4D9A] text-center font-semibold">Gh₵ {product.price}</p>
                                 <div className="mt-4 flex items-center justify-center space-x-3">
                                     <input
                                         type="number"

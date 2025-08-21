@@ -52,7 +52,7 @@ const products = [
     descriptionTwo: "KC Shea Butter Body Cream blends Shea butter with natural oils and fragrance to provide hydration and a pleasant scent. It softens dry skin, improves texture, and locks in moisture. Perfect for everyday use to keep skin smooth, nourished, and lightly fragranced. Use it daily for long-lasting hydration and a healthy, radiant glow.",
   },
   {
-    id: "buttercream",
+    id: "buttercreamsm",
     name: "Shea Butter Cream (sm)",
     nameTwo: "KC Shea Butter Body Cream",
     image: img4,
