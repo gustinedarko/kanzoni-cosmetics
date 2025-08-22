@@ -25,124 +25,124 @@ import ingredient5 from "../assets/images/essential-oil.jpg";
 
 export default function ProductsHome() {
 
-    return (
-        <>
-            <AlertBar />
-            <Navbar />
+  return (
+    <>
+      <AlertBar />
+      <Navbar />
 
-            <section className="w-full h-screen relative overflow-hidden">
-                <HeroHomeSlider />
-            </section>
+      <section className="w-full h-screen relative overflow-hidden">
+        <HeroHomeSlider />
+      </section>
 
-            <section className="w-full h-full">
+      <section className="w-full h-full">
 
-                <div className="w-full h-full bg-white">
+        <div className="w-full h-full bg-white">
 
-                    <div data-aos="fade-up" className="w-5/6 mt-12 flex flex-col items-center justify-center mx-auto">
-                        <h2 className="flex justify-center text-3xl md:text-4xl font-bold mb-2 md:mb-4">Kanzoni</h2>
-                        <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
-                            className="flex justify-center text-2xl md:text-4xl font-bold text-[#8116b4] italic text-center">Represents Pure , Natural Beauty</h3>
-                        <p className="text-justify md:text-center py-6 md:py-10 text-lg" >At Kanzoni Cosmetics, we believe skincare should be as pure as nature itself. That’s why we craft our products using only organic ingredients like raw Shea butter, coconut oil, and essential oils — no harsh chemicals, no shortcuts. From Ghana’s rich Shea traditions to your home, our mission is simple: to nourish, protect, and celebrate your skin’s natural glow. Every jar, every bar, and every blend carries the care, integrity, and quality that define who we are.</p>
+          <div data-aos="fade-up" className="w-5/6 mt-12 flex flex-col items-center justify-center mx-auto">
+            <h2 className="flex justify-center text-3xl md:text-4xl font-bold mb-2 md:mb-4">Kanzoni</h2>
+            <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
+              className="flex justify-center text-2xl md:text-4xl font-bold text-[#8116b4] italic text-center">Represents Pure , Natural Beauty</h3>
+            <p className="text-justify md:text-center py-6 md:py-10 text-lg" >At Kanzoni Cosmetics, we believe skincare should be as pure as nature itself. That’s why we craft our products using only organic ingredients like raw Shea butter, coconut oil, and essential oils — no harsh chemicals, no shortcuts. From Ghana’s rich Shea traditions to your home, our mission is simple: to nourish, protect, and celebrate your skin’s natural glow. Every jar, every bar, and every blend carries the care, integrity, and quality that define who we are.</p>
 
-                        <span className="flex justify-center"><Link to="/about-us" className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mb-12 text-lg font-medium bg-[#8116b4] hover:bg-[#453979] text-[#F7F4ED]">Our Story</Link></span>
-                    </div>
+            <span className="flex justify-center"><Link to="/about-us" className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mb-12 text-lg font-medium bg-[#8116b4] hover:bg-[#453979] text-[#F7F4ED]">Our Story</Link></span>
+          </div>
 
-                    <div className="w-full h-full bg-[#F5F3FF]">
-                        <div className="w-5/6 py-12 mx-auto">
-                            <span>
-                                <p data-aos="zoom-in" className="text-center text-2xl md:text-3xl font-medium mb-6">Explore Our Natural Skincare Collection</p>
+          <div className="w-full h-full bg-[#F5F3FF]">
+            <div className="w-5/6 py-12 mx-auto">
+              <span>
+                <p data-aos="zoom-in" className="text-center text-2xl md:text-3xl font-medium mb-6">Explore Our Natural Skincare Collection</p>
 
-                                <div data-aos="zoom-in" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-6 md:py-8">
-                                    {products.filter((product) => ["rawshea", "rawsoap", "lotion", "showergel"].includes(product.id)) // choose the ids you want
-                                        .map((product) => (
-                                            <ProductsCard
-                                                key={product.id}
-                                                id={product.id}
-                                                name={product.name}
-                                                nameTwo={product.nameTwo}
-                                                price={product.price}
-                                                image={product.image}
-                                            />
-                                        ))}
-                                </div>
-                            </span>
-                            {/* <span className="flex justify-center">
+                <div data-aos="zoom-in" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-6 md:py-8">
+                  {products.filter((product) => ["rawshea", "rawsoap", "lotion", "showergel"].includes(product.id)) // choose the ids you want
+                    .map((product) => (
+                      <ProductsCard
+                        key={product.id}
+                        id={product.id}
+                        name={product.name}
+                        nameTwo={product.nameTwo}
+                        price={product.price}
+                        image={product.image}
+                      />
+                    ))}
+                </div>
+              </span>
+              {/* <span className="flex justify-center">
                                 <Link to="/our-products">
                                     <button className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 text-lg font-medium bg-[#8116b4] hover:bg-[#453979] text-[#F7F4ED]">
                                         Our Products
                                     </button>
                                 </Link>
                             </span> */}
-                        </div>
-                    </div>
-                </div>
+            </div>
+          </div>
+        </div>
 
-            </section>
+      </section>
 
-            <section
-                style={{
-                    backgroundImage: `url(${cropCream})`,
-                }}
-                className="relative w-full h-full md:h-screen md:bg-fixed bg-cover bg-center">
+      <section
+        style={{
+          backgroundImage: `url(${cropCream})`,
+        }}
+        className="relative w-full h-full md:h-screen md:bg-fixed bg-cover bg-center">
 
-                <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="absolute inset-0 bg-black opacity-20"></div>
 
-                <div className="w-full h-screen flex items-center justify-center">
+        <div className="w-full h-screen flex items-center justify-center">
 
-                    <div className="text-center">
-                        <p data-aos="zoom-in" style={{ fontFamily: "'Dancing Script', cursive" }}
-                            className="text-[#8116b4] text-4xl md:text-5xl font-bold tracking-wider md:tracking-normal italic mb-10">From Pure Shea Butter to Nourishing Body Care</p>
+          <div className="text-center">
+            <p data-aos="zoom-in" style={{ fontFamily: "'Dancing Script', cursive" }}
+              className="text-[#8116b4] text-4xl md:text-5xl font-bold tracking-wider md:tracking-normal italic mb-10">From Pure Shea Butter to Nourishing Body Care</p>
 
-                        <Link to="/shopnow-products"><button className="bg-white text-black border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 font-medium hover:bg-[#8116b4] hover:text-[#F7F4ED] animate-bounce">Shop Now</button></Link>
-                    </div>
-                </div>
-            </section>
+            <Link to="/shopnow-products"><button className="bg-white text-black border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 font-medium hover:bg-[#8116b4] hover:text-[#F7F4ED] animate-bounce">Shop Now</button></Link>
+          </div>
+        </div>
+      </section>
 
-            <section
-                style={{
-                    backgroundImage: `url(${cropLotion})`
-                }}
-                className="w-full h-screen md:bg-fixed bg-cover bg-right">
-            </section>
+      <section
+        style={{
+          backgroundImage: `url(${cropLotion})`
+        }}
+        className="w-full h-screen md:bg-fixed bg-cover bg-right">
+      </section>
 
-            <section className="w-full h-screen">
-                <BottomHomeSlider />
-            </section>
+      <section className="w-full h-screen">
+        <BottomHomeSlider />
+      </section>
 
-            <section className="w-full h-full bg- flex items-center justify-center">
+      <section className="w-full h-full bg- flex items-center justify-center">
 
-                <div data-aos="fade-left" className="my-10">
-                    <h2 className="flex justify-center text-2xl md:text-3xl font-medium mb-8">Ingredients</h2>
+        <div data-aos="fade-left" className="my-10">
+          <h2 className="flex justify-center text-2xl md:text-3xl font-medium mb-8">Ingredients</h2>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-10">
-                        <div className="flex flex-col items-center justify-center text-center">
-                            <img src={ingredient2} alt="" className="md:h-50 md:w-50 h-60 w-60 border border-gray-300 rounded-full shadow-xl" />
-                            <p className="text-xl text-[#8116b4] font-medium mt-2">Raw Shea Butter</p>
-                        </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-10">
+            <div className="flex flex-col items-center justify-center text-center">
+              <img src={ingredient2} alt="" className="md:h-50 md:w-50 h-60 w-60 border border-gray-300 rounded-full shadow-xl" />
+              <p className="text-xl text-[#8116b4] font-medium mt-2">Raw Shea Butter</p>
+            </div>
 
-                        <div className="flex flex-col items-center justify-center text-center">
-                            <img src={ingredient1} alt="" className="md:h-50 md:w-50 h-60 w-60 border border-gray-300 rounded-full shadow-xl" />
-                            <p className="text-xl text-[#8116b4] font-medium mt-2">Coconut Oil</p>
-                        </div>
+            <div className="flex flex-col items-center justify-center text-center">
+              <img src={ingredient1} alt="" className="md:h-50 md:w-50 h-60 w-60 border border-gray-300 rounded-full shadow-xl" />
+              <p className="text-xl text-[#8116b4] font-medium mt-2">Coconut Oil</p>
+            </div>
 
-                        <div className="flex flex-col items-center justify-center text-center">
-                            <img src={ingredient3} alt="" className="md:h-50 md:w-50 h-60 w-60 border border-gray-300 rounded-full shadow-xl" />
-                            <p className="text-xl text-[#8116b4] font-medium mt-2">Palm Kernel Oil</p>
-                        </div>
+            <div className="flex flex-col items-center justify-center text-center">
+              <img src={ingredient3} alt="" className="md:h-50 md:w-50 h-60 w-60 border border-gray-300 rounded-full shadow-xl" />
+              <p className="text-xl text-[#8116b4] font-medium mt-2">Palm Kernel Oil</p>
+            </div>
 
-                        <div className="flex flex-col items-center justify-center text-center">
-                            <img src={ingredient4} alt="" className="md:h-50 md:w-50 h-60 w-60 border border-gray-300 rounded-full shadow-xl" />
-                            <p className="text-xl text-[#8116b4] font-medium mt-2">Potash</p>
-                        </div>
+            <div className="flex flex-col items-center justify-center text-center">
+              <img src={ingredient4} alt="" className="md:h-50 md:w-50 h-60 w-60 border border-gray-300 rounded-full shadow-xl" />
+              <p className="text-xl text-[#8116b4] font-medium mt-2">Potash</p>
+            </div>
 
-                        <div className="flex flex-col items-center justify-center text-center">
-                            <img src={ingredient5} alt="" className="md:h-50 md:w-50 h-60 w-60 border border-gray-300 rounded-full shadow-xl" />
-                            <p className="text-xl text-[#8116b4] font-medium mt-2">Essential Oils</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <Footer />
-        </>
-    );
+            <div className="flex flex-col items-center justify-center text-center">
+              <img src={ingredient5} alt="" className="md:h-50 md:w-50 h-60 w-60 border border-gray-300 rounded-full shadow-xl" />
+              <p className="text-xl text-[#8116b4] font-medium mt-2">Essential Oils</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </>
+  );
 }
