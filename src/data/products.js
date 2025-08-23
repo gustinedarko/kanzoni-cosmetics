@@ -1,5 +1,5 @@
 import img1 from "../assets/images/kc-raw-sheabutter.jpeg";
-import img2 from "../assets/images/giorgio.jpg";
+import img2 from "../assets/images/kc-raw-soap.jpeg";
 import img3 from "../assets/images/kc-lotion.jpeg";
 import img4 from "../assets/images/kc-mixed-sheabutter.jpeg";
 import img5 from "../assets/images/kc-blacksoap.jpeg";
