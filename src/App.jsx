@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
-import ProductsHome from "./pages/ProductsHome";
+import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Process from "./pages/Process";
 import Contact from "./pages/Contact";
@@ -23,7 +23,7 @@ const withScroll = (element) => (
 );
 
 const kanzoniCosmeticsRouter = createBrowserRouter([
-  { path: '/', element: withScroll(<ProductsHome />) },
+  { path: '/', element: withScroll(<Home />) },
   // { path: '/view-single-product', element: withScroll(<ViewSingleProduct />) },
   // { path: '/products/:id', element: withScroll(<ProductsDetail />) },
   // { path: '/our-products', element: withScroll(<OurProducts />) },

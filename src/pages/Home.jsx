@@ -23,7 +23,7 @@ import ingredient3 from "../assets/images/palmkennel-oil.jpg";
 import ingredient4 from "../assets/images/potash.jpg";
 import ingredient5 from "../assets/images/essential-oil.jpg";
 
-export default function ProductsHome() {
+export default function Home() {
 
   return (
     <>
