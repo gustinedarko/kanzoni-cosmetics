@@ -1,18 +1,9 @@
-// import { useEffect, useState } from "react";
 import AlertBar from "../components/AlertBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-// import img1 from "../assets/images/istockphoto-A.jpg";
-// import img2 from "../assets/images/kaeme-unsplash.jpg";
-// import img3 from "../assets/images/istockphoto-B.jpg";
-// import imgA from "../assets/images/megumi.jpg";
-// import imgB from "../assets/images/leighann.jpg";
-// import imgC from "../assets/images/aurelia.jpg";
 import cropCream from "../assets/images/sincerely.jpg";
 import cropLotion from "../assets/images/leighann-cream.jpg";
-// import cropShowergel from "../assets/images/robbie.jpg";
-// import cropSoap from "../assets/images/hygiene.jpg";
-import { Link } from "react-router";
+import Button from "../components/Button";
 import ProductsCard from "../components/ProductsCard";
 import products from "../data/products";
 import ingredient1 from "../assets/images/deanna.jpg";
@@ -44,7 +35,10 @@ export default function Home() {
               className="flex justify-center text-2xl md:text-4xl font-bold text-[#8116b4] italic text-center">Represents Pure , Natural Beauty</h3>
             <p className="text-justify md:text-center py-6 md:py-10 text-lg" >At Kanzoni Cosmetics, we believe skincare should be as pure as nature itself. That’s why we craft our products using only organic ingredients like raw Shea butter, coconut oil, and essential oils — no harsh chemicals, no shortcuts. From Ghana’s rich Shea traditions to your home, our mission is simple: to nourish, protect, and celebrate your skin’s natural glow. Every jar, every bar, and every blend carries the care, integrity, and quality that define who we are.</p>
 
-            <span className="flex justify-center"><Link to="/about-us" className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mb-12 text-lg font-medium bg-[#8116b4] hover:bg-[#453979] text-[#F7F4ED]">Our Story</Link></span>
+            <span className="flex justify-center">
+              <Button to="/about-us" variant="primary" className="mb-12">Our Story</Button>
+              {/* <Link to="/about-us" className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mb-12 text-lg font-medium bg-[#8116b4] hover:bg-[#453979] text-[#F7F4ED]">Our Story</Link> */}
+            </span>
           </div>
 
           <div className="w-full h-full bg-[#F5F3FF]">
@@ -93,7 +87,11 @@ export default function Home() {
             <p data-aos="zoom-in" style={{ fontFamily: "'Dancing Script', cursive" }}
               className="text-[#8116b4] text-4xl md:text-5xl font-bold tracking-wider md:tracking-normal italic mb-10">From Pure Shea Butter to Nourishing Body Care</p>
 
-            <Link to="/shopnow-products"><button className="bg-white text-black border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 font-medium hover:bg-[#8116b4] hover:text-[#F7F4ED] animate-bounce">Shop Now</button></Link>
+            <Button to="/shopnow-products" variant="secondary" className="animate-bounce mt-10">
+              Shop Now
+            </Button>
+
+            {/* <Link to="/shopnow-products"><button className="bg-white text-black border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 font-medium hover:bg-[#8116b4] hover:text-[#F7F4ED] animate-bounce">Shop Now</button></Link> */}
           </div>
         </div>
       </section>

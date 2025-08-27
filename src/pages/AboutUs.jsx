@@ -27,6 +27,10 @@ export default function AboutUs() {
         className="relative h-screen w-full flex justify-center items-center"
         style={{ backgroundImage: `url(${bgAboutImageI})`, backgroundSize: 'cover', backgroundPosition: 'center', }}>
 
+        {/* Hidden image to force preload */}
+        <img src={bgAboutImageI} alt="" className="hidden" loading="eager" />
+
+
         <div className="absolute inset-0 bg-black opacity-40"></div>
 
         <h1 data-aos="fade-right" className="relative z-10 text-[#F7F4ED] text-5xl md:text-6xl font-bold text-center">About Kanzoni Cosmetics</h1>

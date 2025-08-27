@@ -3,7 +3,8 @@ import { Link } from "react-router";
 import AlertBar from "../components/AlertBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { FaChevronLeft } from "react-icons/fa";
+import CartButton from "../components/CartButton";
+import NavButton from "../components/NavButton";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -60,9 +61,9 @@ export default function Cart() {
     <>
       <AlertBar />
       <Navbar />
-      <Link to="/shopnow-products">
+      <NavButton to="/shopnow-products" label="Shop" />
+      {/* <Link to="/shopnow-products">
         <button
-          // onClick={() => navigate(-1)}
           className="ml-10 mt-6 px-1.5 py-1.5 text-white rounded font-medium bg-[#9C88FF] hover:bg-[#453979] transition"
         >
           <span className="flex items-center space-x-1">
@@ -70,7 +71,7 @@ export default function Cart() {
             <span>Shop</span>
           </span>
         </button>
-      </Link>
+      </Link> */}
 
       <div className="">
         <h1 data-aos="fade-down" className="text-2xl md:text-3xl font-semibold mb-6 text-center">Your Cart</h1>
@@ -82,7 +83,7 @@ export default function Cart() {
         ) : (
           <>
             <section data-aos="fade-down" className="px-6 md:w-5/6 mx-auto">
-              <hr className="text-gray-400" />
+              <hr className="text-gray-400 mb-4" />
               <div className="space-y-4">
                 {cartItems.map(item => (
                   <div key={item.id} className="flex justify-between items-center border-b border-gray-400 pb-4">
@@ -109,23 +110,33 @@ export default function Cart() {
                         </div>
                       </div>
                     </div>
-                    <button
+
+                    <CartButton onClick={() => removeFromCart(item.id)} variant="remove">
+                      Remove
+                    </CartButton>
+
+                    {/* <button
                       onClick={() => removeFromCart(item.id)}
                       className="text-red-600 hover:underline"
                     >
                       Remove
-                    </button>
+                    </button> */}
                   </div>
                 ))}
               </div>
               <div className="mt-6 text-right">
                 <p className="text-xl font-bold">Total: <span className="text-[#453979]">Gh₵ {total}</span></p>
-                <button
+
+                <CartButton onClick={clearCart} variant="danger" className="mt-4">
+                  Clear Cart
+                </CartButton>
+
+                {/* <button
                   onClick={clearCart}
                   className="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700"
                 >
                   Clear Cart
-                </button>
+                </button> */}
               </div>
             </section>
 
@@ -166,12 +177,17 @@ export default function Cart() {
                       className="w-full border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#9C88FF]"
                       required
                     ></textarea>
-                    <button
+
+                    <CartButton type="submit" variant="success">
+                      Place Order
+                    </CartButton>
+
+                    {/* <button
                       type="submit"
                       className="bg-green-400 text-white px-4 py-2 rounded hover:bg-green-600 w-full"
                     >
                       Place Order
-                    </button>
+                    </button> */}
                   </form>
                 </div>
               </div>

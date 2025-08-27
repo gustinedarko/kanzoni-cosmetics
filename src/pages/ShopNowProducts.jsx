@@ -2,11 +2,11 @@ import products from "../data/products";
 import AlertBar from "../components/AlertBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { FaChevronLeft } from "react-icons/fa";
+import Button from "../components/Button";
+import NavButton from "../components/NavButton";
 import { useCart } from "../context/CartContext";
 import { useState } from "react";
 import { Link } from "react-router";
-
 
 export default function ShopNowProducts() {
 
@@ -19,9 +19,9 @@ export default function ShopNowProducts() {
       <section className="bg-[#F5F3FF]">
         <AlertBar />
         <Navbar />
-        <Link to="/">
+        <NavButton to="/" label="Back" />
+        {/* <Link to="/">
           <button
-            // onClick={() => navigate(-1)}
             className="ml-10 mt-6 px-1.5 py-1.5 text-white rounded font-medium bg-[#9C88FF] hover:bg-[#453979] transition text-sm md:text-base"
           >
             <span className="flex items-center space-x-1">
@@ -29,7 +29,7 @@ export default function ShopNowProducts() {
               <span>Back</span>
             </span>
           </button>
-        </Link>
+        </Link> */}
 
         <div data-aos="fade-down" className="px-6 md:px-10 pb-8 md:pb-12 md:w-5/6 mx-auto">
 
@@ -68,11 +68,16 @@ export default function ShopNowProducts() {
                     }
                     className="w-16 h-10 border border-gray-400 rounded px-2 text-center"
                   />
-                  <button
+
+                  <Button onClick={() => addToCart(product, quantities[product.id] || 1)} variant="primary">
+                    Add to Cart
+                  </Button>
+
+                  {/* <button
                     onClick={() => addToCart(product, quantities[product.id] || 1)}
                     className="bg-[#8116b4] hover:bg-[#453979] text-white font-medium px-4 py-2 rounded">
                     Add to Cart
-                  </button>
+                  </button> */}
                 </div>
               </div>
             ))}

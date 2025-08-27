@@ -1,11 +1,13 @@
-import { useParams, Link, useNavigate } from "react-router";
+import { useParams } from "react-router";
 import products from "../data/products";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AlertBar from "../components/AlertBar";
-import { FaChevronLeft } from "react-icons/fa";
+import Button from "../components/Button";
+import NavButton from "../components/NavButton";
 import { useCart } from "../context/CartContext";
 import { useState } from "react";
+import { Link } from "react-router";
 
 export default function CartProductDetails() {
   const { id } = useParams();
@@ -17,8 +19,6 @@ export default function CartProductDetails() {
     return <p className="text-center mt-10">Product not found.</p>;
   }
 
-  const navigate = useNavigate();
-
   return (
     <section className="bg-[#F5F3FF] min-h-screen">
       <AlertBar />
@@ -26,12 +26,15 @@ export default function CartProductDetails() {
 
 
       <div className="w-full flex items-center justify-between">
-        <button onClick={() => navigate(-1)} className="ml-10 mt-6 px-1.5 py-1.5 text-white rounded font-medium bg-[#9C88FF] hover:bg-[#453979] transition text-sm md:text-base">
+
+        <NavButton goBack label="Back" />
+
+        {/* <button onClick={() => navigate(-1)} className="ml-10 mt-6 px-1.5 py-1.5 text-white rounded font-medium bg-[#9C88FF] hover:bg-[#453979] transition text-sm md:text-base">
           <span className="flex items-center space-x-1">
             <span><FaChevronLeft /></span>
             <span>Back</span>
           </span>
-        </button>
+        </button> */}
         <Link to="/shopnow-products" className="text-[#8116b4] mr-6 md:mr-10 mt-6 underline hover:font-medium hover:text-[#453979] animate-bounce text-sm md:text-base">Shop Now</Link>
       </div>
 
@@ -68,11 +71,15 @@ export default function CartProductDetails() {
                 className="w-20 h-10 border border-gray-400 rounded px-2 text-center"
               />
 
-              <button
+              <Button onClick={() => addToCart(product, quantity || 1)} variant="primary">
+                Add to Cart
+              </Button>
+
+              {/* <button
                 onClick={() => addToCart(product, quantity || 1)}
                 className="bg-[#8116b4] hover:bg-[#453979] text-white font-medium px-6 py-2 rounded">
                 Add to Cart
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

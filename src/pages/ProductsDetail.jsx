@@ -41,10 +41,10 @@ export default function ProductsDetail() {
             <p className="mt-2 text-center text-lg font-medium text-[#5C4D9A]">Gh₵ {product.price}</p>
 
             {/* <Link to="/shopnow-products">
-                            <button className="bg-[#8116b4] text-[#F7F4ED] w-full border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-2 font-medium hover:bg-[#453979] block mx-auto">
-                                Shop Now
-                            </button>
-                        </Link> */}
+                  <button className="bg-[#8116b4] text-[#F7F4ED] w-full border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-2 font-medium hover:bg-[#453979] block mx-auto">
+                      Shop Now
+                  </button>
+                </Link> */}
           </div>
         </div>
         <Footer />

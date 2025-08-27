@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import { Link } from 'react-router';
 import imgA from "../assets/images/megumi.jpg";
 import imgB from "../assets/images/leighann.jpg";
 import imgC from "../assets/images/aurelia.jpg";
@@ -24,6 +23,11 @@ export default function HeroHomeSlider() {
   return (
     <>
       <div className="relative w-full h-screen overflow-hidden">
+        {/* Preload all hero images */}
+        {heroImages.map((image, index) => (
+          <img key={index} src={image} alt="" className="hidden" loading="eager" />
+        ))}
+
         {heroImages.map((image, index) => (
           <div
             key={index}
