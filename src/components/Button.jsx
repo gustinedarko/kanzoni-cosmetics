@@ -16,7 +16,7 @@ export default function Button({
   // Variants
   const variants = {
     primary: "bg-[#8116b4] hover:bg-[#453979] text-white",
-    secondary: "bg-white text-black border border-gray-400 hover:bg-[#8116b4] hover:text-[#F7F4ED]",
+    secondary: "bg-white text-black border border-gray-400 hover:bg-[#453979] hover:text-[#F7F4ED]",
     disabled: "bg-[#7a6bb7] cursor-not-allowed text-white",
   };
 
