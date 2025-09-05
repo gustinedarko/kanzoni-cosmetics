@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CartButton from "../components/CartButton";
 import NavButton from "../components/NavButton";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function Cart() {
@@ -28,6 +28,19 @@ export default function Cart() {
     address: "",
   });
 
+  const [notification, setNotification] = useState({ show: false, message: "", type: "" });
+
+  useEffect(() => {
+    if (notification.show) {
+      const timer = setTimeout(() => {
+        setNotification({ show: false, message: "", type: "" });
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [notification.show]);
+
+
+
   // NEW: Handle checkout form submission
   const handleCheckout = (e) => {
     e.preventDefault();
@@ -48,12 +61,12 @@ export default function Cart() {
     // Replace with your EmailJS service, template, and public key
     emailjs.send("service_vryiqos", "template_z4w6lg7", templateParams, "4VorpMdP2j_3nH7kp")
       .then(() => {
-        alert("Order sent successfully!");
+        setNotification({ show: true, message: "Order placed successfully!", type: "success" });
         clearCart();
         setBuyer({ name: "", email: "", phone: "", address: "" });
       })
       .catch(() => {
-        alert("Failed to send order. Please try again.");
+        setNotification({ show: true, message: "Failed to place order. Please try again.", type: "error" });
       });
   };
 
@@ -74,6 +87,16 @@ export default function Cart() {
       </Link> */}
 
       <div className="">
+
+        {notification.show && (
+          <div
+            className={`fixed top-20 left-1/2 transform -translate-x-1/2 z-50 px-6 py-3 rounded-md shadow-md text-white font-medium transition duration-300
+    ${notification.type === "success" ? "bg-green-400" : "bg-red-500"}`}
+          >
+            {notification.message}
+          </div>
+        )}
+
         <h1 data-aos="fade-down" className="text-2xl md:text-3xl font-semibold mb-6 text-center">Your Cart</h1>
         {cartItems.length === 0 ? (
           <div data-aos="fade-down" className="text-center text-lg text-gray-600 my-16">

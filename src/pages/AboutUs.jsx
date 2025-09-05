@@ -90,7 +90,7 @@ export default function AboutUs() {
               Growing up, I witnessed the strength of women in our communities and their tireless work in shea nut collection. That experience planted a deep passion in me to create a brand that values their efforts, transforms raw potential into quality products, and provides opportunities for lasting economic independence.
             </p>
             <p className="text-lg text-center md:text-justify">
-              Kanzoni Cosmetics Industries Limited was born out of this vision — to blend tradition with innovation. Every product we create reflects our commitment to quality, community, and sustainability. Beyond cosmetics, we are building a legacy that empowers rural women, protects our environment, and celebrates the true wealth of Ghana.
+              Kanzoni Cosmetics Industries Limited was born out of this vision — to blend tradition with innovation. Every product we create reflects our commitment to quality, community, and sustainability. Beyond cosmetics, we are building a legacy that empowers rural women, protects our environment, and celebrates the true wealth of Ghana. — <span style={{ fontFamily: "'Dancing Script', cursive" }} className="font-medium text-2xl">Patricia Kanzoni</span>
             </p>
           </div>
 
