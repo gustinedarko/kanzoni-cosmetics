@@ -59,7 +59,7 @@ export default function Cart() {
     };
 
     // Replace with your EmailJS service, template, and public key
-    emailjs.send("service_vryiqos", "template_z4w6lg7", templateParams, "4VorpMdP2j_3nH7kp")
+    emailjs.send("service_zr19pbe", "template_mn6shvf", templateParams, "AJmSMd45koy0J9p56")
       .then(() => {
         setNotification({ show: true, message: "Order placed successfully!", type: "success" });
         clearCart();
@@ -164,7 +164,7 @@ export default function Cart() {
             </section>
 
             <section className="bg-[#F5F3FF]">
-              {/* 📌 NEW: Checkout Form */}
+              {/* NEW: Checkout Form */}
               <div className="mt-10 px-6 pb-8 md:w-5/6 mx-auto flex md:justify-end">
                 <div className="mt-10 bg-white p-6 rounded shadow-md md:w-6/11">
                   <h2 className="text-lg font-semibold mb-4">Complete the form below to order now.</h2>
