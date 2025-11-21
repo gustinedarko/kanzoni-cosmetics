@@ -7,10 +7,22 @@ import ourStoryImage from "../assets/images/zach.jpg"
 import foundersImage from "../assets/images/founder-profile.png"
 import ourMissionImage from "../assets/images/annie-4.jpg"
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router";
 
 export default function AboutUs() {
 
   const [isMd, setIsMd] = useState(false);
+
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [hash]);
 
   useEffect(() => {
     const handleResize = () => setIsMd(window.innerWidth >= 768); // md breakpoint
@@ -36,7 +48,7 @@ export default function AboutUs() {
         <h1 data-aos="fade-right" className="relative z-10 text-[#F7F4ED] text-5xl md:text-6xl font-bold text-center">About Kanzoni Cosmetics</h1>
       </section>
 
-      <section className="h-full w-full bg-[#F5F3FF]">
+      <section id="why-who" className="scroll-mt-12 h-full w-full bg-[#F5F3FF]">
         <div data-aos="fade-left" className="px-4 sm:px-6 lg:px-8 py-10 text-center">
           <h1 className="text-2xl md:text-3xl text-[#8116b4] font-medium">Who We Are and What We Do</h1>
           <p className="py-6 px-4 md:w-5/6 mx-auto text-lg text-justify md:text-center">Kanzoni Cosmetics Industry Limited was founded in 2019 after in-depth research into the potential of Africa’s shea butter industry. Inspired by Ghana’s rich heritage and the global demand for natural skincare, we set out to create pure, organic products using only the finest raw ingredients. From raw shea butter to nourishing lotions, soaps, and shower gels, we craft skincare that celebrates tradition, supports local communities, and delivers lasting benefits to your skin.</p>
@@ -56,7 +68,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 py-10 bg-[#F5F3FF]">
+      <section id="our-story" className="scroll-mt-12 px-4 sm:px-6 lg:px-8 py-10 bg-[#F5F3FF]">
         <h2 className="text-3xl text-[#8116b4] font-medium mb-10 text-center">Our Story</h2>
 
         <div className="flex flex-col md:flex-row gap-6 items-center">
@@ -80,7 +92,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 py-10 bg-[#9C88FF] text-white">
+      <section id="founder" className="scroll-mt-12 px-4 sm:px-6 lg:px-8 py-10 bg-[#9C88FF] text-white">
         <h2 className="text-3xl font-medium mb-10 text-center">Founder</h2>
 
         <div className="flex flex-col-reverse md:flex-row gap-6 items-center">
@@ -105,7 +117,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 py-10 bg-[#F5F3FF]">
+      <section id="mission" className="scroll-mt-8 px-4 sm:px-6 lg:px-8 py-10 bg-[#F5F3FF]">
         <h2 className="text-3xl text-[#8116b4] font-medium mb-10 text-center">Our Mission</h2>
 
         <div className="flex flex-col md:flex-row gap-6 items-center">

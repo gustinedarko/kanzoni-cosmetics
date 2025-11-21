@@ -13,8 +13,21 @@ import ingredient2 from "../assets/images/raw-shea.jpg";
 import ingredient3 from "../assets/images/palmkennel-oil.jpg";
 import ingredient4 from "../assets/images/potash.jpg";
 import ingredient5 from "../assets/images/essential-oil.jpg";
+import { useLocation } from "react-router";
+import { useEffect } from "react";
 
 export default function Home() {
+
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [hash]);
 
   return (
     <>
@@ -29,7 +42,7 @@ export default function Home() {
 
         <div className="w-full h-full bg-white">
 
-          <div data-aos="fade-up" className="w-5/6 mt-12 flex flex-col items-center justify-center mx-auto">
+          <div id="brief-story" data-aos="fade-up" className="scroll-mt-24 w-5/6 mt-12 flex flex-col items-center justify-center mx-auto">
             <h2 className="flex justify-center text-3xl md:text-4xl font-bold mb-2 md:mb-4">Kanzoni</h2>
             <h3 style={{ fontFamily: "'Dancing Script', cursive" }}
               className="flex justify-center text-2xl md:text-4xl font-bold text-[#8116b4] italic text-center">Represents Pure , Natural Beauty</h3>
@@ -41,7 +54,7 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="w-full h-full bg-[#F5F3FF]">
+          <div id="explore" className="scroll-mt-12 w-full h-full bg-[#F5F3FF]">
             <div className="w-5/6 py-12 mx-auto">
               <span>
                 <p data-aos="zoom-in" className="text-center text-2xl md:text-3xl font-medium mb-6">Explore Our Natural Skincare Collection</p>
@@ -61,23 +74,23 @@ export default function Home() {
                 </div>
               </span>
               {/* <span className="flex justify-center">
-                                <Link to="/our-products">
-                                    <button className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 text-lg font-medium bg-[#8116b4] hover:bg-[#453979] text-[#F7F4ED]">
-                                        Our Products
-                                    </button>
-                                </Link>
-                            </span> */}
+                <Link to="/our-products">
+                  <button className="border border-gray-400 px-5 py-2.5 rounded-lg shadow-lg mt-10 text-lg font-medium bg-[#8116b4] hover:bg-[#453979] text-[#F7F4ED]">
+                    Our Products
+                  </button>
+                </Link>
+              </span> */}
             </div>
           </div>
         </div>
 
       </section>
 
-      <section
+      <section id="shop-now"
         style={{
           backgroundImage: `url(${cropCream})`,
         }}
-        className="relative w-full h-full md:h-screen md:bg-fixed bg-cover bg-center">
+        className="scroll-mt-12 relative w-full h-full md:h-screen md:bg-fixed bg-cover bg-center">
 
         <div className="absolute inset-0 bg-black opacity-20"></div>
 
@@ -103,7 +116,7 @@ export default function Home() {
         className="w-full h-screen md:bg-fixed bg-cover bg-right">
       </section>
 
-      <section className="w-full h-screen">
+      <section id="ingredients" className="scroll-mt-12 w-full h-screen">
         <BottomHomeSlider />
       </section>
 

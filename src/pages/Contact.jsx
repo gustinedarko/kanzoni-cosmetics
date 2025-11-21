@@ -4,8 +4,20 @@ import Footer from "../components/Footer";
 import React from "react";
 import { FaPhoneAlt, FaEnvelope, FaWhatsapp, FaMapMarkerAlt, FaClock, FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { useState, useRef, useEffect } from "react";
+import { useLocation } from "react-router";
 
 export default function Contact() {
+
+	const { hash } = useLocation();
+
+	useEffect(() => {
+		if (hash) {
+			const el = document.querySelector(hash);
+			if (el) {
+				el.scrollIntoView({ behavior: "smooth" });
+			}
+		}
+	}, [hash]);
 
 	const [isSubmitting, setIsSubmitting] = useState(false);
 	const [notification, setNotification] = useState({ show: false, message: "", type: "" });
@@ -69,7 +81,7 @@ export default function Contact() {
 				</section>
 
 				{/* Contact Options */}
-				<section data-aos="fade-right" className="py-16 px-6 max-w-6xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+				<section id="address" data-aos="fade-right" className="scroll-mt-12 py-16 px-6 max-w-6xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 					<div className="bg-[#FAF9FF] rounded-xl p-6 shadow transform hover:scale-105 transition duration-300">
 						<FaPhoneAlt size={24} className="text-[#5C4D9A] mb-2" />
 						<h4 className="font-bold mb-1">Call Us</h4>
@@ -115,7 +127,7 @@ export default function Contact() {
 				</section>
 
 				{/* Contact Form */}
-				<section className="py-16 px-6 bg-[#F5F3FF]">
+				<section id="email-us" className="scroll-mt-8 py-16 px-6 bg-[#F5F3FF]">
 					<h3 className="text-2xl font-bold text-center mb-8 text-[#8116b4]">Send Us a Message</h3>
 					<form
 						ref={formRef}
@@ -185,7 +197,7 @@ export default function Contact() {
                 </section> */}
 
 				{/* Embedded Google Map */}
-				<section className="px-6 pb-16 bg-[#F5F3FF]">
+				<section id="map" className="scroll-mt-24 px-6 pb-16 bg-[#F5F3FF]">
 					<iframe
 						title="Kanzoni Cosmetics Location"
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15699.637167187617!2d-0.8086538680017943!3d10.349137845154733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfd4c47880cf91a1%3A0xaa0362404ea1f4c5!2sWalewale!5e0!3m2!1sen!2sgh!4v1755656352033!5m2!1sen!2sgh"

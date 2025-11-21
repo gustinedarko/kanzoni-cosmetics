@@ -21,30 +21,30 @@ export default function Footer() {
               <li>
                 <Link to="/" className="font-medium hover:underline block">Home</Link>
                 <ul className="mt-1 space-y-1 text-gray-600">
-                  <li><Link to="/about-us" className="hover:underline">Our Story</Link></li>
-                  <li><a href="/#" className="hover:underline">Expolore</a></li>
-                  <li><a href="/#" className="hover:underline">Shop Now</a></li>
-                  <li><a href="/#" className="hover:underline">Ingredients</a></li>
+                  <li><Link to="/#brief-story" className="hover:underline">Our Story</Link></li>
+                  <li><Link to="/#explore" className="hover:underline">Expolore</Link></li>
+                  <li><Link to="/#shop-now" className="hover:underline">Shop Now</Link></li>
+                  <li><Link to="/#ingredients" className="hover:underline">Ingredients</Link></li>
                 </ul>
               </li>
 
               <li>
                 <Link to="/about-us" className="font-medium hover:underline block">About</Link>
                 <ul className="mt-1 space-y-1 text-gray-600">
-                  <li><Link to="/about-us" className="hover:underline">Why & Who</Link></li>
-                  <li><Link to="/about-us" className="hover:underline">Our Story</Link></li>
-                  <li><Link to="/about-us" className="hover:underline">Founder</Link></li>
-                  <li><Link to="/about-us" className="hover:underline">Mission</Link></li>
+                  <li><Link to="/about-us#why-who" className="hover:underline">Why & Who</Link></li>
+                  <li><Link to="/about-us#our-story" className="hover:underline">Our Story</Link></li>
+                  <li><Link to="/about-us#founder" className="hover:underline">Founder</Link></li>
+                  <li><Link to="/about-us#mission" className="hover:underline">Mission</Link></li>
                 </ul>
               </li>
 
               <li>
                 <Link to="/process" className="font-medium hover:underline block">Process</Link>
                 <ul className="mt-1 space-y-1 text-gray-600">
-                  <li><Link to="/process" className="hover:underline">Craft</Link></li>
-                  <li><Link to="/process" className="hover:underline">Did You</Link></li>
-                  <li><a href="/process#sourcing" className="hover:underline">Packaging</a></li>
-                  <li><a href="/process#sourcing" className="hover:underline">Impact</a></li>
+                  <li><Link to="/process#craft" className="hover:underline">Craft</Link></li>
+                  <li><Link to="/process#did-you" className="hover:underline">Did You</Link></li>
+                  <li><Link to="/process#packaging" className="hover:underline">Packaging</Link></li>
+                  <li><Link to="/process#impact" className="hover:underline">Impact</Link></li>
                 </ul>
               </li>
 
@@ -52,9 +52,9 @@ export default function Footer() {
                 <Link to="/contact" className="font-medium hover:underline block">Contact</Link>
                 <ul className="mt-1 space-y-1 text-gray-600">
                   <li><Link to="/cart" className="hover:underline">Cart</Link></li>
-                  <li><a href="/contact#location" className="hover:underline">Address</a></li>
-                  <li><a href="/contact#form" className="hover:underline">Email Us</a></li>
-                  <li><a href="/contact#form" className="hover:underline">Map</a></li>
+                  <li><Link to="/contact#address" className="hover:underline">Address</Link></li>
+                  <li><Link to="/contact#email-us" className="hover:underline">Email Us</Link></li>
+                  <li><Link to="/contact#map" className="hover:underline">Map</Link></li>
                 </ul>
               </li>
             </ul>

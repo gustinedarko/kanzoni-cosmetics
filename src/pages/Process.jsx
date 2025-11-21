@@ -12,8 +12,22 @@ import img3 from "../assets/images/kc-lotion.jpeg";
 import img4 from "../assets/images/kc-mixed-sheabutter.jpeg";
 import img5 from "../assets/images/kc-blacksoap.jpeg";
 import img6 from "../assets/images/sagar.jpg";
+import { useLocation } from "react-router";
+import { useEffect } from "react";
 
 export default function Process() {
+
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [hash]);
+
   const steps = [
     {
       icon: <FaSeedling size={40} className="text-[#8116b4]" />,
@@ -74,7 +88,7 @@ export default function Process() {
             </p>
           </div>
 
-          <div data-aos="fade-right" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-12">
+          <div id="craft" data-aos="fade-right" className="scroll-mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-12">
             {steps.map((step, index) => (
               <div key={index} className="bg-white shadow-md rounded-lg p-6 text-center transform hover:scale-110 transition duration-300">
                 <div className="mb-4 flex justify-center">{step.icon}</div>
@@ -84,7 +98,7 @@ export default function Process() {
             ))}
           </div>
 
-          <div data-aos="fade-right" className="mt-16 text-center">
+          <div id="did-you" data-aos="fade-right" className="scroll-mt-24 mt-16 text-center">
             <h4 className="text-2xl md:text-3xl font-semibold text-[#8116b4] mb-4">Did You Know?</h4>
             <p className="text-lg px-6 md:px-20 text-gray-700">
               Shea butter is rich in vitamins A and E and contains essential fatty acids that deeply moisturize the skin. Its production supports local
@@ -104,7 +118,7 @@ export default function Process() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 px-12">
+        <div id="packaging" className="scroll-mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 px-12">
           {/* Product 1 - Shea Butter */}
           <div className="bg-amber-50 p-4 rounded-lg shadow-md text-center transform hover:scale-105 transition duration-300">
             <img
@@ -185,7 +199,7 @@ export default function Process() {
         </div>
       </section>
 
-      <section className="bg-[#F5F3FF] py-12 px-4 sm:px-8 lg:px-16">
+      <section id="impact" className="scroll-mt-12 bg-[#F5F3FF] py-12 px-4 sm:px-8 lg:px-16">
         <h2 className="text-2xl md:text-3xl text-center font-semibold text-[#8116b4] mb-6">
           Traditional Tools & Community Impact
         </h2>
